@@ -16,8 +16,9 @@
   <summary>Explicación</summary>
   <div style="text-align:center; margin:1.5em 0;">
     <h2 style="font-size:2.5em; margin-bottom:0.5em;">Logo Luxury_SL</h2>
-    <!-- La imagen debe estar en la misma carpeta que este archivo -->
-    <img src="LogoLuxury_SL.png" alt="Logo Luxury_SL" style="max-width:400px; width:90%; height:auto;">
+    <!-- Imagen cargada desde Imgur -->
+    <img src="https://i.imgur.com/YePpr4D.png" alt="Logo Luxury_SL"
+         style="max-width:400px; width:90%; height:auto;">
   </div>
   <p>
     Hola, Somos el grupo de SMX2_LuxurySL. Nuestro proyecto tiene varias apps que usaremos,
