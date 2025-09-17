@@ -3,58 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SMX2_LuxurySL</title>
-<style>
-  body {
-    margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #1e1e2f;
-    color: #f0f0f0;
-    scroll-behavior: smooth;
-    padding:2rem;
-  }
-
-  /* Título y nombres */
-  .titulo {
-    text-align:center;
-    margin-bottom:2rem;
-  }
-  .titulo h1 {
-    font-size:4em;
-    margin-bottom:0.3em;
-  }
-  .titulo h2 {
-    font-weight: normal;
-    color:#ccc;
-  }
-
-  /* Secciones */
-  details {
-    background:#2c2c44;
-    margin-bottom:1rem;
-    padding:0.5rem 1rem;
-    border-radius:8px;
-    transition:0.3s;
-  }
-  details[open] {
-    background:#3c3c58;
-  }
-  summary {
-    font-weight:bold;
-    cursor:pointer;
-    font-size:1.1em;
-  }
-  details p {
-    margin-top:0.5rem;
-    padding-left:0.5rem;
-  }
-</style>
 </head>
 <body>
 
-<div class="titulo">
-  <h1>SMX2_LuxurySL</h1>
-  <h2>Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
+<div style="text-align:center; margin-bottom:2rem;">
+  <h1 style="font-size:4em; margin-bottom:0.3em;">SMX2_LuxurySL</h1>
+  <h2 style="font-weight: normal; color:#ccc;">Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
 </div>
 
 <!-- Secciones con flechas -->
