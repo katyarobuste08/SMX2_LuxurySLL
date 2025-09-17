@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMX2_LuxurySL</title>
 </head>
 <body>
 
@@ -15,11 +16,15 @@
   <summary>Explicación</summary>
   <div style="text-align:center; margin:1.5em 0;">
     <h2 style="font-size:2.5em; margin-bottom:0.5em;">Logo Luxury_SL</h2>
-    <img src="ChatGPT Image 17 sept 2025, 12_58_45.png" alt="Logo Luxury_SL" style="max-width:400px; width:90%; height:auto;">
+    <!-- La imagen debe estar en la misma carpeta que este archivo -->
+    <img src="LogoLuxury_SL.png" alt="Logo Luxury_SL" style="max-width:400px; width:90%; height:auto;">
   </div>
   <p>
-    Hola, Somos el grupo de SMX2_LuxurySL. Nuestro proyecto tiene varias apps que usaremos, ya como Blender y c/c++ (un tipo de script de arduino).
-    El nombre que hemos escojido es el nombre donde muestra una empressa de lujo, pero de coches de lujo. Mostraremos el modelo de un coche en 3D y con un motor de arduino que ira con un mando controlado donde tendras varios efectos especiales.
+    Hola, Somos el grupo de SMX2_LuxurySL. Nuestro proyecto tiene varias apps que usaremos,
+    ya como Blender y c/c++ (un tipo de script de arduino).
+    El nombre que hemos escogido es el nombre donde muestra una empresa de lujo,
+    pero de coches de lujo. Mostraremos el modelo de un coche en 3D y con un motor
+    de arduino que irá con un mando controlado donde tendrás varios efectos especiales.
   </p>
 </details>
 
