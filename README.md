@@ -30,21 +30,69 @@
   </nav>
 
   <main class="container">
-    <details open id="indice"><summary></summary></details>
-    <details open id="explicacion"><summary></summary></details>
-    <details open id="guias"><summary></summary></details>
-    <details open id="diagrama"><summary></summary></details>
-    <details open id="instalaciones"><summary></summary></details>
-    <details open id="backups"><summary></summary></details>
-    <details open id="dns"><summary></summary></details>
-    <details open id="firewall"><summary></summary></details>
-    <details open id="blender"><summary></summary></details>
-    <details open id="scripts"><summary></summary></details>
-    <details open id="aprendido"><summary></summary></details>
-    <details open id="incidencias"><summary></summary></details>
+    <details id="indice">
+      <summary>Índice</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="explicacion">
+      <summary>Explicación</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="guias">
+      <summary>Guías de Uso</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="diagrama">
+      <summary>Diagrama de Red</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="instalaciones">
+      <summary>Instalaciones</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="backups">
+      <summary>BackUps</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="dns">
+      <summary>DNS</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="firewall">
+      <summary>FireWall</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="blender">
+      <summary>Blender</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="scripts">
+      <summary>Scripts</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="aprendido">
+      <summary>Qué hemos Aprendido</summary>
+      <p>Contenido aquí</p>
+    </details>
+
+    <details id="incidencias">
+      <summary>Incidencias</summary>
+      <p>Contenido aquí</p>
+    </details>
   </main>
 
   <footer>
+    <p>© 2025 - SMX2_LuxurySL</p>
   </footer>
 
 </body>
