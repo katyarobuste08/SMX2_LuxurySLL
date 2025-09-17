@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portada</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -13,83 +13,68 @@
     <p>Documentación y recursos técnicos</p>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#indice">Índice</a></li>
-      <li><a href="#explicacion">Explicación</a></li>
-      <li><a href="#guias">Guías de Uso</a></li>
-      <li><a href="#diagrama">Diagrama de Red</a></li>
-      <li><a href="#instalaciones">Instalaciones</a></li>
-      <li><a href="#backups">BackUps</a></li>
-      <li><a href="#dns">DNS</a></li>
-      <li><a href="#firewall">FireWall</a></li>
-      <li><a href="#blender">Blender</a></li>
-      <li><a href="#scripts">Scripts</a></li>
-      <li><a href="#aprendido">Qué hemos Aprendido</a></li>
-      <li><a href="#incidencias">Incidencias</a></li>
-    </ul>
-  </nav>
+  <main class="container">
 
-  <main>
-    <section id="indice">
-      <h2>Índice</h2>
+    <details open id="indice">
+      <summary>Índice</summary>
       <p>En esta página encontrarás toda la información organizada por secciones clave de nuestro proyecto.</p>
-    </section>
+    </details>
 
-    <section id="explicacion">
-      <h2>Explicación</h2>
+    <details open id="explicacion">
+      <summary>Explicación</summary>
       <p>Aquí va una descripción general del proyecto, sus objetivos y alcances.</p>
-    </section>
+    </details>
 
-    <section id="guias">
-      <h2>Guías de Uso</h2>
+    <details open id="guias">
+      <summary>Guías de Uso</summary>
       <p>Documentación paso a paso para el uso correcto de herramientas y sistemas implementados.</p>
-    </section>
+    </details>
 
-    <section id="diagrama">
-      <h2>Diagrama de Red</h2>
+    <details open id="diagrama">
+      <summary>Diagrama de Red</summary>
       <p>Representación visual de la red implementada con conexiones, dispositivos y roles.</p>
-    </section>
+    </details>
 
-    <section id="instalaciones">
-      <h2>Instalaciones</h2>
+    <details open id="instalaciones">
+      <summary>Instalaciones</summary>
       <p>Pasos y comandos utilizados para realizar las instalaciones necesarias.</p>
-    </section>
+    </details>
 
-    <section id="backups">
-      <h2>BackUps</h2>
+    <details open id="backups">
+      <summary>BackUps</summary>
       <p>Políticas, comandos y ejemplos de respaldos realizados.</p>
-    </section>
+    </details>
 
-    <section id="dns">
-      <h2>DNS</h2>
+    <details open id="dns">
+      <summary>DNS</summary>
       <p>Configuración del sistema de nombres de dominio, zonas y registros utilizados.</p>
-    </section>
+    </details>
 
-    <section id="firewall">
-      <h2>FireWall</h2>
+    <details open id="firewall">
+      <summary>FireWall</summary>
       <p>Reglas configuradas, servicios permitidos y puertos bloqueados.</p>
-    </section>
+    </details>
 
-    <section id="blender">
-      <h2>Blender</h2>
+    <details open id="blender">
+      <summary>Blender</summary>
       <p>Uso de Blender en el proyecto (si aplica), animaciones o visualización 3D.</p>
-    </section>
+    </details>
 
-    <section id="scripts">
-      <h2>Scripts</h2>
+    <details open id="scripts">
+      <summary>Scripts</summary>
       <p>Listado de scripts automatizados, su función y código fuente.</p>
-    </section>
+    </details>
 
-    <section id="aprendido">
-      <h2>Qué hemos Aprendido</h2>
+    <details open id="aprendido">
+      <summary>Qué hemos Aprendido</summary>
       <p>Resumen de aprendizajes técnicos y habilidades adquiridas durante el desarrollo del proyecto.</p>
-    </section>
+    </details>
 
-    <section id="incidencias">
-      <h2>Incidencias</h2>
+    <details open id="incidencias">
+      <summary>Incidencias</summary>
       <p>Problemas encontrados, soluciones aplicadas y mejoras futuras.</p>
-    </section>
+    </details>
+
   </main>
 
   <footer>
