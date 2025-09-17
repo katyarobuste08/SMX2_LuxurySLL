@@ -12,7 +12,7 @@
 </div>
 <details>
   <summary>Explicación</summary>
-  <p>Aquí va el contenido de la sección Explicación.</p>
+  <p>Nuestro proyecto consiste en crear un coche funcional y controlable combinando diseño 3D, electrónica y programación. La idea es unir Blender, Arduino y un mando para conseguir un vehículo que se pueda manejar y personalizar.</p>
 </details>
 
 <details>
