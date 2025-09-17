@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portada</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -30,66 +30,56 @@
     </ul>
   </nav>
 
-  <main>
-    <section id="indice">
-      <h2>Índice</h2>
-      <p>En esta página encontrarás toda la información organizada por secciones clave de nuestro proyecto.</p>
-    </section>
+  <main class="container">
 
-    <section id="explicacion">
-      <h2>Explicación</h2>
-      <p>Aquí va una descripción general del proyecto, sus objetivos y alcances.</p>
-    </section>
+    <details open id="indice">
+      <summary>Índice</summary>
+    </details>
 
-    <section id="guias">
-      <h2>Guías de Uso</h2>
-      <p>Documentación paso a paso para el uso correcto de herramientas y sistemas implementados.</p>
-    </section>
+    <details open id="explicacion">
+      <summary>Explicación</summary>
+    </details>
 
-    <section id="diagrama">
-      <h2>Diagrama de Red</h2>
-      <p>Representación visual de la red implementada con conexiones, dispositivos y roles.</p>
-    </section>
+    <details open id="guias">
+      <summary>Guías de Uso</summary>
+    </details>
 
-    <section id="instalaciones">
-      <h2>Instalaciones</h2>
-      <p>Pasos y comandos utilizados para realizar las instalaciones necesarias.</p>
-    </section>
+    <details open id="diagrama">
+      <summary>Diagrama de Red</summary>
+    </details>
 
-    <section id="backups">
-      <h2>BackUps</h2>
-      <p>Políticas, comandos y ejemplos de respaldos realizados.</p>
-    </section>
+    <details open id="instalaciones">
+      <summary>Instalaciones</summary>
+    </details>
 
-    <section id="dns">
-      <h2>DNS</h2>
-      <p>Configuración del sistema de nombres de dominio, zonas y registros utilizados.</p>
-    </section>
+    <details open id="backups">
+      <summary>BackUps</summary>
+    </details>
 
-    <section id="firewall">
-      <h2>FireWall</h2>
-      <p>Reglas configuradas, servicios permitidos y puertos bloqueados.</p>
-    </section>
+    <details open id="dns">
+      <summary>DNS</summary>
+    </details>
 
-    <section id="blender">
-      <h2>Blender</h2>
-      <p>Uso de Blender en el proyecto (si aplica), animaciones o visualización 3D.</p>
-    </section>
+    <details open id="firewall">
+      <summary>FireWall</summary>
+    </details>
 
-    <section id="scripts">
-      <h2>Scripts</h2>
-      <p>Listado de scripts automatizados, su función y código fuente.</p>
-    </section>
+    <details open id="blender">
+      <summary>Blender</summary>
+    </details>
 
-    <section id="aprendido">
-      <h2>Qué hemos Aprendido</h2>
-      <p>Resumen de aprendizajes técnicos y habilidades adquiridas durante el desarrollo del proyecto.</p>
-    </section>
+    <details open id="scripts">
+      <summary>Scripts</summary>
+    </details>
 
-    <section id="incidencias">
-      <h2>Incidencias</h2>
-      <p>Problemas encontrados, soluciones aplicadas y mejoras futuras.</p>
-    </section>
+    <details open id="aprendido">
+      <summary>Qué hemos Aprendido</summary>
+    </details>
+
+    <details open id="incidencias">
+      <summary>Incidencias</summary>
+    </details>
+
   </main>
 
   <footer>
@@ -98,4 +88,3 @@
 
 </body>
 </html>
-
