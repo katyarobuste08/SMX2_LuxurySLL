@@ -13,21 +13,8 @@
     scroll-behavior: smooth;
   }
 
-  /* Portada */
-  .portada {
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background: linear-gradient(135deg,#1e1e2f,#3c3c58);
-  }
-  .portada h1 { font-size:4em; margin-bottom:0.3em; }
-  .portada h2 { font-weight: normal; color: #ccc; }
-
   /* Layout */
-  main { display:flex; padding:2rem; gap:2rem; }
+  main { display:flex; padding:2rem; gap:2rem; min-height:100vh; }
 
   /* Índice lateral */
   nav#indice {
@@ -64,11 +51,6 @@
 </head>
 <body>
 
-<section class="portada">
-  <h1>SMX2_LuxurySL</h1>
-  <h2>Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
-</section>
-
 <main>
   <!-- Índice -->
   <nav id="indice">
@@ -90,36 +72,30 @@
 
   <!-- Contenido -->
   <section class="content">
-    <details id="explicacion"><summary>Explicación</summary><p>Aquí va el texto de la sección Explicación.</p></details>
-    <details id="guias"><summary>Guías de Uso</summary><p>Aquí va el texto de la sección Guías de Uso.</p></details>
-    <details id="diagrama"><summary>Diagrama de Red</summary><p>Aquí va el texto de la sección Diagrama de Red.</p></details>
-    <details id="instalaciones"><summary>Instalaciones</summary><p>Aquí va el texto de la sección Instalaciones.</p></details>
-    <details id="backups"><summary>BackUps</summary><p>Aquí va el texto de la sección BackUps.</p></details>
-    <details id="dns"><summary>DNS</summary><p>Aquí va el texto de la sección DNS.</p></details>
-    <details id="firewall"><summary>FireWall</summary><p>Aquí va el texto de la sección FireWall.</p></details>
-    <details id="blender"><summary>Blender</summary><p>Aquí va el texto de la sección Blender.</p></details>
-    <details id="scripts"><summary>Scripts</summary><p>Aquí va el texto de la sección Scripts.</p></details>
-    <details id="aprendido"><summary>Qué hemos Aprendido</summary><p>Aquí va el texto de la sección Qué hemos Aprendido.</p></details>
-    <details id="incidencias"><summary>Incidencias</summary><p>Aquí va el texto de la sección Incidencias.</p></details>
+    <details id="explicacion"><summary>Explicación</summary><p>Aquí va el contenido de la sección Explicación.</p></details>
+    <details id="guias"><summary>Guías de Uso</summary><p>Aquí va el contenido de Guías de Uso.</p></details>
+    <details id="diagrama"><summary>Diagrama de Red</summary><p>Aquí va el contenido de Diagrama de Red.</p></details>
+    <details id="instalaciones"><summary>Instalaciones</summary><p>Aquí va el contenido de Instalaciones.</p></details>
+    <details id="backups"><summary>BackUps</summary><p>Aquí va el contenido de BackUps.</p></details>
+    <details id="dns"><summary>DNS</summary><p>Aquí va el contenido de DNS.</p></details>
+    <details id="firewall"><summary>FireWall</summary><p>Aquí va el contenido de FireWall.</p></details>
+    <details id="blender"><summary>Blender</summary><p>Aquí va el contenido de Blender.</p></details>
+    <details id="scripts"><summary>Scripts</summary><p>Aquí va el contenido de Scripts.</p></details>
+    <details id="aprendido"><summary>Qué hemos Aprendido</summary><p>Aquí va el contenido de Qué hemos Aprendido.</p></details>
+    <details id="incidencias"><summary>Incidencias</summary><p>Aquí va el contenido de Incidencias.</p></details>
   </section>
 </main>
 
 <script>
-  // Función que abre la sección y hace scroll
+  // Abrir sección al clicar en índice
   const links = document.querySelectorAll('nav#indice a');
   links.forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
       const target = document.getElementById(link.dataset.target);
-
-      // Cerrar todas
       document.querySelectorAll('details').forEach(d => d.removeAttribute('open'));
-      
-      // Abrir la sección deseada
       target.setAttribute('open', true);
-
-      // Scroll suave
-      target.scrollIntoView({behavior: 'smooth', block:'start'});
+      target.scrollIntoView({behavior:'smooth', block:'start'});
     });
   });
 </script>
