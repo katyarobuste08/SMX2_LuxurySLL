@@ -3,9 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SMX2_LuxurySL</title>
+  <title></title>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
+
+  <h1>SMX2_LuxurySL</h1>
 
   <details id="indice"><summary>Índice</summary></details>
   <details id="explicacion"><summary>Explicación</summary></details>
