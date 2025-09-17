@@ -9,17 +9,15 @@
 
 <div style="text-align:center; margin-bottom:2rem;">
   <h1 style="font-size:4em; margin-bottom:0.3em;">SMX2_LuxurySL</h1>
+  <!-- Imagen justo debajo del título -->
+  <img src="https://i.imgur.com/YePpr4D.png" 
+       alt="Logo Luxury_SL"
+       style="max-width:250px; width:80%; height:auto; margin-bottom:1em;">
   <h2 style="font-weight: normal; color:#ccc;">Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
 </div>
 
 <details open>
   <summary>Explicación</summary>
-  <div style="text-align:center; margin:1.5em 0;">
-    <h2 style="font-size:2.5em; margin-bottom:0.5em;">Logo Luxury_SL</h2>
-    <!-- Imagen cargada desde Imgur -->
-    <img src="https://i.imgur.com/YePpr4D.png" alt="Logo Luxury_SL"
-         style="max-width:400px; width:90%; height:auto;">
-  </div>
   <p>
     Hola, Somos el grupo de SMX2_LuxurySL. Nuestro proyecto tiene varias apps que usaremos,
     ya como Blender y c/c++ (un tipo de script de arduino).
