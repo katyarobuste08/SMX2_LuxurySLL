@@ -10,8 +10,6 @@
   <h1 style="font-size:4em; margin-bottom:0.3em;">SMX2_LuxurySL</h1>
   <h2 style="font-weight: normal; color:#ccc;">Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
 </div>
-
-<!-- Secciones con flechas -->
 <details>
   <summary>Explicación</summary>
   <p>Aquí va el contenido de la sección Explicación.</p>
