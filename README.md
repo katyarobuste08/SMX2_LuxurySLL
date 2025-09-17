@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portada</title>
+  <title>SMX2_LuxurySL</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Portada</h1>
-    <p>Documentación y recursos técnicos</p>
+    <h1>SMX2_LuxurySL</h1>
   </header>
 
   <nav>
@@ -31,59 +30,21 @@
   </nav>
 
   <main class="container">
-
-    <details open id="indice">
-      <summary>Índice</summary>
-    </details>
-
-    <details open id="explicacion">
-      <summary>Explicación</summary>
-    </details>
-
-    <details open id="guias">
-      <summary>Guías de Uso</summary>
-    </details>
-
-    <details open id="diagrama">
-      <summary>Diagrama de Red</summary>
-    </details>
-
-    <details open id="instalaciones">
-      <summary>Instalaciones</summary>
-    </details>
-
-    <details open id="backups">
-      <summary>BackUps</summary>
-    </details>
-
-    <details open id="dns">
-      <summary>DNS</summary>
-    </details>
-
-    <details open id="firewall">
-      <summary>FireWall</summary>
-    </details>
-
-    <details open id="blender">
-      <summary>Blender</summary>
-    </details>
-
-    <details open id="scripts">
-      <summary>Scripts</summary>
-    </details>
-
-    <details open id="aprendido">
-      <summary>Qué hemos Aprendido</summary>
-    </details>
-
-    <details open id="incidencias">
-      <summary>Incidencias</summary>
-    </details>
-
+    <details open id="indice"><summary></summary></details>
+    <details open id="explicacion"><summary></summary></details>
+    <details open id="guias"><summary></summary></details>
+    <details open id="diagrama"><summary></summary></details>
+    <details open id="instalaciones"><summary></summary></details>
+    <details open id="backups"><summary></summary></details>
+    <details open id="dns"><summary></summary></details>
+    <details open id="firewall"><summary></summary></details>
+    <details open id="blender"><summary></summary></details>
+    <details open id="scripts"><summary></summary></details>
+    <details open id="aprendido"><summary></summary></details>
+    <details open id="incidencias"><summary></summary></details>
   </main>
 
   <footer>
-    <p>© 2025 - Proyecto Documentado | Repositorio de aprendizaje y práctica</p>
   </footer>
 
 </body>
