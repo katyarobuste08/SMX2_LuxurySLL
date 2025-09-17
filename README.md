@@ -16,7 +16,24 @@
 
   <!-- Secciones -->
   <main style="padding:2rem;">
-    <details id="indice"><summary>Índice</summary></details>
+    <details id="indice">
+      <summary>Índice</summary>
+      <!-- Mini índice -->
+      <ul style="margin-top:1rem;list-style:none;padding-left:0;line-height:1.8;">
+        <li><a href="#explicacion">Explicación</a></li>
+        <li><a href="#guias">Guías de Uso</a></li>
+        <li><a href="#diagrama">Diagrama de Red</a></li>
+        <li><a href="#instalaciones">Instalaciones</a></li>
+        <li><a href="#backups">BackUps</a></li>
+        <li><a href="#dns">DNS</a></li>
+        <li><a href="#firewall">FireWall</a></li>
+        <li><a href="#blender">Blender</a></li>
+        <li><a href="#scripts">Scripts</a></li>
+        <li><a href="#aprendido">Qué hemos Aprendido</a></li>
+        <li><a href="#incidencias">Incidencias</a></li>
+      </ul>
+    </details>
+
     <details id="explicacion"><summary>Explicación</summary></details>
     <details id="guias"><summary>Guías de Uso</summary></details>
     <details id="diagrama"><summary>Diagrama de Red</summary></details>
