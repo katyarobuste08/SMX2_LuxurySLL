@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portada</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -13,68 +13,83 @@
     <p>Documentación y recursos técnicos</p>
   </header>
 
-  <main class="container">
+  <nav>
+    <ul>
+      <li><a href="#indice">Índice</a></li>
+      <li><a href="#explicacion">Explicación</a></li>
+      <li><a href="#guias">Guías de Uso</a></li>
+      <li><a href="#diagrama">Diagrama de Red</a></li>
+      <li><a href="#instalaciones">Instalaciones</a></li>
+      <li><a href="#backups">BackUps</a></li>
+      <li><a href="#dns">DNS</a></li>
+      <li><a href="#firewall">FireWall</a></li>
+      <li><a href="#blender">Blender</a></li>
+      <li><a href="#scripts">Scripts</a></li>
+      <li><a href="#aprendido">Qué hemos Aprendido</a></li>
+      <li><a href="#incidencias">Incidencias</a></li>
+    </ul>
+  </nav>
 
-    <details open id="indice">
-      <summary>Índice</summary>
-      <p>Aquí está el contenido del índice con una visión general de todo el material disponible en esta documentación.</p>
-    </details>
+  <main>
+    <section id="indice">
+      <h2>Índice</h2>
+      <p>En esta página encontrarás toda la información organizada por secciones clave de nuestro proyecto.</p>
+    </section>
 
-    <details open id="explicacion">
-      <summary>Explicación</summary>
-      <p>Explicación general del proyecto, objetivos, estructura y metodología aplicada durante su desarrollo.</p>
-    </details>
+    <section id="explicacion">
+      <h2>Explicación</h2>
+      <p>Aquí va una descripción general del proyecto, sus objetivos y alcances.</p>
+    </section>
 
-    <details open id="guias">
-      <summary>Guías de Uso</summary>
-      <p>Pasos detallados para utilizar correctamente los sistemas, herramientas y configuraciones implementadas.</p>
-    </details>
+    <section id="guias">
+      <h2>Guías de Uso</h2>
+      <p>Documentación paso a paso para el uso correcto de herramientas y sistemas implementados.</p>
+    </section>
 
-    <details open id="diagrama">
-      <summary>Diagrama de Red</summary>
-      <p>Este apartado incluye un diagrama visual de la red, con detalles sobre dispositivos, conexiones y roles.</p>
-    </details>
+    <section id="diagrama">
+      <h2>Diagrama de Red</h2>
+      <p>Representación visual de la red implementada con conexiones, dispositivos y roles.</p>
+    </section>
 
-    <details open id="instalaciones">
-      <summary>Instalaciones</summary>
-      <p>Lista de instalaciones realizadas, incluyendo software, servicios y configuraciones necesarias para el sistema.</p>
-    </details>
+    <section id="instalaciones">
+      <h2>Instalaciones</h2>
+      <p>Pasos y comandos utilizados para realizar las instalaciones necesarias.</p>
+    </section>
 
-    <details open id="backups">
-      <summary>BackUps</summary>
-      <p>Procedimientos para realizar copias de seguridad, recuperación de datos y planificación de respaldo.</p>
-    </details>
+    <section id="backups">
+      <h2>BackUps</h2>
+      <p>Políticas, comandos y ejemplos de respaldos realizados.</p>
+    </section>
 
-    <details open id="dns">
-      <summary>DNS</summary>
-      <p>Configuración del sistema de nombres de dominio, zonas directas e inversas, y tipos de registros utilizados.</p>
-    </details>
+    <section id="dns">
+      <h2>DNS</h2>
+      <p>Configuración del sistema de nombres de dominio, zonas y registros utilizados.</p>
+    </section>
 
-    <details open id="firewall">
-      <summary>FireWall</summary>
-      <p>Reglas establecidas en el firewall, puertos abiertos, servicios permitidos y seguridad aplicada.</p>
-    </details>
+    <section id="firewall">
+      <h2>FireWall</h2>
+      <p>Reglas configuradas, servicios permitidos y puertos bloqueados.</p>
+    </section>
 
-    <details open id="blender">
-      <summary>Blender</summary>
-      <p>Uso de Blender para animaciones, modelado 3D o visualizaciones dentro del contexto del proyecto.</p>
-    </details>
+    <section id="blender">
+      <h2>Blender</h2>
+      <p>Uso de Blender en el proyecto (si aplica), animaciones o visualización 3D.</p>
+    </section>
 
-    <details open id="scripts">
-      <summary>Scripts</summary>
-      <p>Listado y explicación de los scripts utilizados o desarrollados, con código y comentarios incluidos.</p>
-    </details>
+    <section id="scripts">
+      <h2>Scripts</h2>
+      <p>Listado de scripts automatizados, su función y código fuente.</p>
+    </section>
 
-    <details open id="aprendido">
-      <summary>Qué hemos Aprendido</summary>
-      <p>Resumen de conocimientos técnicos y prácticos adquiridos a lo largo del proyecto o la experiencia.</p>
-    </details>
+    <section id="aprendido">
+      <h2>Qué hemos Aprendido</h2>
+      <p>Resumen de aprendizajes técnicos y habilidades adquiridas durante el desarrollo del proyecto.</p>
+    </section>
 
-    <details open id="incidencias">
-      <summary>Incidencias</summary>
-      <p>Registro de problemas encontrados, errores solucionados y posibles mejoras futuras a implementar.</p>
-    </details>
-
+    <section id="incidencias">
+      <h2>Incidencias</h2>
+      <p>Problemas encontrados, soluciones aplicadas y mejoras futuras.</p>
+    </section>
   </main>
 
   <footer>
@@ -83,3 +98,4 @@
 
 </body>
 </html>
+
