@@ -23,7 +23,7 @@
     ya como Blender y c/c++ (un tipo de script de arduino).
     El nombre que hemos escogido es el nombre donde muestra una empresa de lujo,
     pero de coches de lujo. Mostraremos el modelo de un coche en 3D y con un motor
-    de arduino que irá con un mando controlado donde tendrás varios efectos especiales.
+    de arduino que irá con un mando controlado donde tendrás varios efectos especiales ( aun falta ).
   </p>
 </details>
 
