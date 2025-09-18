@@ -6,12 +6,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">🚗 LuxurySL</div>
-    <nav>
-      <a href="#explicacion">Explicación</a>
     </nav>
   </header>
 
