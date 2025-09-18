@@ -7,6 +7,10 @@
     details p {
       color: blue;
     }
+    /* Azul eléctrico para el párrafo de Explicación */
+    .explicacion-texto {
+      color: #00f0ff; /* puedes usar #00ffff o rgb(0,255,255) si lo prefieres */
+    }
   </style>
 </head>
 <body>
@@ -21,7 +25,7 @@
 
   <details open>
     <summary>Explicación</summary>
-    <p>
+    <p class="explicacion-texto">
       Hola, Somos el grupo de SMX2_LuxurySL. Nuestro proyecto tiene varias apps que usaremos,
       ya como Blender y c/c++ (un tipo de script de arduino).
       El nombre que hemos escogido es el nombre donde muestra una empresa de lujo,
