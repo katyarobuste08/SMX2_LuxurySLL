@@ -3,53 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #eee;
-      padding: 2rem;
-    }
-
-    h1 {
-      font-size: 4em;
-      margin-bottom: 0.3em;
-    }
-
-    h2 {
-      font-weight: normal;
-      color: #ccc;
-    }
-
-    details summary {
-      font-size: 1.5em; /* Aumenta el tamaño del título */
-      font-weight: bold;
-      cursor: pointer;
-      margin: 1em 0;
-      padding: 0.5em;
-      background-color: #1e1e1e;
-      border-radius: 5px;
-      color: #f0f0f0;
-    }
-
-    details summary:hover {
-      background-color: #333;
-    }
-
-    details p {
-      padding: 0 1em 1em 1em;
-      color: #ddd;
-    }
-  </style>
 </head>
 <body>
 
   <div style="text-align:center; margin-bottom:2rem;">
-    <h1>SMX2_LuxurySL</h1>
+    <h1 style="font-size:4em; margin-bottom:0.3em;">SMX2_LuxurySL</h1>
     <img src="https://i.imgur.com/YePpr4D.png" 
          alt="Logo Luxury_SL"
          style="max-width:250px; width:80%; height:auto; margin-bottom:1em;">
-    <h2>Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
+    <h2 style="font-weight: normal; color:#ccc;">Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
   </div>
 
   <details open>
