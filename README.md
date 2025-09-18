@@ -3,16 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    /* El resto de párrafos pueden mantener su color si quieres */
-    details p {
-      color: blue;
-    }
-    /* Azul eléctrico SOLO para el texto de Explicación */
-    .explicacion-texto {
-      color: #00f0ff; /* azul eléctrico brillante */
-    }
-  </style>
 </head>
 <body>
 
@@ -26,7 +16,7 @@
 
   <details open>
     <summary>Explicación</summary>
-    <p class="explicacion-texto">
+    <p style="color:#00f0ff;">
       Hola, Somos el grupo de SMX2_LuxurySL. Nuestro proyecto tiene varias apps que usaremos,
       ya como Blender y c/c++ (un tipo de script de arduino).
       El nombre que hemos escogido es el nombre donde muestra una empresa de lujo,
