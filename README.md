@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -8,15 +7,11 @@
 <body>
     </nav>
   </header>
-
-  <!-- Hero -->
   <section class="hero">
     <h1>SMX2_LuxurySL</h1>
     <img src="https://i.imgur.com/YePpr4D.png" alt="Logo Luxury_SL">
     <h2>Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
   </section>
-
-  <!-- Sección Explicación -->
   <main>
     <section id="explicacion" class="card">
       <h2 class="big-title">Explicación</h2>
@@ -29,6 +24,5 @@
       </p>
     </section>
   </main>
-
 </body>
 </html>
