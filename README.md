@@ -3,20 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMX2_LuxurySL</title>
+  <style>
+    /* Tipografía y colores base */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    /* Cabecera */
+    .header {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      background: linear-gradient(90deg,#00f0ff,#00aaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .header img {
+      max-width: 220px;
+      width: 80%;
+      height: auto;
+      margin: 1.5rem 0;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    .header h2 {
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+
+    /* Secciones details */
+    details {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      margin: 1rem auto;
+      max-width: 900px;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    details:hover {
+      transform: translateY(-3px);
+      background: rgba(255,255,255,0.08);
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 1.3rem;
+      font-weight: 600;
+      outline: none;
+    }
+
+    details[open] summary {
+      color: #00f0ff;
+    }
+
+    details p {
+      margin-top: 0.8rem;
+      font-size: 1rem;
+    }
+
+    /* Texto azul eléctrico en la primera sección */
+    .explicacion-texto {
+      color: #00f0ff;
+    }
+
+    /* Animación suave al abrir */
+    details[open] p {
+      animation: fadein 0.4s ease;
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(-5px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .header h1 { font-size: 2.4rem; }
+      summary { font-size: 1.1rem; }
+    }
+  </style>
 </head>
 <body>
 
-  <div style="text-align:center; margin-bottom:2rem;">
-    <h1 style="font-size:4em; margin-bottom:0.3em;">SMX2_LuxurySL</h1>
-    <img src="https://i.imgur.com/YePpr4D.png" 
-         alt="Logo Luxury_SL"
-         style="max-width:250px; width:80%; height:auto; margin-bottom:1em;">
-    <h2 style="font-weight: normal; color:#ccc;">Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
+  <div class="header">
+    <h1>SMX2_LuxurySL</h1>
+    <img src="https://i.imgur.com/YePpr4D.png" alt="Logo Luxury_SL">
+    <h2>Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
   </div>
 
   <details open>
     <summary>Explicación</summary>
-    <p style="color:#00f0ff;">
+    <p class="explicacion-texto">
       Hola, Somos el grupo de SMX2_LuxurySL. Nuestro proyecto tiene varias apps que usaremos,
       ya como Blender y c/c++ (un tipo de script de arduino).
       El nombre que hemos escogido es el nombre donde muestra una empresa de lujo,
