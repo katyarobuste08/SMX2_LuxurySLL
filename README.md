@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    /* El resto de párrafos pueden mantener su color si quieres */
     details p {
       color: blue;
     }
-    /* Azul eléctrico para el párrafo de Explicación */
+    /* Azul eléctrico SOLO para el texto de Explicación */
     .explicacion-texto {
-      color: #00f0ff; /* puedes usar #00ffff o rgb(0,255,255) si lo prefieres */
+      color: #00f0ff; /* azul eléctrico brillante */
     }
   </style>
 </head>
