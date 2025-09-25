@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMX2_LuxurySL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0b0b0b;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #000000, #1c1c1c);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 900px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      margin-bottom: 40px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .hero:hover {
+      box-shadow: 0 15px 40px rgba(255, 215, 0, 0.7);
+    }
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+      font-family: 'Cinzel', serif;
+      background: linear-gradient(90deg, #ffd700, #fffacd, #ffd700);
+      background-size: 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s linear infinite;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    @keyframes shine {
+      0% { background-position: -300%; }
+      100% { background-position: 300%; }
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #e6c200;
+      margin-top: 10px;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .logo {
+      width: 220px;
+      height: auto;
+      margin: 25px 0;
+      border-radius: 15px;
+      border: 2px solid #ffd700;
+      transition: transform 0.3s ease, box-shadow 0.5s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px #ffd700, 0 0 40px #fffacd;
+    }
+    .card {
+      background-color: #1a1a1a;
+      padding: 35px;
+      border-radius: 20px;
+      max-width: 900px;
+      width: 100%;
+      border: 2px solid #ffd700;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+      animation: cardGlow 5s infinite alternate;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(255, 215, 0, 0.6);
+      border-color: #fffacd;
+    }
+
+    @keyframes cardGlow {
+      0% { box-shadow: 0 10px 25px rgba(255,215,0,0.2); border-color: #ffd700; }
+      50% { box-shadow: 0 15px 35px rgba(255,215,0,0.4); border-color: #fffacd; }
+      100% { box-shadow: 0 10px 25px rgba(255,215,0,0.2); border-color: #ffd700; }
+    }
+
+    .big-title {
+      font-size: 2rem;
+      color: #ffd700;
+      margin-bottom: 20px;
+      font-family: 'Cinzel', serif;
+      text-align: center;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .azul {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #f0e68c;
+      text-align: justify;
+    }
+    @media (max-width: 600px) {
+      .title {
+        font-size: 2.2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .logo {
+        width: 160px;
+      }
+
+      .big-title {
+        font-size: 1.5rem;
+      }
+
+      .azul {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1 class="title">SMX2_LuxurySL</h1>
+    <img src="https://i.imgur.com/YePpr4D.png" alt="Logo Luxury_SL" class="logo">
+    <h2 class="subtitle">Katya Robuste • Pau Ferrer • Nazar Kishchuk</h2>
+  </section>
+
+  <main>
+    <section id="explicacion" class="card">
+      <h2 class="big-title">Explicación</h2>
+      <p class="azul">
+        Hola, Somos el grupo de SMX2_LuxurySL. Nuestro proyecto tiene varias apps que usaremos,
+        ya como Blender, c/c++ (un tipo de script de arduino).  
+        El nombre que hemos escogido es el nombre donde muestra una empresa de lujo,
+        pero de coches de lujo. Mostraremos el modelo de un coche en 3D y con un motor
+        de arduino que irá con un mando controlado donde tendrás varios efectos especiales (aún falta).
+      </p>
+    </section>
+  </main>
+</body>
+</html>
