@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMX2_LuxurySL</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --luxury-blue: #0099ff; /* Azul uniforme Luxury_SL */
+}
+
+body {
+  margin: 0;
+  background-color: #000; /* Fondo total negro */
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Menú lateral */
+#sidebar {
+  position: fixed;
+  left: -220px;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  background-color: rgba(0,0,0,0.95);
+  border-right: 2px solid var(--luxury-blue);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+#sidebar.open { left: 0; }
+
+#sidebar button {
+  background: none;
+  border: none;
+  color: var(--luxury-blue);
+  padding: 15px 20px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+#sidebar button:hover, #sidebar button.active {
+  background-color: var(--luxury-blue);
+  color: #000;
+}
+
+/* Botón lateral derecho */
+#toggleBtn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg,#000 70%,var(--luxury-blue) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 10px 18px;
+  cursor: pointer;
+  z-index: 1100;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 0 12px rgba(0,153,255,0.5);
+}
+#toggleBtn span { color: #fff; }
+
+/* Contenido central */
+#content-frame {
+  margin-left: 0;
+  padding: 60px 20px;
+  transition: margin-left 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sidebar.open ~ #content-frame { margin-left: 220px; }
+
+/* Frames de sección */
+.section-container {
+  background: linear-gradient(160deg,#000 70%,#111 85%,var(--luxury-blue) 100%);
+  color: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,153,255,0.3);
+  max-width: 900px;
+  width: 90%;
+  margin: 40px auto;
+  animation: fadeIn 0.6s ease-in-out;
+  text-align: center;
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Título Luxury_SL con azul uniforme */
+.section-container h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  background: linear-gradient(90deg, var(--luxury-blue), var(--luxury-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.section-container h3 {
+  font-family: 'Cinzel', serif;
+  color: var(--luxury-blue);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.section-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--luxury-blue);
+  text-align: justify;
+}
+
+.section-container img {
+  display: block;
+  margin: 20px auto;
+  max-width: 400px;
+  width: 90%;
+  border-radius: 15px;
+  border: 2px solid var(--luxury-blue);
+  box-shadow: 0 0 20px var(--luxury-blue);
+}
+
+.sketchfab-embed-wrapper iframe {
+  border-radius: 15px;
+  border: 2px solid var(--luxury-blue);
+  box-shadow: 0 5px 20px rgba(0,153,255,0.4);
+  width: 100%;
+  height: 500px;
+}
+
+@media (max-width: 700px) {
+  #sidebar { width: 180px; left: -180px; }
+  #sidebar.open ~ #content-frame { margin-left: 180px; }
+  #toggleBtn { font-size: 0.9rem; padding: 8px 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Botón de índice -->
+<button id="toggleBtn">
+  <span>&#x25C0;</span> <span>Índice General de Luxury_SL</span>
+</button>
+
+<!-- Menú lateral -->
+<div id="sidebar">
+  <button onclick="showSection('explicacion', this)">Explicación</button>
+  <button onclick="showSection('guias', this)">Guías de Uso</button>
+  <button onclick="showSection('diagrama', this)">Diagrama de Red</button>
+  <button onclick="showSection('instalaciones', this)">Instalaciones</button>
+  <button onclick="showSection('backups', this)">BackUps</button>
+  <button onclick="showSection('dns', this)">DNS</button>
+  <button onclick="showSection('firewall', this)">FireWall</button>
+  <button onclick="showSection('blender', this)">Blender</button>
+  <button onclick="showSection('scripts', this)">Scripts</button>
+  <button onclick="showSection('aprendido', this)">Qué hemos Aprendido</button>
+  <button onclick="showSection('incidencias', this)">Incidencias</button>
+</div>
+
+<!-- Contenido central -->
+<div id="content-frame">
+
+  <!-- Explicación -->
+  <div id="explicacion" class="section-container">
+    <h2>Luxury_SL</h2>
+    <h3>Explicación</h3>
+    <img src="https://i.imgur.com/CjPEvH2.png" alt="Logo Luxury_SL">
+    <p>
+      Hola, somos el grupo de SMX2_LuxurySL. Nuestro proyecto tiene varias apps que usaremos,
+      como Blender y C/C++ (un tipo de script de Arduino).  
+      El nombre que hemos escogido refleja una empresa de coches de lujo.  
+      Mostraremos el modelo de un coche en 3D con un motor controlado por Arduino, que permitirá varios efectos especiales.
+    </p>
+  </div>
+
+  <!-- Guías de Uso -->
+  <div id="guias" class="section-container" style="display:none;">
+    <h2>Luxury_SL</h2>
+    <h3>Guías de Uso</h3>
+  </div>
+
+  <!-- Diagrama de Red -->
+  <div id="diagrama" class="section-container" style="display:none;">
+    <h2>Luxury_SL</h2>
+    <h3>Diagrama de Red</h3>
+  </div>
+
+  <!-- Instalaciones -->
+  <div id="instalaciones" class="section-container" style="display:none;">
+    <h2>Luxury_SL</h2>
+    <h3>Instalaciones</h3>
+  </div>
+
+  <!-- BackUps -->
+  <div id="backups" class="section-container" style="display:none;">
+    <h2>Luxury_SL</h2>
+    <h3>BackUps</h3>
+  </div>
+
+  <!-- DNS -->
+  <div id="dns" class="section-container" style="display:none;">
+    <h2>Luxury_SL</h2>
+    <h3>DNS</h3>
+  </div>
+
+  <!-- FireWall -->
+  <div id="firewall" class="section-container" style="display:none;">
+    <h2>Luxury_SL</h2>
+    <h3>FireWall</h3>
+  </div>
+
+  <!-- Blender -->
+  <div id="blender" class="section-container" style="display:none;">
+    <h2>Luxury_SL</h2>
+    <h3>Blender</h3>
+    <div class="sketchfab-embed-wrapper">
+      <iframe title="lamborgana"
+              frameborder="0"
+              allowfullscreen
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              allow="autoplay; fullscreen; xr-spatial-tracking"
+              xr-spatial-tracking
+              execution-while-out-of-viewport
+              execution-while-not-rendered
+              web-share
+              src="https://sketchfab.com/models/67139b6a0ca64c5b95d7250e190b2184/embed">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <div id="scripts" class="section-container" style="display:none;">
+    <h2>Luxury_SL</h2>
+    <h3>Scripts</h3>
+  </div>
+
+  <!-- Qué hemos Aprendido -->
+  <div id="aprendido" class="section-container" style="display:none;">
+    <h2>Luxury_SL</h2>
+    <h3>Qué hemos Aprendido</h3>
+  </div>
+
+  <!-- Incidencias -->
+  <div id="incidencias" class="section-container" style="display:none;">
+    <h2>Luxury_SL</h2>
+    <h3>Incidencias</h3>
+  </div>
+
+</div>
+
+<script>
+const toggleBtn = document.getElementById('toggleBtn');
+const sidebar = document.getElementById('sidebar');
+
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('open');
+  const arrow = sidebar.classList.contains('open') ? '&#x25C0;' : '&#x25B6;';
+  toggleBtn.innerHTML = arrow + ' <span>Índice General de Luxury_SL</span>';
+});
+
+function showSection(id, btn) {
+  document.querySelectorAll('.section-container').forEach(sec => sec.style.display = 'none');
+  document.querySelectorAll('#sidebar button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).style.display = 'block';
+  btn.classList.add('active');
+}
+
+// Mostrar sección inicial
+document.querySelector('#sidebar button').click();
+</script>
+
+</body>
+</html>
