@@ -13,7 +13,7 @@
 
 <div style="text-align:center; margin:1.5em 0;">
   <h2 style="font-size:2.5em; margin-bottom:0.5em;">Logo Luxury_SL</h2>
-  <img src="https://i.imgur.com/EDY7tom.png" alt="Logo Luxury_SL"
+  <img src="https://i.imgur.com/FG6uNYF.png" alt="Logo Luxury_SL"
        style="max-width:400px; width:90%; height:auto;">
 </div>
 
