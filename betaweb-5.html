@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUXURY_SL - Oficial</title>
+<style>
+:root{
+  --bg:#000;
+  --fg:#fff;
+  --muted:#aaa;
+  --glass:rgba(255,255,255,0.05);
+  --glass-strong:rgba(255,255,255,0.12);
+  --trans:0.35s;
+  --font-elegant:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:var(--font-elegant);}
+body{background:var(--bg);color:var(--fg);overflow-x:hidden;font-size:16px;transition:background 0.3s;}
+body.video-hidden #videoBackground, body.video-hidden #videoOfficial{opacity:0;pointer-events:none;transition:opacity 0.3s;}
+
+/* Videos */
+#videoBackground, #videoOfficial{
+  position:fixed; inset:0;width:100%;height:100%;object-fit:cover; z-index:-5; opacity:1; transition:opacity 0.5s;
+}
+#videoBackground{filter:brightness(1.3) contrast(1.2);}
+#videoOfficial{filter:brightness(0.7) contrast(1.2) grayscale(1); display:none;}
+
+/* Overlay */
+#overlayBg{position:fixed; inset:0;background: rgba(0,0,0,0.5); z-index:-4;}
+
+/* Header */
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 28px;position:sticky;top:0;
+  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.45);
+  border-bottom:1px solid rgba(255,255,255,0.08); z-index:90;
+}
+header img.logo{height:56px; transition: transform 0.3s;}
+header h1{color:var(--muted);text-transform:uppercase;font-weight:800;letter-spacing:2px;transition:color 0.3s;}
+#userArea{display:flex;align-items:center;gap:8px;}
+#userArea button{padding:8px 14px;border-radius:12px;background:var(--glass-strong);border:1px solid rgba(255,255,255,0.2);color:var(--fg);font-weight:700;cursor:pointer;transition:transform var(--trans);}
+#userArea button:hover{transform:translateY(-2px);background:var(--glass);}
+
+/* Main */
+main{padding:28px 20px 60px;max-width:1200px;margin:0 auto;text-align:center;}
+.center-logo{width:300px;max-width:68%;margin:48px auto 28px;filter:drop-shadow(0 12px 25px rgba(255,255,255,0.6));transition: transform 0.4s, filter 0.4s;}
+.center-logo:hover{transform:scale(1.05); filter:drop-shadow(0 12px 40px rgba(255,255,255,0.8));}
+
+/* Cards */
+.sections{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:30px;}
+.card{flex:1 1 220px;padding:30px;border-radius:16px;background:var(--glass-strong);cursor:pointer;text-transform:uppercase;font-weight:700;text-align:center;backdrop-filter: blur(4px);transition:transform var(--trans), background var(--trans), box-shadow var(--trans);}
+.card:hover{transform:translateY(-6px) scale(1.03);background:var(--glass);box-shadow:0 12px 30px rgba(255,255,255,0.3);}
+
+/* Section Content */
+.sectionContent{display:none;padding:40px;max-width:1200px;margin:0 auto;transition:all 0.5s ease;backdrop-filter: blur(4px);}
+.sectionContent.show{display:block;}
+.backBtn{padding:10px 18px;border-radius:8px;background:var(--glass-strong);border:1px solid rgba(255,255,255,0.2);color:var(--fg);cursor:pointer;margin-bottom:18px;transition:transform 0.3s, background 0.3s;}
+.backBtn:hover{transform:translateY(-2px);background:var(--glass);}
+
+/* Login Overlay */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);display:flex;justify-content:center;align-items:center;z-index:300;opacity:0;pointer-events:none;transition:opacity 0.3s;}
+.overlay.show{opacity:1;pointer-events:auto;}
+.overlay .box{background:#111;padding:30px;border-radius:12px;width:320px;position:relative;box-shadow:0 0 20px rgba(255,255,255,0.2);}
+.overlay .box h3{margin-bottom:16px;}
+.overlay input{width:100%;padding:10px;border:none;border-radius:6px;background:#222;color:#fff;margin-bottom:10px;}
+.overlay .btn{width:100%;padding:10px;border:none;background:#444;color:#fff;border-radius:6px;cursor:pointer;margin-top:6px;transition:transform 0.3s;}
+.overlay .btn:hover{transform:translateY(-2px);background:#555;}
+.overlay .switchBtn{background:none;border:none;color:var(--muted);cursor:pointer;margin-top:8px;font-size:12px;}
+
+/* Comments */
+.comments{background:#000;padding:20px;border-radius:12px;margin-top:30px;color:#fff;}
+.comments h3{margin-bottom:10px;}
+.comments textarea{width:100%;height:80px;background:#111;color:#fff;border:none;border-radius:6px;padding:8px;}
+.comments button{padding:8px 14px;margin-top:6px;border:none;background:#fff;color:#000;border-radius:6px;cursor:pointer;transition:transform 0.2s;}
+.comments button:hover{transform:translateY(-2px);background:#ddd;}
+.commentItem{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1);}
+.commentItem strong{color:#fff;}
+
+/* Discord Sidebar */
+#userSidebar{position:fixed;top:70px;right:20px;width:220px;background:rgba(20,20,20,0.85);border-radius:12px;padding:12px;display:none;flex-direction:column;gap:8px;max-height:80vh;overflow-y:auto;z-index:100;}
+.userItem{display:flex;align-items:center;gap:6px;padding:4px;border-radius:6px;background:rgba(255,255,255,0.03);}
+.statusDot{width:10px;height:10px;border-radius:50%;}
+.statusFrame{margin-left:auto;padding:2px 6px;border-radius:6px;border:1px solid #fff;cursor:pointer;font-size:12px;background:rgba(255,255,255,0.05);color:#fff;}
+
+/* Toast */
+#messageBox{position:fixed;bottom:20px;right:20px;background:#333;color:#fff;padding:10px 14px;border-radius:6px;display:none;opacity:0;transition:opacity 0.3s;z-index:500;}
+</style>
+</head>
+<body>
+
+<video id="videoBackground" autoplay muted loop playsinline>
+  <source src="fondo.mp4" type="video/mp4">
+</video>
+<video id="videoOfficial" autoplay muted loop playsinline>
+  <source src="Lambo2.mp4" type="video/mp4">
+</video>
+<div id="overlayBg"></div>
+
+<header>
+  <img src="https://i.imgur.com/FG6uNYF.png" class="logo">
+  <h1>LUXURY_SL</h1>
+  <div id="userArea">
+    <span id="userLabel" style="display:none;"></span>
+    <button id="openLoginBtn">Entrar / Registrarse</button>
+  </div>
+</header>
+
+<main id="mainMenu">
+  <img src="https://i.imgur.com/BqUJceo.jpeg" class="center-logo">
+  <div class="sections">
+    <div class="card" data-section="Herramientas">Herramientas</div>
+    <div class="card" data-section="3DBlender">3D Blender</div>
+    <div class="card" data-section="Arduino">Arduino</div>
+    <div class="card" data-section="Oficial">Página Oficial</div>
+  </div>
+</main>
+
+<!-- Frames Principal -->
+<section id="Herramientas" class="sectionContent">
+  <button class="backBtn">Volver al Menú Principal</button>
+  <h2>Herramientas</h2>
+  <p>Contenido Herramientas...</p>
+</section>
+<section id="3DBlender" class="sectionContent">
+  <button class="backBtn">Volver al Menú Principal</button>
+  <h2>3D Blender</h2>
+  <p>Contenido Blender...</p>
+</section>
+<section id="Arduino" class="sectionContent">
+  <button class="backBtn">Volver al Menú Principal</button>
+  <h2>Arduino</h2>
+  <p>Contenido Arduino...</p>
+</section>
+
+<!-- Página Oficial -->
+<section id="Oficial" class="sectionContent">
+  <h2>Página Oficial</h2>
+  <button class="backBtn">Volver al Menú Principal</button>
+  <div class="sections">
+    <div class="card" data-section="OfiHerr">Herramientas</div>
+    <div class="card" data-section="OfiBlender">3D Blender</div>
+    <div class="card" data-section="OfiArduino">Arduino</div>
+  </div>
+  <!-- Comentarios -->
+  <div class="comments">
+    <h3>Comentarios</h3>
+    <form id="commentForm">
+      <textarea id="commentText" placeholder="Escribe tu comentario..."></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="commentsList"></div>
+  </div>
+</section>
+
+<!-- Frames Oficial -->
+<section id="OfiHerr" class="sectionContent">
+  <button class="backBtn">Volver a la Página Oficial</button>
+  <h2>Herramientas Oficial</h2>
+  <p>Contenido Herramientas Oficial...</p>
+</section>
+<section id="OfiBlender" class="sectionContent">
+  <button class="backBtn">Volver a la Página Oficial</button>
+  <h2>3D Blender Oficial</h2>
+  <p>Contenido Blender Oficial...</p>
+</section>
+<section id="OfiArduino" class="sectionContent">
+  <button class="backBtn">Volver a la Página Oficial</button>
+  <h2>Arduino Oficial</h2>
+  <p>Contenido Arduino Oficial...</p>
+</section>
+
+<!-- Login -->
+<div class="overlay" id="loginOverlay">
+  <div class="box">
+    <button onclick="closeLogin()" style="position:absolute;top:10px;right:12px;background:none;border:none;color:var(--muted);font-size:18px;cursor:pointer;">✖</button>
+    <h3 id="loginTitle">Iniciar sesión</h3>
+    <input id="email" type="email" placeholder="Correo">
+    <input id="password" type="password" placeholder="Contraseña">
+    <input id="username" type="text" placeholder="Usuario (registrar)" style="display:none;">
+    <button class="btn" id="primaryAuthBtn">Entrar</button>
+    <button class="switchBtn" id="switchModeBtn">¿No tienes cuenta? Crear cuenta</button>
+  </div>
+</div>
+
+<div id="userSidebar"></div>
+<div id="messageBox"></div>
+
+<script>
+// --- Variables ---
+let users = JSON.parse(localStorage.getItem('luxUsers')||'{}');
+let currentUser = JSON.parse(localStorage.getItem('luxCurrent')||'null');
+let authMode = 'login';
+
+// --- Funciones Toast ---
+function showMsg(msg){
+  const box = document.getElementById('messageBox');
+  box.innerText = msg; box.style.display='block'; box.style.opacity='1';
+  setTimeout(()=>{box.style.opacity='0';setTimeout(()=>box.style.display='none',300)},2200);
+}
+
+// --- Login ---
+const openLoginBtn = document.getElementById('openLoginBtn');
+const switchModeBtn = document.getElementById('switchModeBtn');
+const primaryAuthBtn = document.getElementById('primaryAuthBtn');
+const loginOverlay = document.getElementById('loginOverlay');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const usernameInput = document.getElementById('username');
+const userLabel = document.getElementById('userLabel');
+const mainMenu = document.getElementById('mainMenu');
+const videoBg = document.getElementById('videoBackground');
+const videoOfficial = document.getElementById('videoOfficial');
+const sections = document.querySelectorAll('.sectionContent');
+const cards = document.querySelectorAll('.card');
+const backBtns = document.querySelectorAll('.backBtn');
+
+// Abrir Login
+function openLogin(){ 
+  authMode='login'; 
+  document.getElementById('loginTitle').innerText='Iniciar sesión';
+  primaryAuthBtn.innerText='Entrar';
+  switchModeBtn.innerText='¿No tienes cuenta? Crear cuenta';
+  usernameInput.style.display='none'; emailInput.value=''; passwordInput.value=''; usernameInput.value='';
+  loginOverlay.classList.add('show');
+}
+function closeLogin(){ loginOverlay.classList.remove('show'); }
+
+// Cambiar modo
+function switchMode(){
+  if(authMode==='login'){
+    authMode='register';
+    document.getElementById('loginTitle').innerText='Crear cuenta';
+    primaryAuthBtn.innerText='Registrar';
+    switchModeBtn.innerText='¿Ya tienes cuenta? Iniciar sesión';
+    usernameInput.style.display='block';
+  } else openLogin();
+}
+
+// Autenticación
+function performAuth(){
+  const email=emailInput.value.trim();
+  const password=passwordInput.value;
+  const username=usernameInput.value.trim();
+  if(!email||!password||(authMode==='register'&&!username)){showMsg('Rellena los campos'); return;}
+  if(authMode==='register'){
+    if(users[email]){showMsg('Correo ya registrado'); return;}
+    users[email]={username,password,status:'online'};
+    currentUser={email,username,status:'online'};
+    localStorage.setItem('luxUsers',JSON.stringify(users));
+    localStorage.setItem('luxCurrent',JSON.stringify(currentUser));
+    updateUI(); closeLogin(); showMsg('Cuenta creada');
+  } else {
+    if(!users[email]){showMsg('Correo no registrado'); return;}
+    if(users[email].password!==password){showMsg('Contraseña incorrecta'); return;}
+    currentUser={email,username:users[email].username,status:users[email].status||'online'};
+    localStorage.setItem('luxCurrent',JSON.stringify(currentUser));
+    updateUI(); closeLogin(); showMsg('Sesión iniciada');
+  }
+}
+
+// UI
+function updateUI(){
+  if(currentUser){
+    userLabel.style.display='inline-block'; userLabel.innerText=currentUser.username;
+    openLoginBtn.style.display='none';
+    if(!document.getElementById('logoutBtn')){
+      const btn=document.createElement('button'); btn.id='logoutBtn'; btn.innerText='Cerrar sesión';
+      btn.onclick=()=>{currentUser=null; localStorage.setItem('luxCurrent',null); updateUI(); showMsg('Sesión cerrada');};
+      document.getElementById('userArea').appendChild(btn);
+    } else document.getElementById('logoutBtn').style.display='inline-block';
+  } else { 
+    userLabel.style.display='none'; openLoginBtn.style.display='inline-block';
+    const btn=document.getElementById('logoutBtn'); if(btn) btn.remove();
+    sections.forEach(sec=>sec.classList.remove('show'));
+    mainMenu.style.display='block'; videoBg.style.display='block'; videoOfficial.style.display='none';
+  }
+}
+
+// Cards
+cards.forEach(card=>{
+  card.addEventListener('click',()=>{
+    if(card.dataset.section==='Oficial' && !currentUser){showMsg('Debes iniciar sesión'); return;}
+    sections.forEach(sec=>sec.classList.remove('show'));
+    const sec=document.getElementById(card.dataset.section);
+    if(sec){sec.classList.add('show');}
+    mainMenu.style.display='none';
+    videoBg.style.display='none';
+    videoOfficial.style.display=(card.dataset.section==='Oficial')?'block':'none';
+  });
+});
+
+// Botones volver
+backBtns.forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const parent = btn.closest('.sectionContent');
+    if(['Herramientas','3DBlender','Arduino'].includes(parent.id)){
+      mainMenu.style.display='block'; videoBg.style.display='block'; videoOfficial.style.display='none';
+    } else if(['OfiHerr','OfiBlender','OfiArduino'].includes(parent.id)){
+      document.getElementById('Oficial').classList.add('show'); videoOfficial.style.display='block';
+    } else if(parent.id==='Oficial'){
+      mainMenu.style.display='block'; videoBg.style.display='block'; videoOfficial.style.display='none';
+    }
+    parent.classList.remove('show');
+  });
+});
+
+// Eventos login
+openLoginBtn.addEventListener('click',openLogin);
+switchModeBtn.addEventListener('click',switchMode);
+primaryAuthBtn.addEventListener('click',performAuth);
+
+// --- Comentarios ---
+let comments = JSON.parse(localStorage.getItem('luxComments')||'[]');
+function renderComments(){
+  const commentsList = document.getElementById('commentsList');
+  commentsList.innerHTML='';
+  comments.forEach((c,i)=>{
+    const div = document.createElement('div'); div.className='commentItem';
+    div.innerHTML=`<strong>${c.username}:</strong> ${c.text} <button onclick="deleteComment(${i})">Eliminar</button>`;
+    commentsList.appendChild(div);
+  });
+}
+function deleteComment(i){
+  if(!currentUser){showMsg('Debes iniciar sesión'); return;}
+  if(comments[i].username!==currentUser.username){showMsg('Solo puedes borrar tus comentarios'); return;}
+  comments.splice(i,1);
+  localStorage.setItem('luxComments',JSON.stringify(comments));
+  renderComments();
+}
+document.getElementById('commentForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  if(!currentUser){showMsg('Debes iniciar sesión'); return;}
+  const txt = document.getElementById('commentText').value.trim();
+  if(!txt) return;
+  comments.push({username:currentUser.username,text:txt});
+  localStorage.setItem('luxComments',JSON.stringify(comments));
+  renderComments();
+  document.getElementById('commentForm').reset();
+});
+renderComments();
+
+// Inicializar UI
+updateUI();
+</script>
+</body>
+</html>
