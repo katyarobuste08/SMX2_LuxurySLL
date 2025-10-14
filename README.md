@@ -67,5 +67,6 @@ Definir qué **datos necesitamos almacenar** en la base de datos de usuarios y d
 - Usuarios → tiene → Comentarios  
 - Diseño 3D → pertenece a → Coche ← usa → Arduino  
 - Herramientas ↔ relacionadas con ↔ Coche
+- Colores ↔ Blanco, Negro y Gris
 
 ---
