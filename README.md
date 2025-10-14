@@ -16,7 +16,7 @@
 ## Descripción general del proyecto
 
 ### *Aplicaciones utilizadas*
-- **Blender:** Modelado 3D  
+- **Blender3d:** Modelado 3D  
 - **C/C++ (Arduino):** Control de hardware  
 
 ### *Propósito*
