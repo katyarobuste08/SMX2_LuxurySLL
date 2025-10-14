@@ -19,6 +19,23 @@
 - **Blender3d:** Modelado 3D  
 - **C/C++ (Arduino):** Control de hardware  
 
+
+##  Jerarquía Visual
+
+Los colores utilizados  en la web ↔ Blanco, Negro y Gris, con un video al fondo del coche que hemos escogido para el logo 
+
+El color principal del fondo es el negro. Transmite elegancia, lujo y exclusividad. Además, hace que los elementos claros resalten con fuerza.
+El gris se  usa como color intermedio en botones y fondos secundarios. Aporta equilibrio visual y suaviza el contraste entre el blanco y el negro.
+El blanco se aplica al texto y algunos detalles, aportando claridad, limpieza y legibilidad.
+
+## Equilibrio Visual
+
+ El video  del coche ocupa la parte central superior, atrayendo la atención principal.
+ Debajo se encuentran los botones (HERRAMIENTAS, 3D BLENDER, ARDUINO), pocicionado  de forma equilibrada y con igual tamaño, lo que aporta orden y coherencia.
+ En la parte superior derecha se muestra la información del usuario conectado, creando un contraste con la zona izquierda vacía, lo que equilibra la composición general.
+
+
+
 ### *Propósito*
 Presentar un **coche de lujo en 3D**, controlado con Arduino mediante un mando Bluetooth, con **efectos visuales realistas y control de movimiento**.
 
