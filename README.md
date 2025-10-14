@@ -32,7 +32,7 @@ Presentar un **coche de lujo en 3D**, controlado con Arduino mediante un mando B
 | Comentarios   | Contactar con soporte técnico |
 
 ### *Objetivo*
-Definir qué **datos necesitamos almacenar** en la base de datos de usuarios y coches.
+Definir qué **datos necesitamos almacenar** en la base de datos de usuarios y del coche.
 
 ---
 
