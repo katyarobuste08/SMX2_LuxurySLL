@@ -4,7 +4,7 @@
 ---
 
 <details>
-<summary>▶ Sobre el Proyecto</summary>
+<summary> Sobre el Proyecto</summary>
 
 ## Sobre el Proyecto
 
@@ -119,7 +119,7 @@ A estudiantes, profesores y personas curiosas que disfruten de la tecnología, l
 ---
 
 <details>
-<summary>▶ Introducción y Contenido Completo</summary>
+<summary> Introducción y Contenido Completo</summary>
 
 # 1. Introducción  
 
@@ -285,7 +285,7 @@ Aprendimos a conectar hardware con software y a trabajar en equipo.
 ---
 
 <details>
-<summary>▶ Datos Guardados y Relacionados</summary>
+<summary> Datos Guardados y Relacionados</summary>
 
 ## Datos guardados  
 
