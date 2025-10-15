@@ -47,6 +47,7 @@ A estudiantes, profesores y personas curiosas que disfruten de la tecnología, l
 ---
 
 <details>
+
 <summary> Índice del Proyecto SMX2_LuxurySL</summary>
 
 **1. Introducción**  
