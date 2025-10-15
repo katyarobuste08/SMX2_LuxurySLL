@@ -3,6 +3,9 @@
 
 ---
 
+<details>
+<summary>▶ Sobre el Proyecto</summary>
+
 ## Sobre el Proyecto
 
 ### Nombre del Proyecto  
@@ -33,6 +36,8 @@ A estudiantes, profesores y personas curiosas que disfruten de la tecnología, l
 - Base de datos con usuarios y comentarios.  
 - Documentación completa.  
 
+</details>
+
 ---
 
 ## Equipo  
@@ -45,63 +50,76 @@ A estudiantes, profesores y personas curiosas que disfruten de la tecnología, l
 
 ---
 
-# Índice del Proyecto
+# Índice del Proyecto SMX2_LuxurySL
 
-### 1. Introducción  
-Qué estamos creando y por qué lo hacemos.  
+**1. Introducción**  
+ Qué estamos creando y por qué
 
-### 2. Cómo Surgió la Idea  
-De dónde vino la inspiración y los objetivos iniciales.  
+**2. Cómo Surgió la Idea**  
+ Motivación y objetivos iniciales
 
-### 3. Cómo Funciona el Sistema  
-Explicación sencilla de cómo se conectan las partes del proyecto.  
+**3. Cómo Funciona el Sistema**  
+ Interacción entre 3D, Arduino y web
 
-### 4. Herramientas y Materiales  
-Todo lo que usamos: software, hardware y componentes.  
+**4. Herramientas y Materiales**  
+ Software, hardware y componentes
 
-### 5. Conexiones del Proyecto  
-Cómo se comunican el coche, el mando y la web.  
+**5. Conexiones del Proyecto**  
+ Flujo de información entre dispositivos
 
-### 6. Esquema de Red  
-Resumen de cómo se organiza la red del sistema.  
+**6. Esquema de Red**  
+ Organización de servidores y servicios
 
-### 7. Parte Física  
-Los componentes reales: coche, Arduino, Bluetooth y mando.  
+**7. Parte Física**  
+ Componentes reales: coche, Arduino y Bluetooth
 
-### 8. Parte Lógica  
-Cómo fluye la información entre las partes.  
+**8. Parte Lógica**  
+ Flujo de datos y procesamiento de comandos
 
-### 9. La Web del Proyecto  
-Qué se puede hacer en la web y cómo se usa.  
+**9. La Web del Proyecto**  
+ Registro, control y visualización
 
-### 10. Diseño Visual  
-Colores, estilo y aspecto general.  
+**10. Diseño Visual**  
+ Estilo, colores y presentación
 
-### 11. Prototipo (Mockup)  
-Bocetos y vista previa del diseño final.  
+**11. Prototipo (Mockup)**  
+ Bocetos y diseño responsive
 
-### 12. Navegación Web  
-Cómo se mueven los usuarios por la página.  
+**12. Navegación Web**  
+ Flujo de usuario desde inicio hasta soporte
 
-### 13. Servicios del Sistema   
+**13. Servicios del Sistema**  
+ Servidores, bases de datos y backups
 
-### 14. DNS y Red   
+**14. DNS y Red**  
+ Configuración de nombres y conectividad
 
-### 15. IPs Automáticas (DHCP)  
+**15. IPs Automáticas (DHCP)**  
+ Asignación de direcciones a dispositivos
 
-### 16. Servidor Web (Apache)  
+**16. Servidor Web (Apache)**  
+ Gestión de peticiones y contenido web
 
-### 17. Seguridad (Firewall)   
+**17. Seguridad (Firewall)**  
+ Protección de la red y reglas de acceso
 
-### 18. Copias de Seguridad  
+**18. Copias de Seguridad**  
+ Backups periódicos del proyecto
 
-### 19. Conclusiones  .  
+**19. Conclusiones**  
+ Aprendizajes y resultados del proyecto
 
-### 20. Bibliografía  
+**20. Bibliografía**  
+ Recursos consultados y documentación
 
-### 21. Base de Datos del Proyecto  
+**21. Base de Datos del Proyecto**  
+ Entidades, relaciones y datos guardados
+
 
 ---
+
+<details>
+<summary>▶ Introducción y Contenido Completo</summary>
 
 # 1. Introducción  
 
@@ -163,11 +181,14 @@ Contiene los componentes reales: el coche, el Arduino, los motores, el módulo B
 
 # 8. Parte Lógica  
 
+Explica cómo la información pasa del mando Bluetooth al Arduino, luego a los motores, y finalmente se registra en la web.  
+También incluye cómo el sistema interpreta los comandos y los transforma en acciones físicas.
 
 ---
 
 # 9. La Web del Proyecto  
 
+La web muestra el coche, permite registrarse, iniciar sesión, ver actualizaciones y dejar comentarios sobre el proyecto.
 
 ---
 
@@ -179,6 +200,8 @@ El vídeo del coche es el elemento principal.
 ---
 
 # 11. Prototipo (Mockup)  
+
+Incluye bocetos del diseño de la web, las páginas principales y cómo se verán las secciones desde distintos dispositivos.
 
 ---
 
@@ -197,38 +220,44 @@ Inicio → Registro/Login → Página del coche → Comentarios → Soporte
 
 ---
 
-# 14. DNS y Red  
+# 14. DNS y Red
 
-
----
-
-# 15. IPs Automáticas (DHCP)  
-
+Configuración de red y nombres de dominio para acceder fácilmente al proyecto desde la red local.
 
 ---
 
-# 16. Servidor Web (Apache)  
+# 15. IPs Automáticas (DHCP)
 
-
----
-
-# 17. Seguridad (Firewall)  
+Sistema que asigna direcciones IP automáticamente a los dispositivos conectados al proyecto.
 
 ---
 
-# 18. Copias de Seguridad  
+# 16. Servidor Web (Apache)
 
+Servidor que permite alojar la página del proyecto y mostrar la información en la red.
 
 ---
 
-# 19. Conclusiones  
+# 17. Seguridad (Firewall)
+
+Protege el sistema de accesos no deseados mediante reglas configuradas en PFSense.
+
+---
+
+# 18. Copias de Seguridad
+
+Las copias se realizan con **TrueNAS**, asegurando que los datos del proyecto no se pierdan.
+
+---
+
+# 19. Conclusiones
 
 Este proyecto une diseño, programación y electrónica en algo visual y útil.  
 Aprendimos a conectar hardware con software y a trabajar en equipo.  
 
 ---
 
-# 20. Bibliografía  
+# 20. Bibliografía
 
 - Manual de Blender  
 - Guías de Arduino y Bluetooth  
@@ -237,7 +266,7 @@ Aprendimos a conectar hardware con software y a trabajar en equipo.
 
 ---
 
-# 21. Base de Datos del Proyecto  
+# 21. Base de Datos del Proyecto
 
 ## Qué se puede hacer en la web  
 - Crear cuenta (nombre, apellidos, correo, contraseña)  
@@ -250,6 +279,13 @@ Aprendimos a conectar hardware con software y a trabajar en equipo.
 - Arduino  
 - Diseño 3D  
 - Coche  
+
+</details>
+
+---
+
+<details>
+<summary>▶ Datos Guardados y Relacionados</summary>
 
 ## Datos guardados  
 
@@ -276,3 +312,7 @@ Aprendimos a conectar hardware con software y a trabajar en equipo.
 | Arduino | Modelo: Arduino UNO, 02/10/2025 |
 
 ## Dificultades y reflexiones  
+
+Durante el desarrollo tuvimos que aprender a conectar hardware y software, sincronizar el diseño 3D con el sistema real y coordinar el trabajo en equipo para que todo funcionara de forma estable y visualmente atractiva.
+
+</details>
