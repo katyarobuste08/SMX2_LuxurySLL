@@ -41,7 +41,6 @@ A estudiantes, profesores y personas curiosas que disfruten de la tecnología, l
 
 ---
 
-## Logo  
 ![Logo Luxury_SL](https://i.imgur.com/BqUJceo.jpeg)
 
 ---
