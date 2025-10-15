@@ -4,11 +4,9 @@
 ---
 
 <details>
-<summary> Sobre el Proyecto</summary>
+<summary>Briefing</summary>
 
-## Sobre el Proyecto
 
-### Nombre del Proyecto  
 **SMX2_LuxurySL**
 
 ### Descripción  
