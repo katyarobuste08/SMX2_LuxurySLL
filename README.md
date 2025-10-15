@@ -1,5 +1,8 @@
 # SMX2_LuxurySL  
 **Estado:** En desarrollo | **Tecnologías:** Blender | Arduino | C/C++
+## Equipo  
+
+**Katya Robuste • Pau Ferrer • Nazar Kishchuk**
 
 ---
 
@@ -35,11 +38,6 @@ A estudiantes, profesores y personas curiosas que disfruten de la tecnología, l
 - Documentación completa.  
 
 </details>
-
----
-
-## Equipo  
-**Katya Robuste • Pau Ferrer • Nazar Kishchuk**
 
 ---
 
