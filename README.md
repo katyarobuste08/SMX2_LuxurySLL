@@ -48,7 +48,8 @@ A estudiantes, profesores y personas curiosas que disfruten de la tecnología, l
 
 ---
 
-# Índice del Proyecto SMX2_LuxurySL
+<details>
+<summary> Índice del Proyecto SMX2_LuxurySL</summary>
 
 **1. Introducción**  
  Qué estamos creando y por qué
@@ -113,6 +114,7 @@ A estudiantes, profesores y personas curiosas que disfruten de la tecnología, l
 **21. Base de Datos del Proyecto**  
  Entidades, relaciones y datos guardados
 
+</details>
 
 ---
 
