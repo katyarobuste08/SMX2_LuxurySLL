@@ -154,8 +154,12 @@ https://www.youtube.com/watch?v=03mQrT4lDgM
 
 
 #### Fisica
-LINK- Coche 3D Lamborghini Huracan
-https://skfb.ly/pBrxp
+## Modelo 3D del coche
+
+Visualiza el modelo 3D del proyecto en Sketchfab:
+
+[![Ver modelo 3D en Sketchfab](https://sketchfab.com/Static/images/share/sketchfab-share.png)](https://skfb.ly/pBrxp)
+
 #### Proporciones
 
 
