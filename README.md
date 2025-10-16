@@ -156,9 +156,12 @@ https://www.youtube.com/watch?v=03mQrT4lDgM
 #### Fisica
 ## Modelo 3D del coche
 
+## Modelo 3D del coche
+
 Visualiza el modelo 3D del proyecto en Sketchfab:
 
-[![Ver modelo 3D en Sketchfab](https://sketchfab.com/Static/images/share/sketchfab-share.png)](https://skfb.ly/pBrxp)
+[![Modelo 3D Luxury_SL](./4bb6ce32-ae7d-42a5-a500-93917e898b58.png)](https://skfb.ly/pBrxp)
+
 
 #### Proporciones
 
