@@ -156,14 +156,33 @@ https://www.youtube.com/watch?v=03mQrT4lDgM
 #### Fisica
 ## Modelo 3D del coche
 
-## Modelo 3D del coche
-
 Visualiza el modelo 3D del proyecto en Sketchfab:
 
 [![Modelo 3D Luxury_SL](./4bb6ce32-ae7d-42a5-a500-93917e898b58.png)](https://skfb.ly/pBrxp)
 
 
 #### Proporciones
+### Proporciones y Detalles Técnicos del Modelo
+
+| Propiedad                | Valor                                           |
+|---------------------------|------------------------------------------------|
+| Formato                   | FBX                                            |
+| Tamaño del archivo        | 6.4 MB (descargable: 6 MB)                     |
+| Geometría                 | 175.000 triángulos, 94.300 vértices           |
+| Materiales                | 29 (sin texturas PBR)                          |
+| UV Layers                 | Sí                                             |
+| Colores por vértice       | No                                             |
+| Animaciones               | 0                                              |
+| Rigged geometries         | No                                             |
+| Morph geometries          | 0                                              |
+| Escala / Transformaciones | Ajustes aplicados según Blender 3D             |
+| Uso en proyecto           | Visualización 3D e interacción física con Arduino |
+
+
+### Funcionalidad del Modelo 3D
+- Integración web mediante **Blender + Three.js / WebGL** para visualización interactiva.  
+- Permite rotación, zoom y exploración dinámica desde el navegador.  
+- Conexión con Arduino para reflejar movimientos y luces del coche físico.
 
 
 </details>
