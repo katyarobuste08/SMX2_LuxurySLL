@@ -1,8 +1,14 @@
+<div align="center">
+
 # LUXURY_SL
+
+<img src="https://i.imgur.com/FG6uNYF.png" alt="Logo Luxury_SL" width="400" height="400">
 
 **En desarrollo: Blender 3D + CSS + HTML + JavaScript**  
 
-**Equipo:** **Katya Robuste • Pau Ferrer • Nazar Kishchuck**
+**Equipo:** Katya Robuste • Pau Ferrer • Nazar Kishchuk
+
+</div>
 
 ---
 
@@ -77,7 +83,7 @@ La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado 
 - Estilo moderno, profesional y legible.
 
 #### Estilo visual
-- Fondo animado con video (`fondo.mp4` / `Lambo2.mp4`)
+- Fondo animado con video
 - Efectos de desenfoque y transparencia (*glassmorphism*)
 - Sombras suaves y transiciones fluidas
 - Tarjetas y botones con animaciones al pasar el cursor
@@ -152,14 +158,12 @@ La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado 
 Tutorial YT- Facil
 https://www.youtube.com/watch?v=03mQrT4lDgM
 
-
 #### Fisica
 ## Modelo 3D del coche
 
 Visualiza el modelo 3D del proyecto en Sketchfab:
 
 [![Modelo 3D Luxury_SL](./4bb6ce32-ae7d-42a5-a500-93917e898b58.png)](https://skfb.ly/pBrxp)
-
 
 #### Proporciones
 ### Proporciones y Detalles Técnicos del Modelo
@@ -178,12 +182,10 @@ Visualiza el modelo 3D del proyecto en Sketchfab:
 | Escala / Transformaciones | Ajustes aplicados según Blender 3D             |
 | Uso en proyecto           | Visualización 3D e interacción física con Arduino |
 
-
 ### Funcionalidad del Modelo 3D
 - Integración web mediante **Blender + Three.js / WebGL** para visualización interactiva.  
 - Permite rotación, zoom y exploración dinámica desde el navegador.  
 - Conexión con Arduino para reflejar movimientos y luces del coche físico.
-
 
 </details>
 
@@ -219,7 +221,8 @@ Visualiza el modelo 3D del proyecto en Sketchfab:
 
 ---
 
-<details>
-<summary><strong>CONCLUSIONES</strong></summary>
+<div align="center">
 
-</details>
+<img src="https://i.imgur.com/qPQOsBJ.png" alt="Banner Luxury_SL" width="700" height="200">
+
+</div>
