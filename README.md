@@ -371,4 +371,3 @@ Durante el desarrollo tuvimos que aprender a conectar hardware y software, sincr
 
 </div>
 </details>
-
