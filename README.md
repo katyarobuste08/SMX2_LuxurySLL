@@ -155,7 +155,7 @@ La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado 
 <summary><strong>ARDUINO</strong></summary>
 
 #### Programación
-Tutorial YT- Facil
+Tutorial YT- Facil  
 https://www.youtube.com/watch?v=03mQrT4lDgM
 
 #### Fisica
@@ -216,6 +216,20 @@ Visualiza el modelo 3D del proyecto en Sketchfab:
 #### Firewall
 
 #### Copias de Seguridad
+
+</details>
+
+---
+
+<details>
+<summary><strong>CONCLUSIONES</strong></summary>
+
+</details>
+
+---
+
+<details>
+<summary><strong>BIBLIOGRAFÍA</strong></summary>
 
 </details>
 
