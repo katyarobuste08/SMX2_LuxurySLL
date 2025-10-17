@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury SL - Página Oficial</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;color:white;}
+body{background:#000;height:100vh;overflow:hidden;}
+.container{display:flex;height:100vh;}
+
+/* FONDOS */
+#image-bg{position:fixed;top:0;left:0;width:100%;height:100%;background-image:url('https://i.imgur.com/BqUJceo.jpeg');background-size:cover;background-position:center;opacity:0.8;z-index:-10;}
+#image-bg::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);}
+#video-bg{position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-10;opacity:0.3;display:none;}
+
+/* SIDEBAR */
+.sidebar{width:250px;padding:30px;background-color:#000;border-right:1px solid rgba(255,255,255,0.1);display:flex;flex-direction:column;position:fixed;top:0;left:0;height:100vh;overflow-y:auto;z-index:10;}
+.menu-title{font-size:18px;font-weight:700;margin-bottom:20px;letter-spacing:2px;}
+.sidebar ul{list-style:none;margin-bottom:auto;}
+.sidebar li{margin:20px 0;}
+.sidebar a{text-decoration:none;font-size:18px;cursor:pointer;transition:color 0.3s;}
+.sidebar a:hover{color:#aaa;}
+.official-page{font-size:16px;font-weight:700;margin-top:auto;padding-top:20px;cursor:pointer;}
+#login-status{text-align:center;color:#5cb85c;margin-top:15px;opacity:0.9;}
+.sidebar a#open-login-modal, .sidebar a#open-register-modal{margin-top:10px;display:block;}
+
+/* MAIN */
+.main-section{margin-left:250px;width:calc(100% - 250px);height:100vh;position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;transition:opacity 0.8s, transform 0.8s;overflow:auto;}
+.main-section.hidden{opacity:0;transform:translateY(50px);pointer-events:none;}
+#content-area{position:fixed;top:0;left:250px;width:calc(100% - 250px);height:100%;display:flex;justify-content:center;align-items:flex-start;background:transparent;z-index:500;flex-direction:column;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity 0.8s, transform 0.8s;}
+#content-area.visible{opacity:1;transform:translateY(0);pointer-events:auto;}
+.page-content-box{
+    padding:50px;
+    width:95%;
+    max-width:1200px;
+    min-height:80vh;
+    background:rgba(0,0,0,0.7);
+    border-radius:15px;
+    margin:50px auto;
+    overflow:auto;
+    scrollbar-width:thin;
+    scrollbar-color:#555 #111;
+}
+.page-content-box::-webkit-scrollbar{width:10px;}
+.page-content-box::-webkit-scrollbar-thumb{background:#555;border-radius:5px;}
+.page-content-box::-webkit-scrollbar-track{background:#111;}
+.page-content-box h2{text-align:center;font-size:36px;margin-bottom:30px;}
+.page-content-box h3{margin-top:20px;margin-bottom:10px;font-size:24px;}
+.page-content-box p{font-size:18px;line-height:1.8;margin-bottom:20px;}
+button{padding:14px 30px;font-size:18px;border:none;cursor:pointer;border-radius:8px;transition:0.3s;font-weight:700;background:#111;color:white;}
+button:hover{background:#333;color:white;}
+
+/* MODALES */
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);justify-content:center;align-items:center;z-index:1000;}
+.modal-content{background:#000;padding:40px;border-radius:10px;width:90%;max-width:450px;position:relative;color:white;}
+.modal-content h2{margin-bottom:20px;font-size:26px;}
+.modal-content input{width:100%;padding:12px;margin:10px 0;border:1px solid #333;background-color:#111;color:white;border-radius:5px;font-size:16px;}
+.modal-content button{width:100%;margin-top:15px;background:#111;color:white;}
+.close-btn{position:absolute;top:10px;right:15px;font-size:28px;font-weight:bold;color:#aaa;cursor:pointer;}
+.close-btn:hover{color:white;}
+
+/* CONTACTO */
+.contact-layout{display:flex;flex-wrap:wrap;gap:50px;align-items:flex-start;}
+.contact-info{flex:1;min-width:350px;}
+.contact-media{flex:1;min-width:350px;text-align:center;}
+.contact-item{display:flex;align-items:center;margin-bottom:25px;}
+.contact-icon{width:40px;height:40px;border:2px solid white;border-radius:50%;display:flex;justify-content:center;align-items:center;margin-right:20px;font-size:18px;}
+.contact-label{font-weight:700;font-size:18px;}
+.contact-detail{font-size:16px;opacity:0.8;}
+.laptop-image{max-width:400px;width:100%;height:auto;}
+.back-home{margin-top:20px;background:#111;color:white;}
+.back-home:hover{background:#333;}
+</style>
+</head>
+<body>
+
+<!-- FONDOS -->
+<div id="image-bg"></div>
+<video autoplay loop muted id="video-bg">
+    <source src="video-background.mp4" type="video/mp4">
+</video>
+
+<div class="container">
+    <aside class="sidebar">
+        <p class="menu-title">MENU</p>
+        <ul>
+            <li><a id="link-home">Inicio</a></li>
+            <li><a id="link-about">Sobre Nosotros</a></li>
+            <li><a id="link-contact">Contacto</a></li>
+        </ul>
+        <a class="official-page" id="official-page-link">Página Oficial »</a>
+        <div id="login-status"></div>
+        <a id="open-login-modal">Login</a>
+        <a id="open-register-modal">Crear Cuenta</a>
+    </aside>
+
+    <div class="main-section" id="main-content">
+        <h1>LUXURY_SL</h1>
+        <p>¡El proyecto definitivo! Combina diseño 3D de coches con Arduino.</p>
+        <button id="learn-more-button">Learn More</button>
+    </div>
+
+    <div id="content-area">
+        <div class="page-content-box">
+            <h2 id="subpage-title">Página</h2>
+            <div id="subpage-text"></div>
+        </div>
+    </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+<div class="modal-content">
+<span class="close-btn" onclick="loginModal.style.display='none'">&times;</span>
+<h2>Iniciar Sesión</h2>
+<input type="email" id="loginEmail" placeholder="Email" required>
+<input type="password" id="loginPassword" placeholder="Contraseña" required>
+<button onclick="handleLogin()">Login</button>
+</div>
+</div>
+
+<!-- REGISTER MODAL -->
+<div id="registerModal" class="modal">
+<div class="modal-content">
+<span class="close-btn" onclick="registerModal.style.display='none'">&times;</span>
+<h2>Crear Cuenta</h2>
+<input type="text" id="registerUser" placeholder="Usuario" required>
+<input type="email" id="registerEmail" placeholder="Email" required>
+<input type="password" id="registerPassword" placeholder="Contraseña (mín 6 caracteres)" required>
+<button onclick="handleRegister()">Crear Cuenta</button>
+</div>
+</div>
+
+<script>
+let registeredUser=null,isLoggedIn=false;
+const loginModal=document.getElementById('loginModal');
+const registerModal=document.getElementById('registerModal');
+const loginStatus=document.getElementById('login-status');
+const imageBg=document.getElementById('image-bg');
+const videoBg=document.getElementById('video-bg');
+const mainContent=document.getElementById('main-content');
+const contentArea=document.getElementById('content-area');
+const subpageText=document.getElementById('subpage-text');
+const subpageTitle=document.getElementById('subpage-title');
+
+function updateLoginStatus(){loginStatus.innerHTML=isLoggedIn?`Sesión iniciada como: <b>${registeredUser.user}</b> (<a style="color:#f00;cursor:pointer;" onclick="handleLogout()">Cerrar</a>)`:"";}
+function handleRegister(){const user=document.getElementById('registerUser').value.trim();const email=document.getElementById('registerEmail').value.trim();const pass=document.getElementById('registerPassword').value;if(!user||!email||!pass){alert('⚠️ Rellena todos los campos');return;}if(pass.length<6){alert('⚠️ La contraseña debe tener mínimo 6 caracteres');return;}registeredUser={user,email,password:pass};alert(`✅ Cuenta creada con éxito para ${user}`);registerModal.style.display='none';updateLoginStatus();}
+function handleLogin(){const email=document.getElementById('loginEmail').value.trim();const pass=document.getElementById('loginPassword').value;if(!email||!pass){alert('⚠️ Rellena todos los campos');return;}if(!registeredUser || email!==registeredUser.email){alert('❌ Email no registrado');return;}if(pass!==registeredUser.password){alert('❌ Contraseña incorrecta');return;}isLoggedIn=true;alert(`✅ Bienvenido ${registeredUser.user}`);loginModal.style.display='none';updateLoginStatus();openOfficial();}
+function handleLogout(){isLoggedIn=false;updateLoginStatus();alert('Sesión cerrada');showHome();}
+
+function showHome(){mainContent.classList.remove('hidden');contentArea.classList.remove('visible');videoBg.style.display='none';imageBg.style.display='block';}
+function navigatePage(title,html){subpageTitle.textContent=title;subpageText.innerHTML=html+`<button class="back-home" onclick="showHome()">Volver al Inicio</button>`;mainContent.classList.add('hidden');contentArea.classList.add('visible');videoBg.style.display='none';imageBg.style.display='block';}
+function openOfficial(){if(!isLoggedIn){loginModal.style.display='flex';return;}mainContent.classList.add('hidden');contentArea.classList.add('visible');subpageTitle.textContent="Página Oficial";subpageText.innerHTML=`
+<h2 style="text-align:center;">Bienvenido ${registeredUser.user}</h2>
+<p style="font-size:18px;line-height:1.8;text-align:center;">Accede a contenido exclusivo de Luxury_SL: configuradores 3D, tutoriales avanzados y experiencias únicas.</p>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:30px;margin-top:30px;">
+<div style="background:rgba(0,0,0,0.7);padding:20px;border-radius:10px;min-width:250px;">
+<h3>Modelos 3D</h3><p>Descarga y visualiza modelos de coches de alta fidelidad.</p>
+</div>
+<div style="background:rgba(0,0,0,0.7);padding:20px;border-radius:10px;min-width:250px;">
+<h3>Tutoriales Arduino</h3><p>Aprende a integrar tu modelo con sistemas electrónicos.</p>
+</div>
+<div style="background:rgba(0,0,0,0.7);padding:20px;border-radius:10px;min-width:250px;">
+<h3>Experiencia Interactiva</h3><p>Simula y controla tu coche digital desde tu dispositivo.</p>
+</div>
+</div>
+<button class="back-home" style="margin-top:30px;" onclick="showHome()">Volver al Inicio</button>
+`;videoBg.style.display='block';imageBg.style.display='none';}
+
+// EVENTOS
+document.getElementById('link-home').onclick=showHome;
+document.getElementById('link-about').onclick=()=>{navigatePage('Sobre Nosotros','<h3>Luxury_SL: Diseño y Tecnología</h3><p>Combinamos diseño 3D y Arduino para coches interactivos.</p>');};
+document.getElementById('link-contact').onclick=()=>{navigatePage('Contacto','<div class="contact-layout"><div class="contact-info"><div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><div class="contact-label">Email</div><div class="contact-detail">luxury_sl@example.com</div></div></div><div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><div class="contact-label">Teléfono</div><div class="contact-detail">+34 123 456 789</div></div></div></div><div class="contact-media"><img class="laptop-image" src="https://i.imgur.com/lA8K0fR.png" alt="Laptop con coche"></div></div>');};
+document.getElementById('official-page-link').onclick=openOfficial;
+document.getElementById('learn-more-button').onclick=openOfficial;
+document.getElementById('open-login-modal').onclick=()=>{loginModal.style.display='flex';};
+document.getElementById('open-register-modal').onclick=()=>{registerModal.style.display='flex';};
+</script>
+</body>
+</html>
