@@ -77,6 +77,7 @@ La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado 
 - Texto principal: `#fff`
 - Detalles y acentos: `#aaa`
 - Efectos translúcidos: `rgba(255,255,255,0.05–0.12)`
+- Sombras suaves: rgba`(255,255,255,0.06)`
 
 #### Tipografía
 - `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`
