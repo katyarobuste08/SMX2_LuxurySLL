@@ -82,6 +82,10 @@ La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado 
 #### Tipografía
 - `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`
 - Estilo moderno, profesional y legible.
+- Tamaños base recomendados:
+  `body { font-size: 16px; line-height: 1.6 }`
+  `h1 { font-size: 2.25rem }, h2 { 1.75rem }, h3 { 1.25rem }`
+- Accesibilidad: `respetar contraste WCAG (texto sobre #000 con #fff OK)`.
 
 #### Estilo visual
 - Fondo animado con video
