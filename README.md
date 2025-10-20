@@ -112,12 +112,14 @@ La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado 
 - Herramientas Oficial  
 - 3D Blender Oficial  
 - Arduino Oficial  
-- Sección de comentarios  
+- Sección de comentarios
+- Perfil del usuario (ajustes, comentarios, cerrar sesión)
 
 **Sistema de usuario:**
 - Registro / Inicio de sesión (almacenado en `localStorage`)  
 - Cierre de sesión  
-- Gestión de comentarios personales  
+- Gestión de comentarios personales
+- Panel de usuario con estado y acciones rápidas
 
 ---
 
