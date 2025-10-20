@@ -68,7 +68,7 @@ El proyecto busca ofrecer una **web funcional**, con **visualización 3D del coc
 <details>
 <summary><strong>WEB</strong></summary>
 
-### Diseño
+### Mockup
 
 La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado en el estilo *glassmorphism*, con una experiencia visual limpia y elegante centrada en la marca **LUXURY_SL**.
 
