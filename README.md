@@ -100,10 +100,13 @@ La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado 
 ### Mapa de Navegabilidad
 
 **Menú principal:**
+- Inicio
 - Herramientas  
-- 3D Blender  
-- Arduino  
-- Página Oficial *(requiere iniciar sesión)*  
+  3D Blender  
+  Arduino  
+- Página Oficial *(requiere iniciar sesión)*
+- Contacto
+- Sobre nosotros
 
 **Página Oficial:**
 - Herramientas Oficial  
