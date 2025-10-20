@@ -88,7 +88,7 @@ La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado 
 - Accesibilidad: `respetar contraste WCAG (texto sobre #000 con #fff OK)`.
 
 #### Estilo visual
-- Fondo animado con video
+- Fondo animado con video. Vídeo `autoplay muted loop` y `object-fit: cover`. Mostrar `image fallback` para dispositivos sin video.
 - Efectos de desenfoque y transparencia (*glassmorphism*)
 - Sombras suaves y transiciones fluidas
 - Tarjetas y botones con animaciones al pasar el cursor
