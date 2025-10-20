@@ -93,7 +93,7 @@ La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado 
 - Sombras suaves en tarjetas y botones: `box-shadow: 0 6px 18px rgba(0,0,0,0.6), inset 0 0 6px var(--shadow-soft)`.
 - Transiciones fluidas: `transition: transform .25s ease, box-shadow .25s ease, opacity .3s ease`.
 - Hover animations: levantar tarjeta `transform: translateY(-6px)` y botón invertir colores (negro → blanco).
-- Adaptable para las pantallas de los moviles y PCs.
+- Adaptable para las pantallas de todos los dispositivos.
 
 ---
 
