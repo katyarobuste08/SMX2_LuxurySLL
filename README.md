@@ -78,10 +78,20 @@ El sistema de usuario es totalmente local usando localStorage para almacenar reg
 
 El diseño incluye animaciones hover suaves que elevan tarjetas y modifican color de botones generando interacción natural. Todo el contenido es responsive adaptándose a móviles, tablets y ordenadores.  
 
+<div align="center">
+<img src="https://i.imgur.com/dxfX96U.png" alt="Diseño Web" width="900"/>
+</div>
+
+Esta imagen ilustra el diseño visual de la web, mostrando la disposición de los elementos y la estética general de la interfaz.
+
 <details>
 <summary><strong>Base de Datos</strong></summary>
 
 La base de datos del proyecto se encarga de almacenar la información de los usuarios y sus comentarios de manera local en el navegador usando **localStorage**. Permite mantener registro de usuarios, gestionar sus perfiles y almacenar mensajes de soporte o dudas de forma segura y rápida sin depender de servidores externos. La información se organiza en dos tablas principales: **Usuarios** y **Comentarios**  
+
+<div align="center">
+<img src="https://i.imgur.com/ahRo6nr.png" alt="Usuarios" width="700"/>
+</div>
 
 ### Tabla de Usuarios
 
