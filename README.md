@@ -1,8 +1,8 @@
-<div align="center">
-
 # LUXURY_SL
 
-<img src="https://i.imgur.com/FG6uNYF.png" alt="Logo Luxury_SL" width="400" height="400">
+<div align="center">
+
+![Logo Luxury_SL](https://i.imgur.com/FG6uNYF.png)
 
 **En desarrollo: Blender 3D + CSS + HTML + JavaScript**  
 
@@ -15,232 +15,151 @@
 <details>
 <summary><strong>ÍNDICE</strong></summary>
 
-#### **INTRODUCCIÓN**
-
-#### **ARQUITECTURA DE SOFTWARE**
-
-#### **TECNOLOGÍAS A UTILIZAR**
-
-#### **RED**
-• **Diagrama de la Red**  
-• **Mapa Físico**  
-• **Mapa Lógico**  
-
-#### **WEB**
-• **Diseño Web**  
-• **Mapa de Navegabilidad**  
-• **Usuarios y Comentarios**  
-
-#### **ARDUINO**
-• **Programación**  
-• **Electrónica**  
-
-#### **SERVICIOS**
-• **DNS**  
-• **DHCP**  
-• **Apache**  
-• **Firewall**  
-• **Copias de Seguridad**  
-
-#### **CONCLUSIONES**
-
-#### **BIBLIOGRAFÍA**
+- Introducción  
+- Arquitectura de Software  
+- Tecnologías a Utilizar  
+- Red  
+  - Diagrama de la Red  
+  - Mapa Físico  
+  - Mapa Lógico  
+- Web  
+  - Diseño Web  
+  - Mapa de Navegabilidad  
+  - Base de Datos  
+- Arduino y Modelo 3D  
+  - Programación  
+  - Modelo 3D del coche  
+- Servicios  
+  - DNS  
+  - DHCP  
+  - Apache  
+  - Firewall  
+  - Copias de Seguridad  
+- Conclusiones  
+- Bibliografía  
 
 </details>
-
----
 
 <details>
 <summary><strong>BRIEFING LUXURY_SL</strong></summary>
 
-**Luxury_SL** es un proyecto que combina un **diseño 3D de un coche** con **Arduino**, permitiendo al usuario **construir, visualizar e interactuar** con su propio coche.  
+Luxury_SL es un proyecto que combina un diseño 3D de un coche con Arduino permitiendo al usuario construir, visualizar e interactuar con su propio coche
 
-Los usuarios podrán **crear cuenta**, **consultar tutoriales** para montar el coche, **dejar comentarios** al soporte técnico y **controlar el coche vía Bluetooth**, incluyendo movimientos (adelante, atrás, izquierda, derecha) y luces.  
+Los usuarios podrán crear cuenta, consultar tutoriales para montar el coche, dejar comentarios al soporte técnico y controlar el coche vía Bluetooth incluyendo movimientos hacia adelante, atrás, izquierda y derecha además de controlar las luces
 
-Las **entidades clave** del sistema incluyen **Usuario, Comentarios, Arduino, Diseño 3D, Coche y Herramientas**.  
+Las entidades clave del sistema incluyen Usuario, Comentarios, Arduino, Diseño 3D, Coche y Herramientas
 
-El proyecto busca ofrecer una **web funcional**, con **visualización 3D del coche** y **control físico** del mismo, integrando la experiencia digital con la interacción física del hardware.  
+El proyecto busca ofrecer una web funcional con visualización 3D del coche y control físico del mismo integrando la experiencia digital con la interacción física del hardware
 
 </details>
-
----
 
 <details>
 <summary><strong>WEB</strong></summary>
 
-### Mockup
+#### Diseño Web
 
-La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado en el estilo *glassmorphism*, con una experiencia visual limpia y elegante centrada en la marca **LUXURY_SL**.
+La paleta de colores de la web combina un **negro profundo** como fondo principal, un **blanco puro** para textos principales y un **gris claro** para los textos secundarios y elementos de contraste. Los paneles translúcidos aplican una transparencia ligera que permite ver ligeramente el fondo mientras se mantiene la legibilidad, generando el efecto glassmorphism. Las sombras suaves y los detalles minimalistas complementan la estética moderna y elegante del sitio.  
 
-#### Paleta de colores
-- Fondo principal: `#000`
-- Texto principal: `#fff`
-- Detalles y acentos: `#aaa`
-- Efectos translúcidos: `rgba(255,255,255,0.05–0.12)`
-- Sombras suaves: `rgba``(255,255,255,0.06)`
+<div align="center">
+<img src="https://i.imgur.com/zcfUlYo.png" alt="Mood de colores" width="600"/>
+</div>
 
-#### Tipografía
-- `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`
-- Estilo moderno, profesional y legible.
-- Tamaños base recomendados:
-  `body { font-size: 16px; line-height: 1.6 }`
-  `h1 { font-size: 2.25rem }, h2 { 1.75rem }, h3 { 1.25rem }`
-- Accesibilidad: respetar contraste WCAG (texto sobre `#000` con `#fff `OK).
-
-#### Estilo visual
-- Fondo animado con video. Vídeo `autoplay muted loop` y `object-fit: cover`. Mostrar `image fallback` para dispositivos sin video.
-- Glassmorphism: paneles semitransparentes con `backdrop-filter: blur(6px)` y `fondo var(--glass-1/2)`.
-- Sombras suaves en tarjetas y botones: `box-shadow: 0 6px 18px rgba(0,0,0,0.6), inset 0 0 6px var(--shadow-soft)`.
-- Transiciones fluidas: `transition: transform .25s ease, box-shadow .25s ease, opacity .3s ease`.
-- Hover animations: levantar tarjeta `transform: translateY(-6px)` y botón invertir colores (negro → blanco).
-- Adaptable para las pantallas de todos los dispositivos.
+Esta imagen muestra el **mood visual de los colores**, dando referencia de cómo se aplican los tonos oscuros, claros y las transparencias en toda la interfaz.
 
 ---
 
-### Mapa de Navegabilidad
+La web presenta un diseño oscuro moderno y minimalista basado en glassmorphism con fondo negro, texto blanco y detalles en gris claro. Los paneles poseen fondos semitransparentes con desenfoque de seis píxeles aplicado mediante backdrop filter. Se utilizan colores rgba suaves para lograr el efecto translúcido característico del estilo. Las sombras sutiles y las transiciones fluidas en botones y tarjetas aportan profundidad y movimiento a la interfaz.  
 
-**Menú principal:**
-- Inicio
-- Herramientas  
-  3D Blender  
-  Arduino  
-- Página Oficial *(requiere iniciar sesión)*
-- Contacto
-- Sobre nosotros
+La tipografía utilizada es Segoe UI junto con Tahoma, Geneva, Verdana y sans serif garantizando legibilidad y apariencia moderna en cualquier dispositivo. El fondo del sitio está compuesto por un video que se reproduce automáticamente en bucle y sin sonido, adaptándose al tamaño de la pantalla con object-fit cover y contando con imagen alternativa para dispositivos que no reproduzcan video  
 
-**Página Oficial:**
-- Herramientas Oficial  
-- 3D Blender Oficial  
-- Arduino Oficial  
-- Sección de comentarios
-- Perfil del usuario (ajustes, comentarios, cerrar sesión)
+La navegación se organiza mediante un menú principal con secciones Inicio, Herramientas, Página Oficial, Contacto y Sobre Nosotros. En Herramientas se encuentran las subcategorías 3D Blender y Arduino. La Página Oficial solo se puede acceder tras iniciar sesión ofreciendo acceso a herramientas personalizadas, área de comentarios y perfil de usuario  
 
-**Sistema de usuario:**
-- Registro / Inicio de sesión (almacenado en `localStorage`)  
-- Cierre de sesión  
-- Gestión de comentarios personales
-- Panel de usuario con estado y acciones rápidas
+El sistema de usuario es totalmente local usando localStorage para almacenar registro e inicio de sesión de forma rápida y segura. Cada usuario tiene un panel propio para gestionar comentarios, revisar estado y ejecutar acciones sin depender de bases de datos externas. Las secciones cambian dinámicamente sin recargar la página ofreciendo experiencia fluida. Se integran notificaciones tipo toast mostrando confirmaciones o avisos de error. Los videos de fondo cambian según la sección activa creando ambiente visual dinámico  
 
----
-
-### Funcionalidades
-
-- Sistema de login y registro local sin backend  
-- Persistencia de datos mediante `localStorage`  
-- Comentarios con control por usuario  
-- Cambio dinámico de secciones sin recargar la página  
-- Notificaciones tipo “toast” (mensajes flotantes)  
-- Videos de fondo que cambian según la sección activa  
-
----
-
-### Tecnologías utilizadas
-
-- **HTML5:** estructura y contenido  
-- **CSS3:** estilos, animaciones y efectos visuales  
-- **JavaScript (ES6):** manejo de usuarios, navegación y comentarios  
-- **LocalStorage:** almacenamiento local de usuarios y comentarios  
-
----
-
-### Usuarios
-| Campo          | Ejemplo              |
-|----------------|--------------------|
-| Nombre         | Juan Pérez          |
-| Email          | juanp@gmail.com     |
-| Fecha Registro | 10/09/2025          |
-
-### Comentarios
-| Campo         | Ejemplo                                      |
-|---------------|---------------------------------------------|
-| Id comentario | 001                                         |
-| Id usuario    | 1                                           |
-| Mensaje       | Tengo dudas sobre cómo conectar el módulo Bluetooth |
-| Fecha         | 2025-10-02                                  |
-
-</details>
-
----
+El diseño incluye animaciones hover suaves que elevan tarjetas y modifican color de botones generando interacción natural. Todo el contenido es responsive adaptándose a móviles, tablets y ordenadores.  
 
 <details>
-<summary><strong>ARDUINO</strong></summary>
+<summary><strong>Base de Datos</strong></summary>
 
-#### Programación
-Tutorial YT- Facil  
-https://www.youtube.com/watch?v=03mQrT4lDgM
+La base de datos del proyecto se encarga de almacenar la información de los usuarios y sus comentarios de manera local en el navegador usando **localStorage**. Permite mantener registro de usuarios, gestionar sus perfiles y almacenar mensajes de soporte o dudas de forma segura y rápida sin depender de servidores externos. La información se organiza en dos tablas principales: **Usuarios** y **Comentarios**  
 
-#### Placa Bluetooth
-Link
-https://www.amazon.es/desarrollo-Binghe-controlador-ESP-WROOM-32-compatible/dp/B0D86JL12Q/ref=sr_1_18_sspa?adgrpid=55614469385&dib=eyJ2IjoiMSJ9.DAHCoAqcD5_clktNk7Amj7fFyit0wnt-gob8L66IwYQmw-uUa8kOz_P-4SF2rOHBmAAGE3hIUrRVSlgfM0IbPJbVMEvowNdUvx6LXTioqYKpDNnhaID0SUAKEQBX84zaWhaLVeIwlPazxsSvTFVzk3tPq3ZDCYbVdYh7cO_Rr48eHKKb81I6s8ZmYxoOSo_BrXEW8qp1M-6Mpb2hYwojzl40NHU6mLT9vGWjVTPz_80xd7Ol1otV2SaTVmkgopd_SQ-mijJ4CGzFoodVd5AjW3ENxpPMhK3AYx7nU0gZylc.7nFnr-vcn8hu-SdyspqroBcY6pFY-ZS2Xpq09qQRNRE&dib_tag=se&hvadid=275345971589&hvdev=c&hvexpln=0&hvlocphy=1005424&hvnetw=g&hvocijid=16473807064755660048--&hvqmt=e&hvrand=16473807064755660048&hvtargid=kwd-308367043101&hydadcr=11829_1842814&keywords=modulo+bluetooth+arduino&mcid=94bc0e5917a23dd8b3d0805a37c0c120&qid=1761034446&sr=8-18-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1
+### Tabla de Usuarios
 
-#### Fisica
-## Modelo 3D del coche
+Esta tabla guarda los datos básicos de cada usuario registrado, permitiendo identificar y autenticar a cada persona dentro del sistema
 
-Visualiza el modelo 3D del proyecto en Sketchfab:
-https://skfb.ly/pCxW9
+| Campo          | Ejemplo        | Descripción                                          |
+|----------------|----------------|-----------------------------------------------------|
+| Nombre         | Juan Pérez     | Nombre completo del usuario                          |
+| Email          | juanp@gmail.com| Correo electrónico usado para registro y contacto   |
+| Fecha Registro | 10/09/2025     | Fecha en la que se creó la cuenta                   |
 
-#### Proporciones
-### Proporciones y Detalles Técnicos del Modelo
+### Tabla de Comentarios
 
-| Propiedad                | Valor                                           |
-|---------------------------|------------------------------------------------|
-| Formato                   | FBX                                            |
-| Tamaño del archivo        | 6.4 MB (descargable: 6 MB)                     |
-| Geometría                 | 175.000 triángulos, 94.300 vértices           |
-| Materiales                | 29 (sin texturas PBR)                          |
-| UV Layers                 | Sí                                             |
-| Colores por vértice       | No                                             |
-| Animaciones               | 0                                              |
-| Rigged geometries         | No                                             |
-| Morph geometries          | 0                                              |
-| Escala / Transformaciones | Ajustes aplicados según Blender 3D             |
-| Uso en proyecto           | Visualización 3D e interacción física con Arduino |
+Esta tabla almacena los mensajes enviados por los usuarios al soporte o en áreas de interacción, asociando cada comentario con su autor y fecha de creación  
 
-### Funcionalidad del Modelo 3D
-- Integración web mediante **Blender + Three.js / WebGL** para visualización interactiva.  
-- Permite rotación, zoom y exploración dinámica desde el navegador.  
-- Conexión con Arduino para reflejar movimientos y luces del coche físico.
+| Campo         | Ejemplo                                      | Descripción                                      |
+|---------------|---------------------------------------------|-------------------------------------------------|
+| Id comentario | 001                                         | Identificador único del comentario              |
+| Id usuario    | 1                                           | Identificador del usuario que realizó el comentario |
+| Mensaje       | Tengo dudas sobre cómo conectar el módulo Bluetooth | Contenido del mensaje del usuario              |
+| Fecha         | 2025-10-02                                  | Fecha en la que se creó el comentario          |
+
+Estas tablas permiten mantener organizada la información de los usuarios y sus interacciones, facilitando la gestión de la plataforma y la respuesta del soporte técnico  
 
 </details>
+</details>
 
----
+<details>
+<summary><strong>ARDUINO Y MODELO 3D</strong></summary>
+
+### Programación Arduino
+
+Para el control del coche se utiliza Arduino y un módulo Bluetooth que permite mover el vehículo hacia adelante, atrás, izquierda y derecha, así como controlar las luces. La programación se realiza en el IDE de Arduino y se conecta con la web para reflejar los movimientos en tiempo real.  
+
+Tutorial recomendado en YouTube: [YT- Facil](https://www.youtube.com/watch?v=03mQrT4lDgM)
+
+### Modelo 3D del coche
+
+El modelo 3D del coche fue creado en Blender y exportado en formato FBX para su integración en la web mediante Three.js y WebGL. El archivo tiene un tamaño de 6.4 MB y cuenta con 175.000 triángulos y 94.300 vértices, proporcionando una geometría detallada y realista. Se aplicaron 29 materiales diferentes sin texturas PBR, y se crearon capas UV para facilitar texturización futura. El modelo no contiene animaciones ni rigged geometries, lo que permite una visualización ligera y fluida en el navegador.  
+
+Este modelo permite rotación, zoom y exploración interactiva desde la web, y está preparado para sincronizarse con Arduino para reflejar los movimientos y las luces del coche físico. Gracias a estas características, el usuario puede interactuar simultáneamente con el coche digital y el físico, creando una experiencia integrada  
+
+Visualiza el modelo 3D en Sketchfab: [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
+
+El modelo está escalado y ajustado según Blender 3D, con proporciones correctas para visualización y control físico. Cada material y geometría fue optimizado para rendimiento web, asegurando que la interacción sea fluida incluso en dispositivos con recursos limitados. Esta integración permite que cualquier acción del usuario en la interfaz web se vea reflejada en el coche real a través de Arduino, logrando una experiencia completa de simulación y control  
+
+</details>
 
 <details>
 <summary><strong>RED</strong></summary>
 
-#### Diagrama de la Red
+### Diagrama de la Red
 
-#### Mapa Físico
+### Mapa Físico
 
-#### Mapa Lógico
+### Mapa Lógico
 
 </details>
-
----
 
 <details>
 <summary><strong>SERVICIOS</strong></summary>
 
-#### DNS
+### DNS
 
-#### DHCP
+### DHCP
 
-#### Apache
+### Apache
 
-#### Firewall
+### Firewall
 
-#### Copias de Seguridad
+### Copias de Seguridad
 
 </details>
-
----
 
 <details>
 <summary><strong>CONCLUSIONES</strong></summary>
 
 </details>
-
----
 
 <details>
 <summary><strong>BIBLIOGRAFÍA</strong></summary>
@@ -251,6 +170,6 @@ https://skfb.ly/pCxW9
 
 <div align="center">
 
-<img src="https://i.imgur.com/qPQOsBJ.png" alt="Banner Luxury_SL" width="700" height="200">
+![Banner Luxury_SL](https://i.imgur.com/qPQOsBJ.png)
 
 </div>
