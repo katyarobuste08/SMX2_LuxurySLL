@@ -169,6 +169,10 @@ La página web presenta un diseño **oscuro, moderno y minimalista**, inspirado 
 Tutorial YT- Facil  
 https://www.youtube.com/watch?v=03mQrT4lDgM
 
+#### Placa Bluetooth
+Link
+https://www.amazon.es/desarrollo-Binghe-controlador-ESP-WROOM-32-compatible/dp/B0D86JL12Q/ref=sr_1_18_sspa?adgrpid=55614469385&dib=eyJ2IjoiMSJ9.DAHCoAqcD5_clktNk7Amj7fFyit0wnt-gob8L66IwYQmw-uUa8kOz_P-4SF2rOHBmAAGE3hIUrRVSlgfM0IbPJbVMEvowNdUvx6LXTioqYKpDNnhaID0SUAKEQBX84zaWhaLVeIwlPazxsSvTFVzk3tPq3ZDCYbVdYh7cO_Rr48eHKKb81I6s8ZmYxoOSo_BrXEW8qp1M-6Mpb2hYwojzl40NHU6mLT9vGWjVTPz_80xd7Ol1otV2SaTVmkgopd_SQ-mijJ4CGzFoodVd5AjW3ENxpPMhK3AYx7nU0gZylc.7nFnr-vcn8hu-SdyspqroBcY6pFY-ZS2Xpq09qQRNRE&dib_tag=se&hvadid=275345971589&hvdev=c&hvexpln=0&hvlocphy=1005424&hvnetw=g&hvocijid=16473807064755660048--&hvqmt=e&hvrand=16473807064755660048&hvtargid=kwd-308367043101&hydadcr=11829_1842814&keywords=modulo+bluetooth+arduino&mcid=94bc0e5917a23dd8b3d0805a37c0c120&qid=1761034446&sr=8-18-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1
+
 #### Fisica
 ## Modelo 3D del coche
 
