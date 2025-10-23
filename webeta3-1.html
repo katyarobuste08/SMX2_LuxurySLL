@@ -11,31 +11,22 @@
 body{background:#000;height:100vh;overflow-x:hidden;}
 a{text-decoration:none;color:white;transition:0.3s;}
 a:hover{color:#ccc;}
-
-/* BACKGROUNDS */
 #image-bg{position:fixed;top:0;left:0;width:100%;height:100%;background:url('https://i.imgur.com/BqUJceo.jpeg') center/cover no-repeat;opacity:1;z-index:-10;}
 #image-bg::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.75);}
 #video-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:0;transition:opacity 0.8s;border-radius:25px;filter:brightness(1) contrast(1);}
 
 .container{display:flex;}
 
-/* SIDEBAR */
 .sidebar{width:280px;padding:30px;background:rgba(0,0,0,0.9);border-right:1px solid rgba(255,255,255,0.1);display:flex;flex-direction:column;position:fixed;top:0;left:0;height:100vh;overflow-y:auto;backdrop-filter:blur(5px);z-index:100;}
 .menu-title{font-size:24px;font-weight:700;margin-bottom:25px;letter-spacing:1px;color:#fff;}
 .sidebar ul{list-style:none;margin-bottom:auto;}
 .sidebar li{margin:20px 0;font-weight:500;position:relative;}
 .sidebar li a:hover::before{content:'»'; position:absolute; left:-20px; color:#fff;}
-
-/* USER PANEL */
 .user-panel{position:fixed;top:20px;right:20px;width:220px;padding:15px;background:rgba(0,0,0,0.85);border-radius:20px;display:flex;flex-direction:column;align-items:center;gap:10px;box-shadow:0 0 5px #fff inset 0 0 3px #aaa;z-index:100;transition:0.3s;}
 .user-panel button{width:100%;padding:12px;border:none;border-radius:12px;background:#111;color:#fff;font-weight:700;cursor:pointer;transition:0.3s, box-shadow 0.3s;}
 .user-panel button:hover{background:#222;box-shadow:0 0 5px #fff;}
-
-/* MAIN SECTION */
 .main-section{margin-left:280px;width:calc(100% - 280px);min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;transition:opacity 0.8s, transform 0.8s;overflow:auto;}
 .main-section.hidden{opacity:0;transform:translateY(50px);pointer-events:none;}
-
-/* FRAME DE NOMBRES */
 .team-frame {
   margin-top: 60px;
   background: rgba(255,255,255,0.1);
@@ -50,8 +41,6 @@ a:hover{color:#ccc;}
   font-weight: 600;
   backdrop-filter: blur(5px);
 }
-
-/* BOTON LEARN MORE */
 #learn-more-button {
   margin-top: 40px; /* espacio entre nombres y botón */
   background:#000;
@@ -72,7 +61,6 @@ a:hover{color:#ccc;}
   box-shadow:0 0 5px #fff;
 }
 
-/* CONTENT AREA */
 #content-area{position:fixed;top:0;left:280px;width:calc(100% - 280px);min-height:100%;display:flex;justify-content:center;align-items:flex-start;background:transparent;z-index:50;flex-direction:column;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity 0.8s, transform 0.8s;padding-bottom:80px;}
 #content-area.visible{opacity:1;transform:translateY(0);pointer-events:auto;}
 .page-content-box{position:relative;padding:50px;width:95%;max-width:1300px;background:rgba(0,0,0,0.2);border-radius:25px;margin:50px auto;overflow:auto;display:flex;flex-direction:column;gap:50px;box-shadow:0 0 10px #fff inset 0 0 3px #aaa;backdrop-filter:blur(6px);transition:0.5s;}
@@ -80,14 +68,12 @@ a:hover{color:#ccc;}
 .page-content-box h3{margin-top:20px;margin-bottom:10px;font-size:26px;text-shadow:0 0 1px #fff;}
 .page-content-box p{font-size:18px;line-height:1.8;margin-bottom:20px;opacity:0.9;}
 
-/* FRAME CARDS */
 .frame-section{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin-top:20px;}
 .frame-card{flex:1 1 300px;background:rgba(0,0,0,0.18);padding:30px;border-radius:25px;text-align:center;transition:0.5s;backdrop-filter: blur(6px);box-shadow:0 0 3px #fff inset 0 0 2px #aaa;}
 .frame-card:hover{transform:translateY(-5px);box-shadow:0 0 6px #fff;background:rgba(0,0,0,0.22);}
 .back-home{margin-top:30px;background:#111;color:#fff;padding:12px 25px;border-radius:12px;cursor:pointer;font-weight:700;transition:0.3s;box-shadow:0 0 3px #fff;}
 .back-home:hover{background:#fff;color:#000;box-shadow:0 0 6px #fff;}
 
-/* MODALES */
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);justify-content:center;align-items:center;z-index:1000;}
 .modal-content{background:#111;padding:40px;border-radius:15px;width:90%;max-width:450px;position:relative;color:white;box-shadow:0 0 6px #fff;}
 .modal-content h2{margin-bottom:20px;font-size:28px;text-shadow:0 0 1px #fff;}
@@ -96,8 +82,6 @@ a:hover{color:#ccc;}
 .modal-content button:hover{transform:scale(1.02);box-shadow:0 0 5px #fff;}
 .close-btn{position:absolute;top:10px;right:15px;font-size:28px;font-weight:bold;color:#fff;cursor:pointer;}
 .close-btn:hover{color:#ccc;}
-
-/* MENSAJES FLOTANTES NEGROS */
 #message-container{
     position: fixed;
     top: 80px;
@@ -170,7 +154,6 @@ a:hover{color:#ccc;}
 </div>
 </div>
 
-<!-- MODALES LOGIN/REGISTER -->
 <div id="loginModal" class="modal">
 <div class="modal-content">
 <span class="close-btn" onclick="loginModal.style.display='none'">&times;</span>
@@ -192,11 +175,9 @@ a:hover{color:#ccc;}
 </div>
 </div>
 
-<!-- MENSAJES FLOTANTES -->
 <div id="message-container"></div>
 
 <script>
-// ===== USERS & LOGIN =====
 let users = JSON.parse(localStorage.getItem('luxuryUsers')) || [];
 let isLoggedIn = false;
 
@@ -209,8 +190,7 @@ const subpageText = document.getElementById('subpage-text');
 const subpageTitle = document.getElementById('subpage-title');
 const imageBg = document.getElementById('image-bg');
 const videoBgEl = document.querySelector("#content-area #video-bg");
-
-// MENSAJES FLOTANTES
+  
 function showMessage(type, text){
     const container = document.getElementById('message-container');
     const msg = document.createElement('div');
@@ -228,7 +208,6 @@ function showMessage(type, text){
     },3000);
 }
 
-// LOGIN STATUS
 function updateLoginStatus(){
     const user = JSON.parse(localStorage.getItem('luxuryCurrentUser'));
     if(user){
@@ -246,7 +225,6 @@ function updateLoginStatus(){
     }
 }
 
-// HANDLE REGISTER/LOGIN/LOGOUT
 function handleRegister(){
     const user = document.getElementById('registerUser').value.trim();
     const email = document.getElementById('registerEmail').value.trim();
@@ -322,7 +300,6 @@ function openOfficial(){
     imageBg.style.display='none';
 }
 
-// EVENTOS
 document.getElementById('link-home').onclick=showHome;
 document.getElementById('link-about').onclick=()=>{navigatePage('Sobre Nosotros','<div class="frame-section"><div class="frame-card"><h3>Luxury_SL: Diseño y Tecnología</h3><p>Combinamos diseño 3D y Arduino para coches interactivos.</p></div></div>');};
 document.getElementById('link-contact').onclick=()=>{navigatePage('Contacto',`<div class="frame-section" style="justify-content:center;gap:40px;"><div class="frame-card"><h3>Contacto General</h3><p>Email: luxury_sl@example.com</p><p>Tel: +34 123 456 789</p></div><div class="frame-card"><h3>Soporte Técnico</h3><p>Email: soporte@luxurysl.com</p><p>Horario: Lunes a Viernes, 9:00 - 18:00</p></div></div>`);};
