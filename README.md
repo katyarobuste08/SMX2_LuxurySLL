@@ -103,17 +103,37 @@ El proyecto resulta especialmente atractivo para quienes disfrutan de **transfor
 
 Este proyecto es de uso **educativo y experimental**, enfocado en la **innovación tecnológica** y el **aprendizaje práctico**.
 
+</details>
+
 ---
 
 <details>
 <summary><strong>WEB</strong></summary>
 
-### Diseño Web
+### Mockup Conceptual de la Web Luxury_SL
 
-La web **LUXURY_SL** está diseñada con un enfoque oscuro, moderno y minimalista, orientado a transmitir elegancia y tecnología.  
-A continuación se presentan las pantallas principales del sitio, ordenadas para reflejar el flujo real de uso: pantalla principal, elementos de acceso (login/registro), navegación, contenido informativo y vistas con el usuario autenticado.
+<div align="center">
+
+![Mockup Conceptual Luxury_SL](https://i.imgur.com/3uX91yZ.png)
+
+</div>
+
+El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalidad**. Desde la primera impresión, se percibe un enfoque visual cuidado y minimalista, pensado para resaltar la **tecnología y el lujo** que caracterizan el proyecto. La interfaz está diseñada para que el usuario se sumerja en la experiencia sin distracciones innecesarias, concentrándose en los **modelos 3D**, la interacción con **Arduino** y los contenidos educativos.
 
 ---
+
+### Justificación del estilo y los colores
+
+- **Elegancia y sofisticación:** La paleta oscura, basada en negros y grises profundos, transmite sensación de exclusividad, lujo y profesionalidad. Este enfoque visual ayuda a que la atención del usuario se centre en los elementos interactivos y en los detalles del coche 3D.  
+- **Contraste y claridad:** Los acentos claros, como botones, iconos y textos destacados, proporcionan un contraste visual que facilita la lectura y guía la navegación de manera intuitiva.  
+- **Minimalismo funcional:** Se prioriza la simplicidad y la limpieza visual. Los menús, botones y modales aparecen solo cuando son necesarios, evitando la sobrecarga de información y ofreciendo una experiencia ágil.  
+- **Interactividad intuitiva:** La navegación sin recarga, los menús laterales persistentes y los modales de inicio de sesión o creación de cuenta permiten que el usuario explore el sitio de forma fluida, promoviendo la **exploración educativa** y la interacción directa con los recursos.  
+- **Experiencia educativa integrada:** Los elementos visuales y la organización de la información están orientados a guiar al usuario hacia la comprensión de conceptos STEAM. La jerarquía visual destaca las secciones principales —como **tutoriales Arduino**, **modelos 3D interactivos** y **guías de aprendizaje**— permitiendo que la educación y la experiencia tecnológica convivan de forma natural.  
+- **Fusión entre virtual y físico:** Cada decisión de diseño busca reflejar la filosofía del proyecto: **el usuario controla un coche físico mientras observa su equivalente digital**. El diseño elegante y oscuro sirve como un “marco” que resalta la innovación tecnológica y crea un ambiente inmersivo para la interacción entre hardware y software.  
+
+---
+
+### Pantallas principales del sitio
 
 #### 1. Pantalla principal (hero)
 
@@ -121,9 +141,7 @@ A continuación se presentan las pantallas principales del sitio, ordenadas para
 <img src="https://i.postimg.cc/50PRHXSb/Captura-de-pantalla-2025-11-04-094043.png" alt="Hero Luxury_SL - Página principal" width="600"/>
 </div>
 
-Esta es la pantalla de bienvenida. Muestra el mensaje principal del proyecto y un botón de acción (“Learn More”). Aquí el usuario obtiene la primera impresión visual del proyecto y puede acceder a las funcionalidades del sitio (registro, inicio de sesión o navegar a las secciones principales).
-
----
+La pantalla de bienvenida muestra el mensaje principal del proyecto y un botón de acción (“Learn More”), ofreciendo la primera impresión visual y acceso a funcionalidades principales.
 
 #### 2. Barra de acceso rápido (no autenticado)
 
@@ -131,9 +149,7 @@ Esta es la pantalla de bienvenida. Muestra el mensaje principal del proyecto y u
 <img src="https://i.postimg.cc/rF77CtXq/Captura-de-pantalla-2025-11-04-094021.png" alt="Accesos - Login y Crear Cuenta" width="500"/>
 </div>
 
-Estado de usuario no autenticado: presenta los botones **Login** y **Crear Cuenta** en la parte superior, permitiendo al visitante iniciar el proceso de acceso o registro. Es un componente pequeño y persistente que guía al usuario hacia la autenticación.
-
----
+Presenta los botones **Login** y **Crear Cuenta**, permitiendo al visitante iniciar el proceso de acceso o registro de manera rápida y accesible.
 
 #### 3. Modal: Iniciar sesión
 
@@ -141,9 +157,7 @@ Estado de usuario no autenticado: presenta los botones **Login** y **Crear Cuent
 <img src="https://i.postimg.cc/j5JMjM2s/Captura-de-pantalla-2025-11-04-094233.png" alt="Modal Iniciar Sesión" width="550"/>
 </div>
 
-Ventana modal de inicio de sesión con campos para **Email** y **Contraseña**, y un botón **Login**. El diseño es claro y minimalista para facilitar la entrada de credenciales sin distraer al usuario del fondo de la página.
-
----
+Ventana modal de inicio de sesión con campos para **Email** y **Contraseña**, con diseño claro y minimalista para facilitar la entrada de credenciales.
 
 #### 4. Modal: Crear cuenta
 
@@ -151,9 +165,7 @@ Ventana modal de inicio de sesión con campos para **Email** y **Contraseña**, 
 <img src="https://i.postimg.cc/YqXYJ1qH/Captura-de-pantalla-2025-11-04-094251.png" alt="Modal Crear Cuenta" width="550"/>
 </div>
 
-Formulario de creación de cuenta que solicita **Usuario**, **Email** y **Contraseña** (mínimo 6 caracteres). Al completar este formulario y registrarse correctamente, el usuario podrá iniciar sesión con esas credenciales.
-
----
+Formulario de creación de cuenta que solicita **Usuario**, **Email** y **Contraseña**. Al registrarse, el usuario podrá iniciar sesión con esas credenciales.
 
 #### 5. Menú lateral (navegación)
 
@@ -161,9 +173,7 @@ Formulario de creación de cuenta que solicita **Usuario**, **Email** y **Contra
 <img src="https://i.postimg.cc/CMRgG0Bj/Captura-de-pantalla-2025-11-04-094111.png" alt="Menú lateral - Navegación" width="500"/>
 </div>
 
-Menú lateral izquierdo con las secciones principales: **Inicio**, **Sobre Nosotros**, **Contacto** y **Página Oficial**. Permite navegación persistente entre secciones sin recargar la página.
-
----
+Menú lateral izquierdo con las secciones principales: **Inicio**, **Sobre Nosotros**, **Contacto** y **Página Oficial**, permitiendo navegación persistente sin recargar la página.
 
 #### 6. Sección: Sobre Nosotros
 
@@ -171,9 +181,7 @@ Menú lateral izquierdo con las secciones principales: **Inicio**, **Sobre Nosot
 <img src="https://i.postimg.cc/pT73G9hy/Captura-de-pantalla-2025-11-04-094136.png" alt="Sección Sobre Nosotros" width="600"/>
 </div>
 
-Página que explica la propuesta de Luxury_SL: la **fusión entre diseño 3D y tecnología Arduino** para crear vehículos interactivos. Incluye texto descriptivo y un botón **Volver al Inicio** para facilitar la navegación.
-
----
+Explica la propuesta de Luxury_SL: la **fusión entre diseño 3D y tecnología Arduino** para crear vehículos interactivos, con texto descriptivo y un botón de retorno al inicio.
 
 #### 7. Sección: Contacto
 
@@ -181,9 +189,7 @@ Página que explica la propuesta de Luxury_SL: la **fusión entre diseño 3D y t
 <img src="https://i.postimg.cc/cCwkFFG2/Captura-de-pantalla-2025-11-04-094208.png" alt="Sección Contacto" width="600"/>
 </div>
 
-Panel de contacto dividido en **Contacto General** (email y teléfono) y **Soporte Técnico** (email y horario de atención, lunes–viernes 9:00–18:00). Mantiene la estética oscura y el botón **Volver al Inicio**.
-
----
+Panel de contacto dividido en **Contacto General** y **Soporte Técnico**, manteniendo estética oscura y botones consistentes.
 
 #### 8. Sección: Página Oficial (contenidos)
 
@@ -191,18 +197,8 @@ Panel de contacto dividido en **Contacto General** (email y teléfono) y **Sopor
 <img src="https://i.postimg.cc/4xD7gPDP/Captura-de-pantalla-2025-11-04-094404.png" alt="Página Oficial - Modelos/Experiencias/Tutoriales" width="600"/>
 </div>
 
-La **Página Oficial** agrupa los bloques de contenido principales: **Modelos 3D de Lujo**, **Experiencia Interactiva** y **Tutoriales Arduino**. Cada bloque ofrece acceso a recursos (modelos, simulaciones y guías) manteniendo coherencia visual.
+Agrupa los bloques principales: **Modelos 3D de Lujo**, **Experiencia Interactiva** y **Tutoriales Arduino**, manteniendo coherencia visual y fácil acceso a recursos.
 
----
-
-### Observaciones de diseño
-
-- Estética: predominio de negros y grises, tipografía con buena legibilidad y acentos claros para llamadas a la acción.  
-- Interacción: navegación sin recarga, modales para autenticación, botones de retorno consistentes.  
-- Usabilidad: formularios compactos y directos; menús persistentes y accesibles desde cualquier vista.
-
----
-</details>
 </details>
 
 ---
