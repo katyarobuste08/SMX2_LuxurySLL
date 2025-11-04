@@ -114,7 +114,7 @@ Este proyecto es de uso **educativo y experimental**, enfocado en la **innovaci�
 
 <div align="center">
 
-![Mockup Conceptual Luxury_SL](https://i.imgur.com/3uX91yZ.png)
+<img src="https://i.imgur.com/3uX91yZ.png" width="350"/>
 
 </div>
 
@@ -123,6 +123,12 @@ El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalid
 ---
 
 ### Justificación del estilo y los colores
+
+<div align="center">
+
+<img src="https://i.imgur.com/zcfUlYo.png" width="350"/>
+
+</div>
 
 - **Elegancia y sofisticación:** La paleta oscura, basada en negros y grises profundos, transmite sensación de exclusividad, lujo y profesionalidad. Este enfoque visual ayuda a que la atención del usuario se centre en los elementos interactivos y en los detalles del coche 3D.  
 - **Contraste y claridad:** Los acentos claros, como botones, iconos y textos destacados, proporcionan un contraste visual que facilita la lectura y guía la navegación de manera intuitiva.  
@@ -138,7 +144,7 @@ El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalid
 #### 1. Pantalla principal (hero)
 
 <div align="center">
-<img src="https://i.postimg.cc/50PRHXSb/Captura-de-pantalla-2025-11-04-094043.png" alt="Hero Luxury_SL - Página principal" width="600"/>
+<img src="https://i.postimg.cc/50PRHXSb/Captura-de-pantalla-2025-11-04-094043.png" width="350"/>
 </div>
 
 La pantalla de bienvenida muestra el mensaje principal del proyecto y un botón de acción (“Learn More”), ofreciendo la primera impresión visual y acceso a funcionalidades principales.
@@ -146,7 +152,7 @@ La pantalla de bienvenida muestra el mensaje principal del proyecto y un botón 
 #### 2. Barra de acceso rápido (no autenticado)
 
 <div align="center">
-<img src="https://i.postimg.cc/rF77CtXq/Captura-de-pantalla-2025-11-04-094021.png" alt="Accesos - Login y Crear Cuenta" width="500"/>
+<img src="https://i.postimg.cc/rF77CtXq/Captura-de-pantalla-2025-11-04-094021.png" width="350"/>
 </div>
 
 Presenta los botones **Login** y **Crear Cuenta**, permitiendo al visitante iniciar el proceso de acceso o registro de manera rápida y accesible.
@@ -154,7 +160,7 @@ Presenta los botones **Login** y **Crear Cuenta**, permitiendo al visitante inic
 #### 3. Modal: Iniciar sesión
 
 <div align="center">
-<img src="https://i.postimg.cc/j5JMjM2s/Captura-de-pantalla-2025-11-04-094233.png" alt="Modal Iniciar Sesión" width="550"/>
+<img src="https://i.postimg.cc/j5JMjM2s/Captura-de-pantalla-2025-11-04-094233.png" width="350"/>
 </div>
 
 Ventana modal de inicio de sesión con campos para **Email** y **Contraseña**, con diseño claro y minimalista para facilitar la entrada de credenciales.
@@ -162,7 +168,7 @@ Ventana modal de inicio de sesión con campos para **Email** y **Contraseña**, 
 #### 4. Modal: Crear cuenta
 
 <div align="center">
-<img src="https://i.postimg.cc/YqXYJ1qH/Captura-de-pantalla-2025-11-04-094251.png" alt="Modal Crear Cuenta" width="550"/>
+<img src="https://i.postimg.cc/YqXYJ1qH/Captura-de-pantalla-2025-11-04-094251.png" width="350"/>
 </div>
 
 Formulario de creación de cuenta que solicita **Usuario**, **Email** y **Contraseña**. Al registrarse, el usuario podrá iniciar sesión con esas credenciales.
@@ -170,7 +176,7 @@ Formulario de creación de cuenta que solicita **Usuario**, **Email** y **Contra
 #### 5. Menú lateral (navegación)
 
 <div align="center">
-<img src="https://i.postimg.cc/CMRgG0Bj/Captura-de-pantalla-2025-11-04-094111.png" alt="Menú lateral - Navegación" width="500"/>
+<img src="https://i.postimg.cc/CMRgG0Bj/Captura-de-pantalla-2025-11-04-094111.png" width="350"/>
 </div>
 
 Menú lateral izquierdo con las secciones principales: **Inicio**, **Sobre Nosotros**, **Contacto** y **Página Oficial**, permitiendo navegación persistente sin recargar la página.
@@ -178,7 +184,7 @@ Menú lateral izquierdo con las secciones principales: **Inicio**, **Sobre Nosot
 #### 6. Sección: Sobre Nosotros
 
 <div align="center">
-<img src="https://i.postimg.cc/pT73G9hy/Captura-de-pantalla-2025-11-04-094136.png" alt="Sección Sobre Nosotros" width="600"/>
+<img src="https://i.postimg.cc/pT73G9hy/Captura-de-pantalla-2025-11-04-094136.png" width="350"/>
 </div>
 
 Explica la propuesta de Luxury_SL: la **fusión entre diseño 3D y tecnología Arduino** para crear vehículos interactivos, con texto descriptivo y un botón de retorno al inicio.
@@ -186,7 +192,7 @@ Explica la propuesta de Luxury_SL: la **fusión entre diseño 3D y tecnología A
 #### 7. Sección: Contacto
 
 <div align="center">
-<img src="https://i.postimg.cc/cCwkFFG2/Captura-de-pantalla-2025-11-04-094208.png" alt="Sección Contacto" width="600"/>
+<img src="https://i.postimg.cc/cCwkFFG2/Captura-de-pantalla-2025-11-04-094208.png" width="350"/>
 </div>
 
 Panel de contacto dividido en **Contacto General** y **Soporte Técnico**, manteniendo estética oscura y botones consistentes.
@@ -194,7 +200,7 @@ Panel de contacto dividido en **Contacto General** y **Soporte Técnico**, mante
 #### 8. Sección: Página Oficial (contenidos)
 
 <div align="center">
-<img src="https://i.postimg.cc/4xD7gPDP/Captura-de-pantalla-2025-11-04-094404.png" alt="Página Oficial - Modelos/Experiencias/Tutoriales" width="600"/>
+<img src="https://i.postimg.cc/4xD7gPDP/Captura-de-pantalla-2025-11-04-094404.png" width="350"/>
 </div>
 
 Agrupa los bloques principales: **Modelos 3D de Lujo**, **Experiencia Interactiva** y **Tutoriales Arduino**, manteniendo coherencia visual y fácil acceso a recursos.
@@ -211,10 +217,10 @@ Agrupa los bloques principales: **Modelos 3D de Lujo**, **Experiencia Interactiv
 El control del coche se realiza con un **Arduino ESP32**, que incorpora **Bluetooth integrado** y permite comunicación inalámbrica directa con la web.  
 El sistema gestiona movimientos del vehículo (adelante, atrás, izquierda, derecha) y control de luces desde la interfaz digital.  
 
-📺 **Tutorial recomendado:** [YouTube - Facil](https://www.youtube.com/watch?v=03mQrT4lDgM)
+ **Tutorial recomendado:** [YouTube - Facil](https://www.youtube.com/watch?v=03mQrT4lDgM)
 
 <div align="center">
-<img src="https://i.imgur.com/rijhOry.png" alt="Arduino ESP32 con Bluetooth" width="400"/>
+<img src="https://i.imgur.com/rijhOry.png" width="350"/>
 </div>
 
 ---
@@ -226,7 +232,7 @@ Cuenta con 175.000 triángulos y 94.300 vértices, optimizado para navegadores w
 
 Permite **rotación, zoom e interacción** directa, sincronizándose con Arduino para reflejar el movimiento del coche físico.
 
-🔗 **Visualiza el modelo 3D:** [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
+ **Visualiza el modelo 3D:** [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
 
 </details>
 
@@ -279,6 +285,7 @@ Luxury_SL ofrece una integración completa entre hardware y software, permitiend
 
 <div align="center">
 
-![Banner Luxury_SL](https://i.imgur.com/qPQOsBJ.png)
+<img src="https://i.imgur.com/qPQOsBJ.png" width="350"/>
 
 </div>
+
