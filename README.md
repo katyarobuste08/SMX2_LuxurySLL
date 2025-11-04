@@ -60,48 +60,98 @@ El proyecto busca una experiencia integrada entre el entorno **digital (web + 3D
 
 ### Diseño Web
 
-La web utiliza un estilo **oscuro y minimalista** con efecto **glassmorphism**.  
-Los paneles tienen transparencia suave, desenfoque de fondo y sombras sutiles para lograr una estética moderna.  
-
-<div align="center">
-<img src="https://i.imgur.com/zcfUlYo.png" alt="Mood de colores" width="450"/>
-</div>
-
-La navegación es fluida y dinámica, sin recargar la página.  
-Incluye notificaciones tipo *toast*, animaciones suaves y un fondo en video que cambia según la sección activa.  
-
-<div align="center">
-<img src="https://i.imgur.com/dxfX96U.png" alt="Diseño Web" width="700"/>
-</div>
+La web **LUXURY_SL** está diseñada con un enfoque oscuro, moderno y minimalista, orientado a transmitir elegancia y tecnología.  
+A continuación se presentan las pantallas principales del sitio, ordenadas para reflejar el flujo real de uso: pantalla principal, elementos de acceso (login/registro), navegación, contenido informativo y vistas con el usuario autenticado.
 
 ---
 
-<details>
-<summary><strong>Base de Datos (Logging)</strong></summary>
-
-El sistema usa **localStorage** para manejar usuarios y comentarios de forma local, rápida y segura, sin necesidad de servidor externo.
+#### 1. Pantalla principal (hero)
 
 <div align="center">
-<img src="https://i.imgur.com/ahRo6nr.png" alt="Base de Datos - Logging" width="500"/>
+<img src="https://i.postimg.cc/50PRHXSb/Captura-de-pantalla-2025-11-04-094043.png" alt="Hero Luxury_SL - Página principal" width="600"/>
 </div>
 
-### Tabla de Usuarios
+Esta es la pantalla de bienvenida. Muestra el mensaje principal del proyecto y un botón de acción (“Learn More”). Aquí el usuario obtiene la primera impresión visual del proyecto y puede acceder a las funcionalidades del sitio (registro, inicio de sesión o navegar a las secciones principales).
 
-| Campo          | Ejemplo        | Descripción                                          |
-|----------------|----------------|------------------------------------------------------|
-| Nombre         | Juan Pérez     | Nombre completo del usuario                          |
-| Email          | juanp@gmail.com| Correo electrónico usado para registro y contacto    |
-| Fecha Registro | 10/09/2025     | Fecha en la que se creó la cuenta                    |
+---
 
-### Tabla de Comentarios
+#### 2. Barra de acceso rápido (no autenticado)
 
-| Campo         | Ejemplo                                      | Descripción                                      |
-|---------------|---------------------------------------------|-------------------------------------------------|
-| Id comentario | 001                                         | Identificador único del comentario              |
-| Id usuario    | 1                                           | Usuario que realizó el comentario               |
-| Mensaje       | Tengo dudas sobre cómo conectar el módulo Bluetooth | Contenido del mensaje del usuario              |
-| Fecha         | 2025-10-02                                  | Fecha de creación del comentario                |
+<div align="center">
+<img src="https://i.postimg.cc/rF77CtXq/Captura-de-pantalla-2025-11-04-094021.png" alt="Accesos - Login y Crear Cuenta" width="500"/>
+</div>
 
+Estado de usuario no autenticado: presenta los botones **Login** y **Crear Cuenta** en la parte superior, permitiendo al visitante iniciar el proceso de acceso o registro. Es un componente pequeño y persistente que guía al usuario hacia la autenticación.
+
+---
+
+#### 3. Modal: Iniciar sesión
+
+<div align="center">
+<img src="https://i.postimg.cc/j5JMjM2s/Captura-de-pantalla-2025-11-04-094233.png" alt="Modal Iniciar Sesión" width="550"/>
+</div>
+
+Ventana modal de inicio de sesión con campos para **Email** y **Contraseña**, y un botón **Login**. El diseño es claro y minimalista para facilitar la entrada de credenciales sin distraer al usuario del fondo de la página.
+
+---
+
+#### 4. Modal: Crear cuenta
+
+<div align="center">
+<img src="https://i.postimg.cc/YqXYJ1qH/Captura-de-pantalla-2025-11-04-094251.png" alt="Modal Crear Cuenta" width="550"/>
+</div>
+
+Formulario de creación de cuenta que solicita **Usuario**, **Email** y **Contraseña** (mínimo 6 caracteres). Al completar este formulario y registrarse correctamente, el usuario podrá iniciar sesión con esas credenciales.
+
+---
+
+#### 5. Menú lateral (navegación)
+
+<div align="center">
+<img src="https://i.postimg.cc/CMRgG0Bj/Captura-de-pantalla-2025-11-04-094111.png" alt="Menú lateral - Navegación" width="500"/>
+</div>
+
+Menú lateral izquierdo con las secciones principales: **Inicio**, **Sobre Nosotros**, **Contacto** y **Página Oficial**. Permite navegación persistente entre secciones sin recargar la página.
+
+---
+
+#### 6. Sección: Sobre Nosotros
+
+<div align="center">
+<img src="https://i.postimg.cc/pT73G9hy/Captura-de-pantalla-2025-11-04-094136.png" alt="Sección Sobre Nosotros" width="600"/>
+</div>
+
+Página que explica la propuesta de Luxury_SL: la **fusión entre diseño 3D y tecnología Arduino** para crear vehículos interactivos. Incluye texto descriptivo y un botón **Volver al Inicio** para facilitar la navegación.
+
+---
+
+#### 7. Sección: Contacto
+
+<div align="center">
+<img src="https://i.postimg.cc/cCwkFFG2/Captura-de-pantalla-2025-11-04-094208.png" alt="Sección Contacto" width="600"/>
+</div>
+
+Panel de contacto dividido en **Contacto General** (email y teléfono) y **Soporte Técnico** (email y horario de atención, lunes–viernes 9:00–18:00). Mantiene la estética oscura y el botón **Volver al Inicio**.
+
+---
+
+#### 8. Sección: Página Oficial (contenidos)
+
+<div align="center">
+<img src="https://i.postimg.cc/4xD7gPDP/Captura-de-pantalla-2025-11-04-094404.png" alt="Página Oficial - Modelos/Experiencias/Tutoriales" width="600"/>
+</div>
+
+La **Página Oficial** agrupa los bloques de contenido principales: **Modelos 3D de Lujo**, **Experiencia Interactiva** y **Tutoriales Arduino**. Cada bloque ofrece acceso a recursos (modelos, simulaciones y guías) manteniendo coherencia visual.
+
+---
+
+### Observaciones de diseño
+
+- Estética: predominio de negros y grises, tipografía con buena legibilidad y acentos claros para llamadas a la acción.  
+- Interacción: navegación sin recarga, modales para autenticación, botones de retorno consistentes.  
+- Usabilidad: formularios compactos y directos; menús persistentes y accesibles desde cualquier vista.
+
+---
 </details>
 </details>
 
