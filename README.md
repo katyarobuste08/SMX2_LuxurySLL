@@ -5,54 +5,79 @@
 
 ---
 
-## ÍNDICE
+<details>
+<summary><strong>ÍNDICE</strong></summary>
 
 - Introducción  
-- Estructura del Sitio Web  
-- Tecnologías a Utilizar  
-- Público Objetivo  
-- Objetivo General  
-- Equipo y Herramientas  
-- Futuras Mejoras  
 - Web  
+  - Estructura del Sitio Web  
+  - Diseño Web  
+  - Base de Datos  
 - Arduino y Modelo 3D  
+  - Programación  
+  - Modelo 3D del coche  
 - Red  
+  - Diagrama de la Red  
+  - Mapa Físico  
+  - Mapa Lógico  
 - Servicios  
+  - DNS  
+  - DHCP  
+  - Apache  
+  - Firewall  
+  - Copias de Seguridad  
 - Bibliografía  
+
+</details>
 
 ---
 
 <details>
 <summary><strong>INTRODUCCIÓN</strong></summary>
 
-Luxury_SL es un proyecto que combina el diseño 3D de un coche con un sistema basado en Arduino.  
-Su objetivo es permitir a los usuarios construir, visualizar e interactuar con su propio vehículo en un entorno tanto digital como físico.
+### Briefing
 
-El propósito principal es crear una plataforma web donde el usuario pueda aprender, montar y controlar un coche 3D con Arduino ESP32, incluyendo funciones de movimiento y encendido de luces mediante Bluetooth.
+Luxury_SL es un proyecto que combina el diseño 3D de un coche con un sistema físico controlado mediante Arduino ESP32.  
+El objetivo es permitir a los usuarios construir, visualizar e interactuar con su propio vehículo tanto en el entorno digital como en el físico.
 
-</details>
+El proyecto busca integrar tres áreas principales:  
+- **Diseño 3D (Blender)**  
+- **Programación web (HTML, CSS, JavaScript)**  
+- **Electrónica (Arduino ESP32)**  
 
----
-
-<details>
-<summary><strong>ESTRUCTURA DEL SITIO WEB</strong></summary>
-
-El sitio web está compuesto por diferentes secciones que organizan el contenido y las funciones del proyecto:
-
-- Inicio: Presentación del proyecto.  
-- Quiénes Somos: Información sobre el equipo desarrollador.  
-- A Quién Va Dirigido: Explica el público objetivo.  
-- Tutoriales: Guías detalladas para el montaje y programación del coche.  
-- Modelo 3D: Visualizador interactivo del coche creado en Blender.  
-- Contacto / Feedback: Espacio para dudas o sugerencias.  
-- Login / Registro: Acceso personalizado para los usuarios.
-
-</details>
+La finalidad es educativa, promoviendo el aprendizaje de robótica, modelado 3D y programación de forma práctica y visual.
 
 ---
 
-<details>
-<summary><strong>TECNOLOGÍAS A UTILIZAR</strong></summary>
+### Público Objetivo
+
+Luxury_SL está dirigido a:  
+- Estudiantes de ingeniería, robótica o diseño.  
+- Aficionados a la electrónica, programación o impresión 3D.  
+- Personas interesadas en proyectos “hazlo tú mismo” (DIY).  
+
+El proyecto busca atraer tanto a principiantes como a personas con conocimientos intermedios que deseen aprender mediante la práctica.
+
+---
+
+### Objetivo General
+
+El objetivo de Luxury_SL es integrar la creatividad del diseño 3D, la ingeniería electrónica y la interactividad web para crear una experiencia educativa.  
+Busca acercar el aprendizaje de la robótica y la programación de forma visual, práctica y accesible.
+
+---
+
+### Mockup
+
+El mockup del sitio web refleja un estilo moderno y minimalista con colores oscuros y transparencias.  
+Incluye un menú lateral, botones suaves y animaciones de desplazamiento.  
+El objetivo es mantener una interfaz limpia, profesional y fácil de navegar.
+
+*(Insertar imagen del mockup aquí)*
+
+---
+
+### Tecnologías a Utilizar
 
 | Área | Herramienta / Tecnología | Descripción |
 |------|---------------------------|--------------|
@@ -67,55 +92,26 @@ El sitio web está compuesto por diferentes secciones que organizan el contenido
 | Diseño | Canva, Miro | Diseño de interfaz y diagramas |
 | Red | Visio | Creación del diagrama de red |
 
-</details>
+---
+
+### Equipo y Herramientas
+
+- **Trello:** Gestión de tareas y roles del equipo.  
+- **GitHub:** Control de versiones y almacenamiento del código.  
+- **Canva / Miro:** Diseño de interfaz y estructura del sitio.  
+- **Visio:** Elaboración del diagrama de red y arquitectura.  
+- **Blender 3D:** Modelado y renderizado del coche.  
+- **Arduino ESP32:** Control físico del coche y conexión Bluetooth.
 
 ---
 
-<details>
-<summary><strong>PÚBLICO OBJETIVO</strong></summary>
-
-Luxury_SL está dirigido a:  
-- Estudiantes de ingeniería, robótica o diseño.  
-- Aficionados a la electrónica, programación o impresión 3D.  
-- Personas interesadas en proyectos “hazlo tú mismo” (DIY).  
-
-El proyecto busca atraer tanto a principiantes como a personas con conocimientos intermedios que deseen aprender mediante la práctica.
-
-</details>
-
----
-
-<details>
-<summary><strong>OBJETIVO GENERAL</strong></summary>
-
-El objetivo de Luxury_SL es integrar la creatividad del diseño 3D, la ingeniería electrónica y la interactividad web para crear una experiencia educativa.  
-Busca acercar el aprendizaje de la robótica y la programación de forma visual, práctica y accesible.
-
-</details>
-
----
-
-<details>
-<summary><strong>EQUIPO Y HERRAMIENTAS</strong></summary>
-
-- Trello: Gestión de tareas y roles del equipo.  
-- GitHub: Control de versiones y almacenamiento del código.  
-- Canva / Miro: Diseño de interfaz y estructura del sitio.  
-- Visio: Elaboración del diagrama de red y arquitectura.  
-- Blender 3D: Modelado y renderizado del coche.  
-- Arduino ESP32: Control físico del coche y conexión Bluetooth.
-
-</details>
-
----
-
-<details>
-<summary><strong>FUTURAS MEJORAS</strong></summary>
+### Futuras Mejoras
 
 - Incorporación de sensores adicionales como ultrasonido o infrarrojo.  
 - Control remoto del coche desde la web mediante conexión Wi-Fi.  
 - Creación de un foro interactivo para usuarios.  
-- Implementación de logros o niveles para gamificar el aprendizaje.
+- Implementación de logros o niveles para gamificar el aprendizaje.  
+- Exportación del modelo 3D con texturas y colores personalizados.  
 
 </details>
 
@@ -124,11 +120,27 @@ Busca acercar el aprendizaje de la robótica y la programación de forma visual,
 <details>
 <summary><strong>WEB</strong></summary>
 
+### Estructura del Sitio Web
+
+El sitio web está compuesto por diferentes secciones que organizan el contenido y las funciones del proyecto:
+
+- **Inicio:** Presentación del proyecto.  
+- **Quiénes Somos:** Información sobre el equipo desarrollador.  
+- **A Quién Va Dirigido:** Explica el público objetivo.  
+- **Tutoriales:** Guías detalladas para el montaje y programación del coche.  
+- **Modelo 3D:** Visualizador interactivo del coche creado en Blender.  
+- **Contacto / Feedback:** Espacio para dudas o sugerencias.  
+- **Login / Registro:** Acceso personalizado para los usuarios.
+
+---
+
 ### Diseño Web
 
 El diseño utiliza un estilo oscuro y minimalista con efecto de transparencia.  
 Los paneles presentan desenfoque de fondo y sombras suaves para lograr una estética moderna.  
 La navegación es fluida y dinámica, con animaciones suaves y notificaciones tipo "toast".
+
+---
 
 ### Base de Datos
 
@@ -158,10 +170,12 @@ El sistema emplea almacenamiento local (localStorage) para gestionar usuarios y 
 <details>
 <summary><strong>ARDUINO Y MODELO 3D</strong></summary>
 
-### Programación Arduino
+### Programación
 
 El coche utiliza un Arduino ESP32 con Bluetooth integrado, lo que permite el control inalámbrico desde la web.  
 Gestiona los movimientos del vehículo (adelante, atrás, izquierda, derecha) y el encendido de luces.
+
+---
 
 ### Modelo 3D del Coche
 
@@ -214,10 +228,10 @@ Implementación de copias periódicas de datos y configuraciones del proyecto.
 <details>
 <summary><strong>BIBLIOGRAFÍA</strong></summary>
 
-- Documentación oficial de Blender.  
-- Manual de Three.js.  
-- Referencia técnica del Arduino ESP32.  
-- Documentación de HTML, CSS y JavaScript en MDN.  
+- Documentación oficial de Blender  
+- Manual de Three.js  
+- Referencia técnica del Arduino ESP32  
+- Documentación de HTML, CSS y JavaScript en MDN  
 
 </details>
 
