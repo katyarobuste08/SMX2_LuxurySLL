@@ -45,13 +45,63 @@
 <details>
 <summary><strong>BRIEFING LUXURY_SL</strong></summary>
 
-**Luxury_SL** combina un diseño 3D de un coche con un sistema Arduino que permite al usuario **construir, visualizar e interactuar** con su propio vehículo.  
+## **Descripción General**
 
-Los usuarios pueden crear cuenta, consultar tutoriales, dejar comentarios al soporte y **controlar el coche vía Bluetooth** (movimientos: adelante, atrás, izquierda, derecha y luces).  
+**Luxury_SL** combina un **diseño 3D interactivo** de un coche con un **sistema físico basado en Arduino ESP32**, que permite al usuario **construir, visualizar, personalizar e interactuar** con su propio vehículo desde una **plataforma web**.
 
-El proyecto busca una experiencia integrada entre el entorno **digital (web + 3D)** y el **físico (coche real controlado por Arduino ESP32)**.
+A través de una **interfaz intuitiva**, el usuario puede **crear una cuenta**, acceder a **tutoriales paso a paso**, dejar **comentarios al soporte técnico** y **controlar el coche real mediante conexión Bluetooth**, con movimientos como **adelante**, **atrás**, **izquierda**, **derecha** y **control de luces**.  
 
-</details>
+El **modelo digital** refleja los cambios del **vehículo físico** y viceversa, creando una **experiencia completamente integrada** entre el entorno **virtual (web + 3D)** y el **tangible (coche real controlado por Arduino)**.
+
+---
+
+## **Justificación del Proyecto**
+
+**Luxury_SL** surge de la necesidad de **conectar el aprendizaje práctico con la teoría** a través de un enfoque **interactivo y multidisciplinario**.  
+En un contexto donde la **educación tecnológica y la robótica** son fundamentales, el proyecto ofrece una oportunidad única para **desarrollar habilidades** en **programación, diseño 3D y electrónica** de manera conjunta.
+
+Su **justificación** se basa en el valor educativo de **aprender haciendo**: al visualizar el impacto directo de cada acción digital en el objeto físico, el usuario comprende mejor los **principios de la ingeniería**, la **lógica de control** y la **estética del diseño**.  
+Además, promueve la **autonomía**, la **resolución de problemas** y la **curiosidad** por descubrir cómo interactúan el **software y el hardware** en tiempo real.
+
+---
+
+## **Objetivos**
+
+El **objetivo principal** de Luxury_SL es **desarrollar una plataforma** que combine el **modelado 3D y la robótica** de manera fluida, permitiendo al usuario **experimentar con un coche inteligente personalizable** tanto en el entorno **virtual** como en el **físico**.
+
+### **Objetivos Específicos**
+- Implementar un **sistema de control remoto mediante Bluetooth** que conecte el vehículo digital con su versión real.  
+- Ofrecer **recursos educativos**, **guías** y **tutoriales** que acompañen al usuario en el proceso de aprendizaje.  
+- Fomentar la **participación y colaboración** dentro de la comunidad.  
+- Promover el desarrollo de **competencias STEAM**, impulsando la **creatividad**, la **lógica** y el **pensamiento crítico**.  
+- Consolidarse como una **herramienta educativa adaptable** a distintos niveles de conocimiento.
+
+---
+
+## **Público Objetivo**
+
+Luxury_SL está dirigido a:
+- **Estudiantes y profesores** interesados en robótica, diseño 3D y programación.  
+- **Centros educativos** que buscan incorporar proyectos innovadores STEAM.  
+- **Aficionados a la electrónica y la creatividad digital**.  
+- Personas **curiosas y autodidactas** que deseen construir sus propios proyectos tecnológicos.  
+
+El proyecto resulta especialmente atractivo para quienes disfrutan de **transformar ideas digitales en objetos reales**, conectando el **diseño visual con la ingeniería electrónica** en una experiencia completa y motivadora.
+
+---
+
+## **Tecnologías Utilizadas**
+
+- **Blender 3D** — Modelado y visualización 3D interactiva.  
+- **HTML + CSS + JavaScript** — Interfaz web y conexión con el entorno virtual.  
+- **Arduino ESP32** — Control físico del vehículo mediante Bluetooth.  
+- **Plataforma Web** — Interacción y gestión de usuarios.  
+
+---
+
+## **Licencia**
+
+Este proyecto es de uso **educativo y experimental**, enfocado en la **innovación tecnológica** y el **aprendizaje práctico**.
 
 ---
 
