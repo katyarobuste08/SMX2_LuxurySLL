@@ -6,7 +6,7 @@
 
 **En desarrollo: Blender 3D + CSS + HTML + JavaScript**  
 
-**Equipo:** Katya Robuste • Pau Ferrer • Nazar Kishchuk
+**Equipo:** Katya Robuste •  Nazar Kishchuk
 
 </div>
 
