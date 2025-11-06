@@ -150,11 +150,32 @@ El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalid
 <details>
 <summary><strong>ARDUINO Y MODELO 3D</strong></summary>
 
-*(Sección sin cambios, igual que tu versión actual)*
+### Programación Arduino
+
+El control del coche se realiza con un **Arduino ESP32**, que incorpora **Bluetooth integrado** y permite comunicación inalámbrica directa con la web.  
+El sistema gestiona movimientos del vehículo (adelante, atrás, izquierda, derecha) y control de luces desde la interfaz digital.  
+
+ **Tutorial recomendado:** [YouTube - Facil](https://www.youtube.com/watch?v=03mQrT4lDgM)
+
+<div align="center">
+<img src="https://i.imgur.com/rijhOry.png" width="350"/>
+</div>
+
+---
+
+### Modelo 3D del coche
+
+El modelo 3D fue creado en **Blender** y exportado a **FBX** para su integración en **Three.js / WebGL**.  
+Cuenta con 175.000 triángulos y 94.300 vértices, optimizado para navegadores web.  
+
+Permite **rotación, zoom e interacción** directa, sincronizándose con Arduino para reflejar el movimiento del coche físico.
+
+ **Visualiza el modelo 3D:** [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
 
 </details>
 
 ---
+
 
 <details open>
 <summary><strong>RED</strong></summary>
