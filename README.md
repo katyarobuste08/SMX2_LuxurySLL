@@ -141,7 +141,65 @@ El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalid
 
 ### Pantallas principales del sitio
 
-*(Aquí permanecen todas las imágenes y descripciones de pantallas que ya tienes)*
+<div align="center">
+
+<h4>Pantalla de Inicio</h4>
+<img src="https://i.postimg.cc/sM0GWm4F/Captura-de-pantalla-2025-11-11-091721.png" width="1000"/>
+<p>
+La pantalla de inicio da la bienvenida al usuario con el logotipo de Luxury_SL y un diseño minimalista en tonos oscuros con acentos dorados.  
+Esta primera vista busca transmitir elegancia y modernidad, presentando el concepto del proyecto y sus principales accesos.  
+Su objetivo es generar una experiencia inicial inmersiva que invite al usuario a explorar la plataforma.
+</p>
+
+<h4>Menú Principal</h4>
+<img src="https://i.postimg.cc/cKggB3Fy/Captura-de-pantalla-2025-11-11-091731.png" width="1000"/>
+<p>
+Desde el menú principal se accede a todas las secciones clave del sistema: el modelo 3D interactivo, el panel de control, los tutoriales y el soporte técnico.  
+El diseño prioriza la navegación simple y directa, con botones visibles y coherentes con la identidad visual del proyecto.  
+Cada icono está pensado para guiar intuitivamente al usuario, garantizando una experiencia fluida y profesional.
+</p>
+
+<h4>Panel de Control del Coche</h4>
+<img src="https://i.postimg.cc/mczzy98K/Captura-de-pantalla-2025-11-11-091742.png" width="1000"/>
+<p>
+El panel de control permite manejar el vehículo desde el navegador, enviando comandos al Arduino ESP32 mediante conexión Bluetooth.  
+Incluye botones para avanzar, retroceder, girar y encender las luces, además de un sistema de retroalimentación visual en tiempo real.  
+Esta pantalla demuestra la unión perfecta entre software y hardware, permitiendo al usuario experimentar el control directo sobre un coche físico.
+</p>
+
+<h4>Área del Usuario</h4>
+<img src="https://i.postimg.cc/v1ggtn3J/Captura-de-pantalla-2025-11-11-091813.png" width="1000"/>
+<p>
+En el área de usuario se gestionan los perfiles personales, el progreso y los proyectos creados.  
+Ofrece una experiencia personalizada, guardando la información de aprendizaje y permitiendo continuar el trabajo desde cualquier dispositivo.  
+El diseño está orientado a la comodidad y simplicidad, priorizando la claridad de la información.
+</p>
+
+<h4>Mapa de Navegación Web</h4>
+<img src="https://i.postimg.cc/bGDD9nmX/Captura-de-pantalla-2025-11-11-091821.png" width="1000"/>
+<p>
+El mapa de navegación representa la estructura jerárquica del sitio web, mostrando cómo se relacionan las distintas secciones (inicio, usuario, control, tutoriales, comunidad, soporte).  
+Facilita la comprensión del flujo de navegación y ayuda a mantener la coherencia visual y funcional del sitio.  
+Es una herramienta esencial para el desarrollo front-end y la organización del contenido.
+</p>
+
+<h4>Diseño Visual del Proyecto</h4>
+<img src="https://i.postimg.cc/Z9BBxNwz/Captura-de-pantalla-2025-11-11-091826.png" width="1000"/>
+<p>
+En esta pantalla se aprecia la línea estética definitiva de Luxury_SL: tonos oscuros, tipografía moderna y una interfaz limpia.  
+Cada elemento visual está pensado para reflejar el equilibrio entre lujo y tecnología.  
+El objetivo es mantener la atención del usuario en la interacción con el modelo 3D y los controles del vehículo sin distracciones visuales.
+</p>
+
+<h4>Vista General Final</h4>
+<img src="https://i.postimg.cc/f3ttfd8h/Captura-de-pantalla-2025-11-11-091830.png" width="1000"/>
+<p>
+Esta vista reúne todos los elementos de la plataforma en su versión funcional final.  
+Se observa la integración completa entre el diseño web, el sistema de control y la visualización 3D.  
+Luxury_SL logra unir estética, tecnología y educación en una experiencia digital coherente, elegante y plenamente interactiva.
+</p>
+
+</div>
 
 </details>
 
@@ -175,7 +233,6 @@ Permite **rotación, zoom e interacción** directa, sincronizándose con Arduino
 </details>
 
 ---
-
 
 <details open>
 <summary><strong>RED</strong></summary>
