@@ -35,6 +35,7 @@
   - Apache  
   - Firewall  
   - Copias de Seguridad  
+  - Diagrama de Usuarios y Roles
 - Conclusiones  
 - Bibliografía  
 
@@ -284,6 +285,46 @@ De esta manera, **Luxury_SL** logra una experiencia educativa inmersiva y perfec
 ### Apache  
 ### Firewall  
 ### Copias de Seguridad  
+
+---
+
+### **Diagrama de Usuarios y Roles en Luxury_SL**
+
+<div align="center">
+<img src="https://i.imgur.com/r03QN0i.png" width="600"/>
+</div>
+
+En este diagrama podemos ver **cómo interactúan todos los usuarios de Luxury_SL con los servicios y recursos de la plataforma**, y cómo todo está conectado para que la experiencia sea segura, ordenada y eficiente.  
+
+#### **1. Categorías de Usuarios**
+Primero, tenemos los **diferentes tipos de usuarios**:  
+
+- **Administrador:** Es la persona que controla todo. Gestiona los servidores, configura los servicios (DNS, DHCP, Apache y Firewall) y se asegura de que las copias de seguridad estén actualizadas. Sin él, la plataforma no podría funcionar correctamente.  
+- **Docente / Instructor:** Su función es guiar a los estudiantes. Puede acceder a los tutoriales, ver los proyectos educativos y manipular los modelos 3D para enseñar cómo funciona todo.  
+- **Estudiante / Usuario Registrado:** Es quien usa la plataforma para aprender y crear. Interactúa con los modelos 3D, personaliza su coche y sigue los tutoriales paso a paso.  
+- **Visitante / Invitado:** Solo puede mirar ejemplos y explorar la información pública. No tiene permisos para modificar nada ni guardar proyectos.
+
+#### **2. Cómo se conectan los usuarios con los servicios**
+Cada usuario está **conectado a los servicios según sus permisos**:  
+
+- **DNS y DHCP:** Les permiten conectarse correctamente, asignando direcciones IP y asegurando que cada dispositivo tenga acceso estable a la plataforma.  
+- **Servidor Apache:** Entrega las páginas web, los modelos 3D y las APIs. Cada usuario ve lo que le corresponde según su rol.  
+- **Firewall:** Mantiene la seguridad, bloqueando accesos que no deberían estar allí.  
+- **Copias de Seguridad:** Guardan toda la información importante de usuarios y proyectos, para poder recuperarla en caso de fallos.
+
+#### **3. Cómo fluye la información**
+Cuando un usuario hace algo en la plataforma, por ejemplo, mover su coche 3D o cambiar un proyecto:  
+
+1. Primero envía la acción desde la interfaz web.  
+2. El servidor recibe la solicitud y verifica que el usuario tenga los permisos correctos.  
+3. Luego, procesa la acción y la pasa a los servicios que corresponden (como la base de datos, el modelo 3D o incluso el hardware Arduino ESP32 si es un movimiento físico).  
+4. Finalmente, el resultado se refleja en la interfaz del usuario y todo queda sincronizado con el resto de componentes.
+
+#### **4. Por qué todo está unido**
+Lo importante de este diagrama es que **muestra que nada funciona aislado**. Cada usuario depende de los servicios y cada servicio depende del servidor y de la seguridad para que todo sea estable.  
+Si un servicio falla, afectaría a los usuarios; si un usuario no tiene los permisos correctos, no podría acceder a ciertas funciones. Por eso todo está conectado: **para que la experiencia sea segura, organizada y fluida**, y para que el sistema educativo de Luxury_SL cumpla su propósito de enseñar mientras se interactúa con modelos 3D y hardware real.
+
+En resumen, este diagrama nos ayuda a **visualizar la plataforma como un ecosistema completo**, donde cada usuario, cada servicio y cada función están interrelacionados, trabajando juntos para que todo funcione de manera armoniosa.
 
 </details>
 
