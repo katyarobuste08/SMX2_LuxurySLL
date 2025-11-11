@@ -210,7 +210,7 @@ Permite **rotación, zoom e interacción** directa.
 
 ---
 
-<details open>
+<details>
 <summary><strong>RED</strong></summary>
 
 ### **Arquitectura de la Red – LUXURY_SL**
