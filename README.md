@@ -49,7 +49,7 @@
 
 **Luxury_SL** combina un **diseño 3D interactivo** de un coche con un **sistema físico basado en Arduino ESP32**, que permite al usuario **construir, visualizar, personalizar e interactuar** con su propio vehículo desde una **plataforma web**.
 
-A través de una **interfaz intuitiva**, el usuario puede **crear una cuenta**, acceder a **tutoriales paso a paso**, dejar **comentarios al soporte técnico** y **controlar el coche real mediante conexión Bluetooth**, con movimientos como **adelante**, **atrás**, **izquierda**, **derecha** y **control de luces**.  
+A través de una **interfaz intuitiva**, el usuario puede **crear una cuenta**, acceder a **tutoriales paso a paso**, dejar **comentarios al soporte técnico** y explorar el proyecto de manera interactiva.  
 
 El **modelo digital** refleja los cambios del **vehículo físico** y viceversa, creando una **experiencia completamente integrada** entre el entorno **virtual (web + 3D)** y el **tangible (coche real controlado por Arduino)**.
 
@@ -118,7 +118,7 @@ Este proyecto es de uso **educativo y experimental**, enfocado en la **innovaci�
 
 </div>
 
-El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalidad**. Desde la primera impresión, se percibe un enfoque visual cuidado y minimalista, pensado para resaltar la **tecnología y el lujo** que caracterizan el proyecto. La interfaz está diseñada para que el usuario se sumerja en la experiencia sin distracciones innecesarias, concentrándose en los **modelos 3D**, la interacción con **Arduino** y los contenidos educativos.
+El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalidad**. Desde la primera impresión, se percibe un enfoque visual cuidado y minimalista, pensado para resaltar la **tecnología y el lujo** que caracterizan el proyecto. La interfaz está diseñada para que el usuario se sumerja en la experiencia sin distracciones innecesarias, concentrándose en los **modelos 3D** y los contenidos educativos.
 
 ---
 
@@ -135,71 +135,47 @@ El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalid
 - **Minimalismo funcional:** Se prioriza la simplicidad visual y la experiencia ágil.  
 - **Interactividad intuitiva:** La navegación fluida permite al usuario explorar sin recargas de página.  
 - **Experiencia educativa integrada:** Los elementos visuales guían hacia la comprensión de conceptos STEAM.  
-- **Fusión entre virtual y físico:** Cada decisión de diseño refleja el control simultáneo del coche real y su modelo digital.  
+- **Fusión entre virtual y físico:** Cada decisión de diseño refleja la visión del proyecto y su estética tecnológica.  
 
 ---
 
-### Pantallas principales del sitio
+### **Pantallas del Diseño Web**
 
-<div align="center">
-
-<h4>Pantalla de Inicio</h4>
-<img src="https://i.postimg.cc/sM0GWm4F/Captura-de-pantalla-2025-11-11-091721.png" width="1000"/>
+#### **Dashboard de Inicio**
+<img src="https://i.imgur.com/Xhj3vUs.png" width="1000"/>
 <p>
-La pantalla de inicio da la bienvenida al usuario con el logotipo de Luxury_SL y un diseño minimalista en tonos oscuros con acentos dorados.  
-Esta primera vista busca transmitir elegancia y modernidad, presentando el concepto del proyecto y sus principales accesos.  
-Su objetivo es generar una experiencia inicial inmersiva que invite al usuario a explorar la plataforma.
+Esta pantalla de inicio es la primera impresión que recibe el usuario al entrar a Luxury_SL. Muestra el logotipo, el menú principal y accesos directos a las secciones más importantes, como el modelo 3D, tutoriales y soporte. Su diseño elegante y minimalista transmite lujo y tecnología, invitando al usuario a explorar la plataforma. Se enfoca en la claridad visual y la navegación rápida.
 </p>
 
-<h4>Menú Principal</h4>
-<img src="https://i.postimg.cc/cKggB3Fy/Captura-de-pantalla-2025-11-11-091731.png" width="1000"/>
+#### **Iniciar Sesión / Crear Cuenta**
+<img src="https://i.imgur.com/xFugChF.png" width="1000"/>
 <p>
-Desde el menú principal se accede a todas las secciones clave del sistema: el modelo 3D interactivo, el panel de control, los tutoriales y el soporte técnico.  
-El diseño prioriza la navegación simple y directa, con botones visibles y coherentes con la identidad visual del proyecto.  
-Cada icono está pensado para guiar intuitivamente al usuario, garantizando una experiencia fluida y profesional.
+Pantalla donde los usuarios pueden iniciar sesión si ya poseen una cuenta o crear un nuevo perfil para acceder al contenido exclusivo de Luxury_SL. Esta sección es fundamental para personalizar la experiencia, guardar el progreso del usuario y permitir el acceso a funcionalidades avanzadas, como la interacción con el modelo 3D y los proyectos educativos.
 </p>
 
-<h4>Panel de Control del Coche</h4>
-<img src="https://i.postimg.cc/mczzy98K/Captura-de-pantalla-2025-11-11-091742.png" width="1000"/>
+#### **Objetivos**
+<img src="https://i.imgur.com/snpG4OU.png" width="1000"/>
 <p>
-El panel de control permite manejar el vehículo desde el navegador, enviando comandos al Arduino ESP32 mediante conexión Bluetooth.  
-Incluye botones para avanzar, retroceder, girar y encender las luces, además de un sistema de retroalimentación visual en tiempo real.  
-Esta pantalla demuestra la unión perfecta entre software y hardware, permitiendo al usuario experimentar el control directo sobre un coche físico.
+Esta pantalla muestra la sección principal de la plataforma, con su diseño visual y la organización de los elementos. Permite al usuario visualizar cómo se distribuyen los menús, botones y contenidos dentro del proyecto Luxury_SL. Es una vista conceptual de la interfaz, sin implicar funcionalidades activas.
 </p>
 
-<h4>Área del Usuario</h4>
-<img src="https://i.postimg.cc/v1ggtn3J/Captura-de-pantalla-2025-11-11-091813.png" width="1000"/>
+#### **Arquitectura Del Proyecto**
+<img src="https://i.imgur.com/iM1fOzK.png" width="1000"/>
 <p>
-En el área de usuario se gestionan los perfiles personales, el progreso y los proyectos creados.  
-Ofrece una experiencia personalizada, guardando la información de aprendizaje y permitiendo continuar el trabajo desde cualquier dispositivo.  
-El diseño está orientado a la comodidad y simplicidad, priorizando la claridad de la información.
+La imagen muestra la arquitectura de la plataforma web Luxury_SL, donde el usuario accede desde un navegador para interactuar con el área de usuario, tutoriales y contenido exclusivo. El servidor web gestiona las solicitudes, entrega las páginas y recursos multimedia, y se conecta con la base de datos que almacena perfiles, registros y preferencias. La plataforma cuenta con servicios internos como DNS, DHCP, Firewall y copias de seguridad, garantizando seguridad, conectividad y estabilidad. Toda la información fluye entre usuario, servidor y base de datos de forma segura y organizada
 </p>
 
-<h4>Mapa de Navegación Web</h4>
-<img src="https://i.postimg.cc/bGDD9nmX/Captura-de-pantalla-2025-11-11-091821.png" width="1000"/>
+#### **Flujo De Datos**
+<img src="https://i.imgur.com/6NnGtWI.png" width="1000"/>
 <p>
-El mapa de navegación representa la estructura jerárquica del sitio web, mostrando cómo se relacionan las distintas secciones (inicio, usuario, control, tutoriales, comunidad, soporte).  
-Facilita la comprensión del flujo de navegación y ayuda a mantener la coherencia visual y funcional del sitio.  
-Es una herramienta esencial para el desarrollo front-end y la organización del contenido.
+el Mapa de Navegación Web de Luxury_SL, visualizando cómo están organizadas y conectadas las diferentes secciones de la plataforma —como Inicio, Usuario, Contenido Educativo, Proyectos y Soporte—, permitiendo al equipo de desarrollo entender de un vistazo la jerarquía y los posibles flujos de acceso dentro del sitio.
 </p>
 
-<h4>Diseño Visual del Proyecto</h4>
-<img src="https://i.postimg.cc/Z9BBxNwz/Captura-de-pantalla-2025-11-11-091826.png" width="1000"/>
+#### **Stack Tecnologico**
+<img src="https://i.imgur.com/4gWzAay.png" width="1000"/>
 <p>
-En esta pantalla se aprecia la línea estética definitiva de Luxury_SL: tonos oscuros, tipografía moderna y una interfaz limpia.  
-Cada elemento visual está pensado para reflejar el equilibrio entre lujo y tecnología.  
-El objetivo es mantener la atención del usuario en la interacción con el modelo 3D y los controles del vehículo sin distracciones visuales.
+La imagen muestra el stack tecnológico y los componentes de la plataforma web Luxury_SL, incluyendo todas las secciones y funcionalidades que contiene la web. Se pueden observar elementos como la interfaz de usuario, el área de usuario, los tutoriales y contenido educativo, la gestión de proyectos, la navegación del sitio y los servicios internos que soportan la plataforma. Representa de manera visual todo lo que la web ofrece al usuario final, mostrando cómo se integran los distintos módulos y recursos en una experiencia completa y organizada.
 </p>
-
-<h4>Vista General Final</h4>
-<img src="https://i.postimg.cc/f3ttfd8h/Captura-de-pantalla-2025-11-11-091830.png" width="1000"/>
-<p>
-Esta vista reúne todos los elementos de la plataforma en su versión funcional final.  
-Se observa la integración completa entre el diseño web, el sistema de control y la visualización 3D.  
-Luxury_SL logra unir estética, tecnología y educación en una experiencia digital coherente, elegante y plenamente interactiva.
-</p>
-
-</div>
 
 </details>
 
@@ -226,7 +202,7 @@ El sistema gestiona movimientos del vehículo (adelante, atrás, izquierda, dere
 El modelo 3D fue creado en **Blender** y exportado a **FBX** para su integración en **Three.js / WebGL**.  
 Cuenta con 175.000 triángulos y 94.300 vértices, optimizado para navegadores web.  
 
-Permite **rotación, zoom e interacción** directa, sincronizándose con Arduino para reflejar el movimiento del coche físico.
+Permite **rotación, zoom e interacción** directa.
 
  **Visualiza el modelo 3D:** [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
 
@@ -256,7 +232,7 @@ Cada elemento cumple una función específica dentro del flujo de información, 
 
 #### **Cliente / Usuario**
 El **usuario final** accede desde un **navegador web** al sitio oficial de **Luxury_SL**.  
-Desde allí puede interactuar con el modelo 3D, crear o iniciar sesión, y enviar comandos al coche físico.  
+Desde allí puede interactuar con el modelo 3D, crear o iniciar sesión.  
 La comunicación se realiza mediante **HTTPS**, garantizando la seguridad y la integridad de los datos.
 
 ---
@@ -264,7 +240,6 @@ La comunicación se realiza mediante **HTTPS**, garantizando la seguridad y la i
 #### **Servidor Web (Apache)**
 El **servidor web** actúa como núcleo del sistema.  
 Aloja la **plataforma web**, las **APIs** y los **recursos multimedia** (archivos HTML, CSS, JS, y modelos 3D).  
-Gestiona peticiones del cliente, procesa autenticación y transmite información entre el entorno digital y el hardware.
 
 ---
 
@@ -272,7 +247,6 @@ Gestiona peticiones del cliente, procesa autenticación y transmite información
 Almacena información estructurada, incluyendo:
 - Datos de usuarios y autenticación.  
 - Registros de sesiones y preferencias.  
-- Logs de conexión y actividad con Arduino.  
 
 Permite una recuperación eficiente de datos y mantiene la persistencia del sistema educativo.
 
@@ -280,14 +254,12 @@ Permite una recuperación eficiente de datos y mantiene la persistencia del sist
 
 #### **Arduino ESP32**
 El componente **físico principal** del sistema.  
-Controla el coche real y recibe órdenes enviadas desde la web mediante **Bluetooth**.  
-A su vez, envía información al servidor sobre el estado del coche (movimientos, luces, energía, etc.), manteniendo sincronización constante con el modelo 3D digital.
+Controla el coche real y envía información al servidor sobre el estado del coche (movimientos, luces, energía, etc.), manteniendo sincronización constante con el modelo 3D digital.
 
 ---
 
 #### **Conexión Bluetooth y Comunicación Serial**
 El **módulo Bluetooth** del ESP32 establece una comunicación bidireccional.  
-Permite que las acciones del usuario en la interfaz web se traduzcan en movimientos físicos y que la respuesta del hardware se refleje en el modelo 3D.
 
 ---
 
