@@ -35,7 +35,7 @@
   - Apache  
   - Firewall  
   - Copias de Seguridad  
-  - Diagrama de Usuarios y Roles
+  - Diagrama de Usuarios y Roles  
 - Conclusiones  
 - Bibliografía  
 
@@ -114,9 +114,7 @@ Este proyecto es de uso **educativo y experimental**, enfocado en la **innovaci�
 ### Mockup Conceptual de la Web Luxury_SL
 
 <div align="center">
-
 <img src="https://i.imgur.com/BqUJceo.jpeg" width="350"/>
-
 </div>
 
 El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalidad**. Desde la primera impresión, se percibe un enfoque visual cuidado y minimalista, pensado para resaltar la **tecnología y el lujo** que caracterizan el proyecto. La interfaz está diseñada para que el usuario se sumerja en la experiencia sin distracciones innecesarias, concentrándose en los **modelos 3D** y los contenidos educativos.
@@ -126,9 +124,7 @@ El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalid
 ### Justificación del estilo y los colores
 
 <div align="center">
-
 <img src="https://i.imgur.com/zcfUlYo.png" width="350"/>
-
 </div>
 
 - **Elegancia y sofisticación:** La paleta oscura, basada en negros y grises profundos, transmite sensación de exclusividad, lujo y profesionalidad.  
@@ -145,37 +141,37 @@ El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalid
 #### **Dashboard de Inicio**
 <img src="https://i.imgur.com/Xhj3vUs.png" width="1000"/>
 <p>
-Esta pantalla de inicio es la primera impresión que recibe el usuario al entrar a Luxury_SL. Muestra el logotipo, el menú principal y accesos directos a las secciones más importantes, como el modelo 3D, tutoriales y soporte. Su diseño elegante y minimalista transmite lujo y tecnología, invitando al usuario a explorar la plataforma. Se enfoca en la claridad visual y la navegación rápida.
+Pantalla de inicio, con logotipo, menú principal y accesos directos a secciones clave como modelo 3D, tutoriales y soporte. Diseñada para claridad visual y navegación rápida.
 </p>
 
 #### **Iniciar Sesión / Crear Cuenta**
 <img src="https://i.imgur.com/xFugChF.png" width="1000"/>
 <p>
-Pantalla donde los usuarios pueden iniciar sesión si ya poseen una cuenta o crear un nuevo perfil para acceder al contenido exclusivo de Luxury_SL. Esta sección es fundamental para personalizar la experiencia, guardar el progreso del usuario y permitir el acceso a funcionalidades avanzadas, como la interacción con el modelo 3D y los proyectos educativos.
+Pantalla donde los usuarios pueden iniciar sesión o crear un perfil. Permite personalizar la experiencia, guardar progreso y acceder a funcionalidades avanzadas, incluyendo interacción con el modelo 3D y proyectos educativos.
 </p>
 
 #### **Objetivos**
 <img src="https://i.imgur.com/snpG4OU.png" width="1000"/>
 <p>
-Esta pantalla muestra la sección principal de la plataforma, con su diseño visual y la organización de los elementos. Permite al usuario visualizar cómo se distribuyen los menús, botones y contenidos dentro del proyecto Luxury_SL. Es una vista conceptual de la interfaz, sin implicar funcionalidades activas.
+Sección de objetivos de la plataforma, mostrando organización de menús, botones y contenidos. Vista conceptual de la interfaz.
 </p>
 
 #### **Arquitectura Del Proyecto**
 <img src="https://i.imgur.com/iM1fOzK.png" width="1000"/>
 <p>
-La imagen muestra la arquitectura de la plataforma web Luxury_SL, donde el usuario accede desde un navegador para interactuar con el área de usuario, tutoriales y contenido exclusivo. El servidor web gestiona las solicitudes, entrega las páginas y recursos multimedia, y se conecta con la base de datos que almacena perfiles, registros y preferencias. La plataforma cuenta con servicios internos como DNS, DHCP, Firewall y copias de seguridad, garantizando seguridad, conectividad y estabilidad. Toda la información fluye entre usuario, servidor y base de datos de forma segura y organizada
+Arquitectura de la plataforma web Luxury_SL, mostrando interacción del usuario con la web, servidor, base de datos y servicios internos. Flujo de información seguro y organizado.
 </p>
 
 #### **Flujo De Datos**
 <img src="https://i.imgur.com/6NnGtWI.png" width="1000"/>
 <p>
-el Mapa de Navegación Web de Luxury_SL, visualizando cómo están organizadas y conectadas las diferentes secciones de la plataforma —como Inicio, Usuario, Contenido Educativo, Proyectos y Soporte—, permitiendo al equipo de desarrollo entender de un vistazo la jerarquía y los posibles flujos de acceso dentro del sitio.
+Mapa de navegación, mostrando cómo se conectan secciones como Inicio, Usuario, Contenido Educativo, Proyectos y Soporte. Permite entender jerarquía y flujo de acceso.
 </p>
 
 #### **Stack Tecnologico**
 <img src="https://i.imgur.com/4gWzAay.png" width="1000"/>
 <p>
-La imagen muestra el stack tecnológico y los componentes de la plataforma web Luxury_SL, incluyendo todas las secciones y funcionalidades que contiene la web. Se pueden observar elementos como la interfaz de usuario, el área de usuario, los tutoriales y contenido educativo, la gestión de proyectos, la navegación del sitio y los servicios internos que soportan la plataforma. Representa de manera visual todo lo que la web ofrece al usuario final, mostrando cómo se integran los distintos módulos y recursos en una experiencia completa y organizada.
+Stack tecnológico de Luxury_SL, mostrando todos los módulos y servicios internos, incluyendo la interfaz, área de usuario, tutoriales, gestión de proyectos y navegación.
 </p>
 
 </details>
@@ -190,7 +186,7 @@ La imagen muestra el stack tecnológico y los componentes de la plataforma web L
 El control del coche se realiza con un **Arduino ESP32**, que incorpora **Bluetooth integrado** y permite comunicación inalámbrica directa con la web.  
 El sistema gestiona movimientos del vehículo (adelante, atrás, izquierda, derecha) y control de luces desde la interfaz digital.  
 
- **Tutorial recomendado:** [YouTube - Facil](https://www.youtube.com/watch?v=03mQrT4lDgM)
+**Tutorial recomendado:** [YouTube - Facil](https://www.youtube.com/watch?v=03mQrT4lDgM)
 
 <div align="center">
 <img src="https://i.imgur.com/rijhOry.png" width="350"/>
@@ -205,7 +201,7 @@ Cuenta con 175.000 triángulos y 94.300 vértices, optimizado para navegadores w
 
 Permite **rotación, zoom e interacción** directa.
 
- **Visualiza el modelo 3D:** [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
+**Visualiza el modelo 3D:** [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
 
 </details>
 
@@ -217,32 +213,20 @@ Permite **rotación, zoom e interacción** directa.
 ### **Arquitectura de la Red – LUXURY_SL**
 
 <div align="center">
-
-![Arquitectura de la Red Luxury_SL](https://i.postimg.cc/fLvzC5Lm/image.png)
-
+<img src="https://i.imgur.com/WzbjxSQ.png" width="800"/>
 </div>
-
----
-
-### **Explicación de la Arquitectura**
 
 La arquitectura de red de **Luxury_SL** está diseñada para garantizar una **comunicación fluida**, **seguridad de los datos** y **sincronización en tiempo real** entre los componentes **físicos (Arduino ESP32)** y **virtuales (sitio web + modelo 3D)**.  
 Cada elemento cumple una función específica dentro del flujo de información, asegurando que tanto el control del coche físico como la visualización 3D respondan de forma coordinada.
 
----
-
 #### **Cliente / Usuario**
-El **usuario final** accede desde un **navegador web** al sitio oficial de **Luxury_SL**.  
+El usuario final accede desde un navegador web al sitio oficial de **Luxury_SL**.  
 Desde allí puede interactuar con el modelo 3D, crear o iniciar sesión.  
 La comunicación se realiza mediante **HTTPS**, garantizando la seguridad y la integridad de los datos.
 
----
-
 #### **Servidor Web (Apache)**
-El **servidor web** actúa como núcleo del sistema.  
+El servidor web actúa como núcleo del sistema.  
 Aloja la **plataforma web**, las **APIs** y los **recursos multimedia** (archivos HTML, CSS, JS, y modelos 3D).  
-
----
 
 #### **Base de Datos (MySQL / SQLite)**
 Almacena información estructurada, incluyendo:
@@ -251,27 +235,17 @@ Almacena información estructurada, incluyendo:
 
 Permite una recuperación eficiente de datos y mantiene la persistencia del sistema educativo.
 
----
-
 #### **Arduino ESP32**
-El componente **físico principal** del sistema.  
 Controla el coche real y envía información al servidor sobre el estado del coche (movimientos, luces, energía, etc.), manteniendo sincronización constante con el modelo 3D digital.
 
----
-
 #### **Conexión Bluetooth y Comunicación Serial**
-El **módulo Bluetooth** del ESP32 establece una comunicación bidireccional.  
-
----
+El módulo Bluetooth del ESP32 establece una comunicación bidireccional.  
 
 #### **Sincronización Web–Hardware**
-El sistema integra un bucle de comunicación:
 1. El usuario envía una acción desde la interfaz.  
 2. El servidor procesa la solicitud y la envía al ESP32.  
 3. El coche físico ejecuta la acción.  
 4. El resultado se refleja visualmente en el entorno 3D del navegador.  
-
-De esta manera, **Luxury_SL** logra una experiencia educativa inmersiva y perfectamente coordinada entre el entorno virtual y el físico.
 
 </details>
 
@@ -280,51 +254,78 @@ De esta manera, **Luxury_SL** logra una experiencia educativa inmersiva y perfec
 <details>
 <summary><strong>SERVICIOS</strong></summary>
 
-### DNS  
-### DHCP  
-### Apache  
-### Firewall  
-### Copias de Seguridad  
+### **Servicios de Luxury_SL – Para qué los usaremos y cómo te benefician**
+
+Cada servicio cumple una función crítica para que la plataforma funcione de manera **fluida, segura y educativa**. Te explicaré **para qué lo usamos** primero y luego una **explicación completa**, como si yo te guiara.
 
 ---
 
-### **Diagrama de Usuarios y Roles en Luxury_SL**
+### **1. DNS (Domain Name System)**  
+
+**Para qué lo usaremos:**  
+Para que los usuarios puedan acceder a Luxury_SL escribiendo un nombre fácil de recordar y que el ESP32 se conecte automáticamente al servidor.
+
+**Explicación:**  
+El DNS traduce el nombre de la web a la dirección correcta. Esto permite que accedas rápido y que tus acciones (mover el coche, encender luces) se reflejen en tiempo real en el coche físico y el modelo 3D. Todo funciona sin que tengas que preocuparte por direcciones IP.
+
+---
+
+### **2. DHCP**  
+
+**Para qué lo usaremos:**  
+Para asignar automáticamente direcciones IP únicas a todos los dispositivos que se conecten a la red.
+
+**Explicación:**  
+Con DHCP, tu ordenador, móvil o el ESP32 reciben una IP sin conflictos, permitiendo que los comandos lleguen correctamente al servidor y al coche físico. Esto garantiza que la experiencia sea fluida y sin interrupciones.
+
+---
+
+### **3. Apache**  
+
+**Para qué lo usaremos:**  
+Para alojar la web, entregar los contenidos, manejar APIs y sincronizar la interacción con la base de datos y el ESP32.
+
+**Explicación:**  
+Apache procesa todas tus acciones en la web y las envía al ESP32 usando C++. Guarda tus proyectos y progreso, manteniendo todo sincronizado con el modelo 3D y el coche físico.
+
+---
+
+### **4. Firewall**  
+
+**Para qué lo usaremos:**  
+Para proteger la plataforma y el hardware de accesos no autorizados.
+
+**Explicación:**  
+Controla qué usuarios pueden hacer qué acciones, asegurando que nadie externo interfiera con tus proyectos.
+
+---
+
+### **5. Copias de Seguridad**  
+
+**Para qué lo usaremos:**  
+Para guardar toda la información de usuarios, proyectos y tutoriales.
+
+**Explicación:**  
+Permiten restaurar datos si algo falla y mantener la sincronización entre acciones web y coche físico.
+
+---
+
+### **6. Diagrama de Usuarios y Roles**  
+
+**Para qué lo usaremos:**  
+Para mostrar cómo interactúan los diferentes roles con los servicios y cómo todo está conectado.
 
 <div align="center">
 <img src="https://i.imgur.com/r03QN0i.png" width="600"/>
 </div>
 
-En este diagrama podemos ver **cómo interactúan todos los usuarios de Luxury_SL con los servicios y recursos de la plataforma**, y cómo todo está conectado para que la experiencia sea segura, ordenada y eficiente.  
+**Explicación:**  
+- Estudiantes usan la web para mover el coche y seguir tutoriales.  
+- Docentes supervisan y guían.  
+- Administradores gestionan servicios, seguridad y copias de seguridad.  
+- Visitantes exploran contenido público.  
 
-#### **1. Categorías de Usuarios**
-Primero, tenemos los **diferentes tipos de usuarios**:  
-
-- **Administrador:** Es la persona que controla todo. Gestiona los servidores, configura los servicios (DNS, DHCP, Apache y Firewall) y se asegura de que las copias de seguridad estén actualizadas. Sin él, la plataforma no podría funcionar correctamente.  
-- **Docente / Instructor:** Su función es guiar a los estudiantes. Puede acceder a los tutoriales, ver los proyectos educativos y manipular los modelos 3D para enseñar cómo funciona todo.  
-- **Estudiante / Usuario Registrado:** Es quien usa la plataforma para aprender y crear. Interactúa con los modelos 3D, personaliza su coche y sigue los tutoriales paso a paso.  
-- **Visitante / Invitado:** Solo puede mirar ejemplos y explorar la información pública. No tiene permisos para modificar nada ni guardar proyectos.
-
-#### **2. Cómo se conectan los usuarios con los servicios**
-Cada usuario está **conectado a los servicios según sus permisos**:  
-
-- **DNS y DHCP:** Les permiten conectarse correctamente, asignando direcciones IP y asegurando que cada dispositivo tenga acceso estable a la plataforma.  
-- **Servidor Apache:** Entrega las páginas web, los modelos 3D y las APIs. Cada usuario ve lo que le corresponde según su rol.  
-- **Firewall:** Mantiene la seguridad, bloqueando accesos que no deberían estar allí.  
-- **Copias de Seguridad:** Guardan toda la información importante de usuarios y proyectos, para poder recuperarla en caso de fallos.
-
-#### **3. Cómo fluye la información**
-Cuando un usuario hace algo en la plataforma, por ejemplo, mover su coche 3D o cambiar un proyecto:  
-
-1. Primero envía la acción desde la interfaz web.  
-2. El servidor recibe la solicitud y verifica que el usuario tenga los permisos correctos.  
-3. Luego, procesa la acción y la pasa a los servicios que corresponden (como la base de datos, el modelo 3D o incluso el hardware Arduino ESP32 si es un movimiento físico).  
-4. Finalmente, el resultado se refleja en la interfaz del usuario y todo queda sincronizado con el resto de componentes.
-
-#### **4. Por qué todo está unido**
-Lo importante de este diagrama es que **muestra que nada funciona aislado**. Cada usuario depende de los servicios y cada servicio depende del servidor y de la seguridad para que todo sea estable.  
-Si un servicio falla, afectaría a los usuarios; si un usuario no tiene los permisos correctos, no podría acceder a ciertas funciones. Por eso todo está conectado: **para que la experiencia sea segura, organizada y fluida**, y para que el sistema educativo de Luxury_SL cumpla su propósito de enseñar mientras se interactúa con modelos 3D y hardware real.
-
-En resumen, este diagrama nos ayuda a **visualizar la plataforma como un ecosistema completo**, donde cada usuario, cada servicio y cada función están interrelacionados, trabajando juntos para que todo funcione de manera armoniosa.
+Los servicios aseguran que la experiencia sea **fluida, segura y educativa**, reflejando tus acciones en el modelo 3D y el coche físico.
 
 </details>
 
@@ -333,8 +334,7 @@ En resumen, este diagrama nos ayuda a **visualizar la plataforma como un ecosist
 <details>
 <summary><strong>CONCLUSIONES</strong></summary>
 
-**Luxury_SL** ofrece una integración completa entre hardware y software, permitiendo una experiencia inmersiva y educativa donde el usuario aprende sobre **programación**, **diseño 3D** y **control electrónico**.  
-El proyecto demuestra el potencial de combinar la ingeniería, el diseño y la educación STEAM en un solo entorno interactivo.
+**Luxury_SL** integra hardware y software para ofrecer una experiencia educativa inmersiva. Permite aprender sobre **programación, diseño 3D y control electrónico**, demostrando el potencial de combinar ingeniería, diseño y educación STEAM en un solo entorno interactivo.
 
 </details>
 
@@ -350,10 +350,6 @@ El proyecto demuestra el potencial de combinar la ingeniería, el diseño y la e
 
 </details>
 
----
-
 <div align="center">
-
 <img src="https://i.imgur.com/qPQOsBJ.png" width="350"/>
-
 </div>
