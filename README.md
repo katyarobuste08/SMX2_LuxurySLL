@@ -114,7 +114,7 @@ Este proyecto es de uso **educativo y experimental**, enfocado en la **innovaci√
 
 <div align="center">
 
-<img src="https://i.imgur.com/3uX91yZ.png" width="350"/>
+<img src="https://i.imgur.com/BqUJceo.jpeg" width="350"/>
 
 </div>
 
