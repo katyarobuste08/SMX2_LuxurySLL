@@ -28,38 +28,43 @@
 <img src="https://www.shutterstock.com/image-vector/vector-solid-black-icon-booklist-600nw-2545713609.jpg" width="22"/> Índice
 </strong></summary>
 
-<ul style="line-height:1.8;">
-<li> <img src="https://w7.pngwing.com/pngs/195/943/png-transparent-computer-icons-symbol-incandescent-light-bulb-introduction-miscellaneous-text-silhouette.png" width="22"/> <strong>Introducción</strong>
-    <ul>
+<ul style="line-height:2.2; padding-left:20px; margin-top:10px;">
+
+<li style="margin-bottom:14px;"><strong>Introducción</strong>
+    <ul style="line-height:1.8; padding-left:20px; margin-top:5px;">
         <li><img src="https://w7.pngwing.com/pngs/195/943/png-transparent-computer-icons-symbol-incandescent-light-bulb-introduction-miscellaneous-text-silhouette.png" width="22"/> Justificación</li>
         <li><img src="https://cdn-icons-png.flaticon.com/512/1221/1221614.png" width="22"/> Objetivos</li>
         <li><img src="https://cdn-icons-png.flaticon.com/512/60/60481.png" width="22"/> Público Objetivo</li>
         <li><img src="https://cdn-icons-png.flaticon.com/512/8379/8379454.png" width="22"/> Tecnologías Utilizadas</li>
     </ul>
 </li>
-<li> <img src="https://e7.pngegg.com/pngimages/187/112/png-clipart-responsive-web-design-html-computer-icons-css3-world-wide-web-consortium-css-angle-text.png" width="22"/> <strong>Web</strong>
-    <ul>
+
+<li style="margin-bottom:14px;"><strong>Web</strong>
+    <ul style="line-height:1.8; padding-left:20px; margin-top:5px;">
         <li><img src="https://www.seoptimer.com/storage/images/2020/06/color-wheel.png" width="22"/> Justificación del Estilo y Colores</li>
         <li><img src="https://cdn-icons-png.flaticon.com/512/1221/1221614.png" width="22"/> Pantallas del Diseño Web</li>
     </ul>
 </li>
-<li> <img src="https://toppng.com/uploads/preview/arduino-logo-11563227354ny21akychx.png" width="22"/> <strong>Arduino y Modelo 3D</strong>
-    <ul>
+
+<li style="margin-bottom:14px;"><strong>Arduino y Modelo 3D</strong>
+    <ul style="line-height:1.8; padding-left:20px; margin-top:5px;">
         <li><img src="https://w7.pngwing.com/pngs/195/943/png-transparent-computer-icons-symbol-incandescent-light-bulb-introduction-miscellaneous-text-silhouette.png" width="22"/> Programación Arduino</li>
         <li><img src="https://cdn-icons-png.flaticon.com/512/60/60481.png" width="22"/> Diagrama Arduino</li>
         <li><img src="https://us.123rf.com/450wm/igoun/igoun1912/igoun191200027/134793058-car-vector-icon-isolated-simple-view-front-logo-illustration-sign-symbol-auto-style-car-logo.jpg" width="22"/> Modelo 3D del Coche</li>
     </ul>
 </li>
-<li> <img src="https://e7.pngegg.com/pngimages/720/214/png-clipart-computer-network-logo-computer-icons-technology-computer-network-angle.png" width="22"/> <strong>Red</strong>
-    <ul>
+
+<li style="margin-bottom:14px;"><strong>Red</strong>
+    <ul style="line-height:1.8; padding-left:20px; margin-top:5px;">
         <li><img src="https://cdn-icons-png.flaticon.com/512/60/60481.png" width="22"/> Sincronización Web-Hardware</li>
     </ul>
 </li>
-<li> <img src="https://img.freepik.com/vector-premium/vector-desino-plantilla-logotipo-servicio_20029-568.jpg" width="22"/> <strong>Servicios</strong></li>
-<li> <img src="https://cdn-icons-png.flaticon.com/512/1221/1221614.png" width="22"/> <strong>Conclusiones</strong></li>
-<li> <img src="https://www.shutterstock.com/image-vector/vector-solid-black-icon-booklist-600nw-2545713609.jpg" width="22"/> <strong>Bibliografía</strong></li>
-</ul>
 
+<li style="margin-bottom:14px;"><strong>Servicios</strong></li>
+<li style="margin-bottom:14px;"><strong>Conclusiones</strong></li>
+<li style="margin-bottom:14px;"><strong>Bibliografía</strong></li>
+
+</ul>
 </details>
 <hr style="border:1px solid #ccc; margin: 10px 0;">
 
@@ -123,7 +128,7 @@ Los acentos claros mejoran la legibilidad y la navegación.
 El diseño minimalista garantiza una experiencia **ágil y sin distracciones**, reflejando la fusión entre **entorno virtual y físico**.
 
 <div align="center">
-<img src="https://i.imgur.com/yourColorPalette.png" width="400"/>
+<img src="https://i.imgur.com/zcfUlYo_d.png?maxwidth=520&shape=thumb&fidelity=high" width="400"/>
 <br><i>Paleta de colores utilizada en el diseño web de Luxury_SL.</i>
 </div>
 
