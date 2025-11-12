@@ -28,6 +28,7 @@
   - Base de Datos  
 - Arduino y Modelo 3D  
   - Programación  
+  - Diagrama Arduino  
   - Modelo 3D del coche  
 - Servicios  
   - DNS  
@@ -50,7 +51,7 @@
 
 **Luxury_SL** combina un **diseño 3D interactivo** de un coche con un **sistema físico basado en Arduino ESP32**, que permite al usuario **construir, visualizar, personalizar e interactuar** con su propio vehículo desde una **plataforma web**.
 
-A través de una **interfaz intuitiva**, el usuario puede **crear una cuenta**, acceder a **tutoriales paso a paso**, dejar **comentarios al soporte técnico** y explorar el proyecto de manera interactiva.  
+A través de una **interfaz intuitiva**, el usuario puede **crear una cuenta**, acceder a **tutoriales paso a paso**, dejar **comentarios al soporte técnico** y explorar el proyecto de manera interactiva.
 
 El **modelo digital** refleja los cambios del **vehículo físico** y viceversa, creando una **experiencia completamente integrada** entre el entorno **virtual (web + 3D)** y el **tangible (coche real controlado por Arduino)**.
 
@@ -81,11 +82,11 @@ El **objetivo principal** de Luxury_SL es **desarrollar una plataforma** que com
 
 ## **Público Objetivo**
 
-Luxury_SL está dirigido a:
+Luxury_SL está dirigido a:  
 - **Estudiantes y profesores** interesados en robótica, diseño 3D y programación.  
 - **Centros educativos** que buscan incorporar proyectos innovadores STEAM.  
 - **Aficionados a la electrónica y la creatividad digital**.  
-- Personas **curiosas y autodidactas** que deseen construir sus propios proyectos tecnológicos.  
+- Personas **curiosas y autodidactas** que deseen construir sus propios proyectos tecnológicos.
 
 El proyecto resulta especialmente atractivo para quienes disfrutan de **transformar ideas digitales en objetos reales**, conectando el **diseño visual con la ingeniería electrónica** en una experiencia completa y motivadora.
 
@@ -96,7 +97,7 @@ El proyecto resulta especialmente atractivo para quienes disfrutan de **transfor
 - **Blender 3D** — Modelado y visualización 3D interactiva.  
 - **HTML + CSS + JavaScript** — Interfaz web y conexión con el entorno virtual.  
 - **Arduino ESP32** — Control físico del vehículo mediante Bluetooth.  
-- **Plataforma Web** — Interacción y gestión de usuarios.  
+- **Plataforma Web** — Interacción y gestión de usuarios.
 
 ---
 
@@ -132,7 +133,7 @@ El diseño de **Luxury_SL** busca combinar **elegancia, modernidad y funcionalid
 - **Minimalismo funcional:** Se prioriza la simplicidad visual y la experiencia ágil.  
 - **Interactividad intuitiva:** La navegación fluida permite al usuario explorar sin recargas de página.  
 - **Experiencia educativa integrada:** Los elementos visuales guían hacia la comprensión de conceptos STEAM.  
-- **Fusión entre virtual y físico:** Cada decisión de diseño refleja la visión del proyecto y su estética tecnológica.  
+- **Fusión entre virtual y físico:** Cada decisión de diseño refleja la visión del proyecto y su estética tecnológica.
 
 ---
 
@@ -156,19 +157,19 @@ Pantalla donde los usuarios pueden iniciar sesión o crear un perfil. Permite pe
 Sección de objetivos de la plataforma, mostrando organización de menús, botones y contenidos. Vista conceptual de la interfaz.
 </p>
 
-#### **Arquitectura Del Proyecto**
+#### **Arquitectura del Proyecto**
 <img src="https://i.imgur.com/iM1fOzK.png" width="1000"/>
 <p>
 Arquitectura de la plataforma web Luxury_SL, mostrando interacción del usuario con la web, servidor, base de datos y servicios internos. Flujo de información seguro y organizado.
 </p>
 
-#### **Flujo De Datos**
+#### **Flujo de Datos**
 <img src="https://i.imgur.com/6NnGtWI.png" width="1000"/>
 <p>
 Mapa de navegación, mostrando cómo se conectan secciones como Inicio, Usuario, Contenido Educativo, Proyectos y Soporte. Permite entender jerarquía y flujo de acceso.
 </p>
 
-#### **Stack Tecnologico**
+#### **Stack Tecnológico**
 <img src="https://i.imgur.com/4gWzAay.png" width="1000"/>
 <p>
 Stack tecnológico de Luxury_SL, mostrando todos los módulos y servicios internos, incluyendo la interfaz, área de usuario, tutoriales, gestión de proyectos y navegación.
@@ -184,7 +185,7 @@ Stack tecnológico de Luxury_SL, mostrando todos los módulos y servicios intern
 ### Programación Arduino
 
 El control del coche se realiza con un **Arduino ESP32**, que incorpora **Bluetooth integrado** y permite comunicación inalámbrica directa con la web.  
-El sistema gestiona movimientos del vehículo (adelante, atrás, izquierda, derecha) y control de luces desde la interfaz digital.  
+El sistema gestiona movimientos del vehículo (adelante, atrás, izquierda, derecha) y control de luces desde la interfaz digital.
 
 **Tutorial recomendado:** [YouTube - Facil](https://www.youtube.com/watch?v=03mQrT4lDgM)
 
@@ -194,12 +195,42 @@ El sistema gestiona movimientos del vehículo (adelante, atrás, izquierda, dere
 
 ---
 
+### Diagrama Arduino
+
+<div align="center">
+<img src="https://i.imgur.com/cGVPCzm.png" width="600"/>
+</div>
+
+El siguiente diagrama muestra la estructura completa del sistema físico del coche controlado por Arduino ESP32.  
+En este esquema se observa cómo cada componente cumple una función específica dentro del conjunto. La **placa ESP32** actúa como el cerebro central del vehículo, procesando las instrucciones enviadas desde la interfaz web a través de la conexión **Bluetooth**.  
+Estas órdenes se traducen en movimientos y respuestas físicas del coche, controlando la dirección, la velocidad y las luces de manera inalámbrica y precisa.
+
+El sistema está diseñado para ofrecer una conexión estable y eficiente entre el entorno digital y el hardware físico. Los **motores** son los encargados del desplazamiento del vehículo, mientras que el **driver L298N** o un módulo similar regula la energía que los alimenta. Los **cables jumper** conectan cada elemento eléctrico del circuito, garantizando la comunicación entre la placa, el controlador y las ruedas.
+
+El **chasis**, fabricado generalmente en acrílico o metal ligero, sirve como base estructural para todos los componentes. Además, se incluyen **luces LED** opcionales que permiten simular faros, indicadores o retroalimentación visual del estado del coche.
+
+En conjunto, esta configuración permite que el coche físico responda de forma sincronizada con su modelo 3D en la plataforma web de **Luxury_SL**, logrando una integración total entre el software y el hardware.
+
+---
+
 ### Modelo 3D del coche
 
-El modelo 3D fue creado en **Blender** y exportado a **FBX** para su integración en **Three.js / WebGL**.  
-Cuenta con 175.000 triángulos y 94.300 vértices, optimizado para navegadores web.  
+El modelo 3D representa un **Lamborghini negro** creado completamente desde cero en **Blender**.  
+El proceso comenzó con el modelado digital detallado, cuidando cada curva y proporción del vehículo para reflejar el estilo elegante y deportivo de la marca.  
+Una vez terminado el diseño, el modelo fue **exportado y preparado para impresión 3D**, lo que permitió fabricar una **versión física del coche** que posteriormente se utilizó para integrar el sistema **Arduino ESP32**.  
 
-Permite **rotación, zoom e interacción** directa.
+De esta manera, el **modelo virtual y el modelo físico** comparten las mismas proporciones y estética, conectando el entorno digital con la realidad tangible.
+
+<div align="center">
+  <img src="https://i.imgur.com/IZttiWP.png" width="600"/>
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/bTWoQN3.png" width="600"/>
+</div>
+
+El modelo digital conserva los materiales y reflejos característicos de la carrocería negra brillante, con detalles aerodinámicos y acabados de alta calidad.  
+En su forma impresa, este Lamborghini se convierte en la base física perfecta para montar los componentes del sistema Arduino, sirviendo como ejemplo de la unión entre **diseño 3D, ingeniería electrónica y fabricación real**.
 
 **Visualiza el modelo 3D:** [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
 
@@ -219,33 +250,33 @@ Permite **rotación, zoom e interacción** directa.
 La arquitectura de red de **Luxury_SL** está diseñada para garantizar una **comunicación fluida**, **seguridad de los datos** y **sincronización en tiempo real** entre los componentes **físicos (Arduino ESP32)** y **virtuales (sitio web + modelo 3D)**.  
 Cada elemento cumple una función específica dentro del flujo de información, asegurando que tanto el control del coche físico como la visualización 3D respondan de forma coordinada.
 
-#### **Cliente / Usuario**
+#### **Cliente / Usuario**  
 El usuario final accede desde un navegador web al sitio oficial de **Luxury_SL**.  
 Desde allí puede interactuar con el modelo 3D, crear o iniciar sesión.  
 La comunicación se realiza mediante **HTTPS**, garantizando la seguridad y la integridad de los datos.
 
-#### **Servidor Web (Apache)**
+#### **Servidor Web (Apache)**  
 El servidor web actúa como núcleo del sistema.  
-Aloja la **plataforma web**, las **APIs** y los **recursos multimedia** (archivos HTML, CSS, JS, y modelos 3D).  
+Aloja la **plataforma web**, las **APIs** y los **recursos multimedia** (archivos HTML, CSS, JS, y modelos 3D).
 
-#### **Base de Datos (MySQL / SQLite)**
-Almacena información estructurada, incluyendo:
+#### **Base de Datos (MySQL / SQLite)**  
+Almacena información estructurada, incluyendo:  
 - Datos de usuarios y autenticación.  
-- Registros de sesiones y preferencias.  
+- Registros de sesiones y preferencias.
 
 Permite una recuperación eficiente de datos y mantiene la persistencia del sistema educativo.
 
-#### **Arduino ESP32**
+#### **Arduino ESP32**  
 Controla el coche real y envía información al servidor sobre el estado del coche (movimientos, luces, energía, etc.), manteniendo sincronización constante con el modelo 3D digital.
 
-#### **Conexión Bluetooth y Comunicación Serial**
-El módulo Bluetooth del ESP32 establece una comunicación bidireccional.  
+#### **Conexión Bluetooth y Comunicación Serial**  
+El módulo Bluetooth del ESP32 establece una comunicación bidireccional.
 
-#### **Sincronización Web–Hardware**
+#### **Sincronización Web–Hardware**  
 1. El usuario envía una acción desde la interfaz.  
 2. El servidor procesa la solicitud y la envía al ESP32.  
 3. El coche físico ejecuta la acción.  
-4. El resultado se refleja visualmente en el entorno 3D del navegador.  
+4. El resultado se refleja visualmente en el entorno 3D del navegador.
 
 </details>
 
@@ -323,7 +354,7 @@ Para mostrar cómo interactúan los diferentes roles con los servicios y cómo t
 - Estudiantes usan la web para mover el coche y seguir tutoriales.  
 - Docentes supervisan y guían.  
 - Administradores gestionan servicios, seguridad y copias de seguridad.  
-- Visitantes exploran contenido público.  
+- Visitantes exploran contenido público.
 
 Los servicios aseguran que la experiencia sea **fluida, segura y educativa**, reflejando tus acciones en el modelo 3D y el coche físico.
 
