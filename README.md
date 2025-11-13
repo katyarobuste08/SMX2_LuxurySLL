@@ -115,7 +115,8 @@ Luxury_SL está dirigido a:
 | <img src="https://e7.pngegg.com/pngimages/617/252/png-clipart-mysql-workbench-computer-icons-logo-database-server-blue-text.png" width="20"/> MySQL | Base de datos y gestión de información |
 
 </details>
-<hr style="border:1px solid #ccc; margin: 10px 0;">
+
+---
 
 <!-- WEB -->
 <details>
@@ -128,7 +129,7 @@ Los acentos claros mejoran la legibilidad y la navegación.
 El diseño minimalista garantiza una experiencia **ágil y sin distracciones**, reflejando la fusión entre **entorno virtual y físico**.
 
 <div align="center">
-<img src="https://i.imgur.com/zcfUlYo_d.png?maxwidth=520&shape=thumb&fidelity=high" width="400"/>
+<img src="https://i.imgur.com/zcfUlYo_d.png" width="400"/>
 <br><i>Paleta de colores utilizada en el diseño web de Luxury_SL.</i>
 </div>
 
@@ -152,7 +153,8 @@ El diseño minimalista garantiza una experiencia **ágil y sin distracciones**, 
 </div>
 
 </details>
-<hr style="border:1px solid #ccc; margin: 10px 0;">
+
+---
 
 <!-- ARDUINO Y MODELO 3D -->
 <details>
@@ -184,7 +186,8 @@ El control del coche se realiza mediante **Arduino ESP32** con **Bluetooth integ
 **Visualiza el modelo 3D:** [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
 
 </details>
-<hr style="border:1px solid #ccc; margin: 10px 0;">
+
+---
 
 <!-- RED -->
 <details>
@@ -201,20 +204,31 @@ El control del coche se realiza mediante **Arduino ESP32** con **Bluetooth integ
 3. Coche físico ejecuta la acción.  
 4. Modelo 3D se actualiza visualmente.
 
+### Arquitectura Detallada
+La arquitectura de red de Luxury_SL garantiza **fluidez, seguridad de datos y sincronización en tiempo real** entre componentes físicos (Arduino ESP32) y virtuales (web + 3D).  
+Cada elemento cumple una función específica, asegurando que control físico y visualización 3D respondan de forma coordinada.
+
+**Cliente / Usuario:** Accede desde navegador web, interacción con modelo 3D, HTTPS seguro.  
+**Servidor Web (Apache):** Aloja plataforma web, APIs y multimedia.  
+**Base de Datos (MySQL/SQLite):** Datos de usuarios, sesiones y preferencias.  
+**Arduino ESP32:** Control del coche real y sincronización con modelo 3D.  
+**Bluetooth / Comunicación Serial:** Bidireccional, para sincronización.  
+
 </details>
-<hr style="border:1px solid #ccc; margin: 10px 0;">
+
+---
 
 <!-- SERVICIOS -->
 <details>
 <summary><strong><img src="https://img.freepik.com/vector-premium/vector-desino-plantilla-logotipo-servicio_20029-568.jpg" width="22"/> Servicios</strong></summary>
 
-| Servicio | Función | Beneficio |
-|----------|--------|-----------|
-| DNS | Traduce dominio web | Acceso rápido y seguro |
-| DHCP | Asigna IPs automáticas | Conexión sin conflictos |
-| Apache | Aloja la web y APIs | Sincronización fluida |
-| Firewall | Protege el sistema | Seguridad ante accesos externos |
-| Backups | Guarda datos y progreso | Recuperación ante fallos |
+| Servicio | Uso | Explicación / Beneficio |
+|----------|-----|------------------------|
+| DNS | Acceso mediante nombre de dominio | Permite acceso fácil y que ESP32 se conecte automáticamente. Traduce nombre a dirección correcta, comunicación en tiempo real. |
+| DHCP | Asigna IPs automáticas | Garantiza IP única sin conflictos. Comandos llegan correctamente al servidor y al coche físico. |
+| Apache | Aloja web y APIs | Procesa acciones, sincroniza modelo 3D y coche físico. |
+| Firewall | Protección | Controla permisos, evitando interferencias externas. |
+| Copias de Seguridad | Guardado de datos | Permite restaurar información y mantener sincronización entre web y coche físico. |
 
 ### Diagrama de Usuarios y Roles
 <div align="center">
@@ -223,7 +237,8 @@ El control del coche se realiza mediante **Arduino ESP32** con **Bluetooth integ
 </div>
 
 </details>
-<hr style="border:1px solid #ccc; margin: 10px 0;">
+
+---
 
 <!-- CONCLUSIONES -->
 <details>
@@ -233,7 +248,8 @@ Luxury_SL integra **hardware y software** para ofrecer una experiencia educativa
 Permite aprender sobre **programación, diseño 3D y control electrónico**, combinando **ingeniería, diseño y educación STEAM** en un solo entorno interactivo.
 
 </details>
-<hr style="border:1px solid #ccc; margin: 10px 0;">
+
+---
 
 <!-- BIBLIOGRAFÍA -->
 <details>
