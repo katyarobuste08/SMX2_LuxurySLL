@@ -151,6 +151,12 @@ El diseño minimalista garantiza una experiencia **ágil y sin distracciones**, 
 </tr>
 </table>
 </div>
+### <img src="https://cdn-icons-png.flaticon.com/512/60/60481.png" width="22"/> Diagrama de Gantt
+Aquí se muestra la planificación temporal completa del proyecto Luxury_SL.
+
+Puedes descargar el archivo en el siguiente enlace (o actualizarlo si lo subes al repositorio):
+
+[Descargar Gantt.xlsx](./Gantt.xlsx)
 
 </details>
 
