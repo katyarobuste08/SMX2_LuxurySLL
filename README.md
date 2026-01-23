@@ -28,13 +28,10 @@
 
 El objetivo central es la creación de un ecosistema donde la administración de servidores, el montaje de hardware y la configuración de redes convergen en un vehículo robótico controlado mediante una interfaz web.
 
-### Pilares trabajados:
-- **Gestión de Sistemas y Servicios**
-- **Redes y Conectividad**
-- **Montaje de Hardware**
-- **Optimización de Recursos**
-
-Este trabajo demuestra la capacidad de integrar múltiples tecnologías en un entorno real y funcional.
+- Gestión de sistemas
+- Redes y conectividad
+- Hardware e impresión 3D
+- Optimización de recursos
 
 </details>
 
@@ -43,14 +40,14 @@ Este trabajo demuestra la capacidad de integrar múltiples tecnologías en un en
 <details>
   <summary id="tecnologias"><strong>🛠️ 2. Tecnologías y Herramientas</strong></summary>
 
-| Tecnología | Aplicación | Función |
-| :---: | :--- | :--- |
-| **Blender 3D** | Diseño | Modelado del chasis |
-| **HTML / CSS** | Web | Interfaz visual |
-| **JavaScript** | Frontend | Comunicación asíncrona |
-| **ESP32** | Hardware | Control y red |
-| **Apache** | Servidor | Hosting web |
-| **MySQL** | Base de datos | Usuarios y registros |
+| Tecnología | Función |
+| :--- | :--- |
+| Blender 3D | Diseño del chasis |
+| HTML / CSS | Interfaz web |
+| JavaScript | Comunicación |
+| ESP32 | Control hardware |
+| Apache | Servidor web |
+| MySQL | Base de datos |
 
 </details>
 
@@ -59,18 +56,10 @@ Este trabajo demuestra la capacidad de integrar múltiples tecnologías en un en
 <details>
   <summary id="web"><strong>🌐 3. Web</strong></summary>
 
-La web de **Luxury_SL** actúa como consola central de control.
-
-- Diseño **Dark Gold**
-- Acceso seguro por usuarios
-- Panel de monitorización
-- Comunicación en tiempo real con el hardware
-
-Incluye:
-- Dashboard
-- Login
-- Mapa de progreso
-- Panel técnico
+- Dashboard de control
+- Login seguro
+- Monitorización en tiempo real
+- Estética Dark Gold
 
 </details>
 
@@ -79,18 +68,15 @@ Incluye:
 <details>
   <summary id="arduino-3d"><strong>🤖 4. Arduino & Modelo 3D</strong></summary>
 
-### ⚡ Electrónica
-El sistema usa un **ESP32**, que gestiona:
+### Electrónica
+- ESP32
+- PWM para motores
 - Conectividad WiFi
-- Señales **PWM**
-- Control de motores
 
-### 🎨 Diseño 3D
-- Chasis diseñado en **Blender**
-- Fabricación mediante impresión 3D
-- Optimización de peso y estructura
+### Diseño
+- Modelado en Blender
+- Impresión 3D
 
-🔗 Modelo 3D:  
 https://skfb.ly/pCxW9
 
 </details>
@@ -100,14 +86,12 @@ https://skfb.ly/pCxW9
 <details>
   <summary id="arquitectura-red"><strong>🏗️ 5. Arquitectura & Red</strong></summary>
 
-### Flujo de datos:
-1. Usuario envía orden desde la web
-2. Servidor Apache procesa petición
-3. Validación de usuario
-4. Envío al ESP32
-5. Activación de motores
+1. Usuario → Web
+2. Apache procesa
+3. MySQL valida
+4. ESP32 ejecuta
 
-La red está diseñada para **baja latencia y alta fiabilidad**.
+Red optimizada para baja latencia.
 
 </details>
 
@@ -116,17 +100,17 @@ La red está diseñada para **baja latencia y alta fiabilidad**.
 <details>
   <summary id="servicios-roles"><strong>🔐 6. Servicios & Roles</strong></summary>
 
-### Servicios:
-- **DNS local**
-- **DHCP**
-- **Servidor Web**
-- **Base de datos**
-- **Firewall y seguridad**
+### Servicios
+- DNS
+- DHCP
+- Web
+- Base de datos
+- Seguridad
 
-### Roles:
-| Rol | Función |
+### Roles
+| Rol | Permisos |
 | :--- | :--- |
-| Administrador | Control total |
+| Administrador | Total |
 | Docente | Supervisión |
 | Estudiante | Operación |
 | Visitante | Lectura |
@@ -138,13 +122,7 @@ La red está diseñada para **baja latencia y alta fiabilidad**.
 <details>
   <summary id="conclusiones"><strong>🚀 7. Conclusiones</strong></summary>
 
-**Luxury_SL** demuestra la integración real de:
-- Redes
-- Sistemas
-- Hardware
-- Diseño
-
-Aplicando conocimientos clave del ciclo **SMX2** en un entorno funcional y profesional.
+Proyecto integral que demuestra la aplicación práctica de conocimientos de sistemas, redes y hardware en SMX2.
 
 </details>
 
