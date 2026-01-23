@@ -16,15 +16,16 @@
 
 <div align="center">
 
-| 🟢 [**1. INTRODUCCIÓN**](#introducción) | 🔵 [**2. TECNOLOGÍAS**](#tecnologías-y-herramientas) |
+| 🟢 **1. INTRODUCCIÓN** | 🔵 **2. TECNOLOGÍAS** |
 | :--- | :--- |
 | Visión, objetivos y despliegue SMX2. | Software, Firmware y Herramientas. |
-| 🟡 [**3. WEB**](#web) | 🔴 [**4. ARDUINO & 3D**](#arduino-y-modelo-3d) |
+| 🟡 **3. WEB** | 🔴 **4. ARDUINO & 3D** |
 | UX Premium, APIs y Telemetría. | ESP32, Motores y Modelado Industrial. |
-| 🟣 [**5. ARQUITECTURA & RED**](#arquitectura-y-red) | 🟠 [**6. SERVICIOS & ROLES**](#servicios-y-roles) |
+| 🟣 **5. ARQUITECTURA & RED** | 🟠 **6. SERVICIOS & ROLES** |
 | Latencia, Protocolos y Conectividad. | RBAC, Firewalls y Servicios de Red. |
 
 </div>
+
 
 ---
 
