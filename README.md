@@ -193,8 +193,34 @@ La red de **Luxury_SL** se ha configurado para garantizar que las órdenes del u
 La base de este proyecto de **SMX2** es la correcta configuración de los servicios que permiten la conectividad y seguridad de la red.
 
 ### 🛠️ Servicios Desplegados:
-* **DNS Local:** Configuración para acceder a la web mediante `luxury.sl`, evitando el uso de IPs.
-* **DHCP:** Gestión de direcciones IP para que los dispositivos se conecten automáticamente a la red.
+* **DNS Local:** Tecnologías a utilizar
+DNS 
+¿Qué es? 
+El DNS es un sistema que traduce nombres fáciles de entender (como www.midominio.com) en direcciones numéricas que entienden los ordenadores. Funciona como una agenda de la red. 
+
+¿Para qué sirve? 
+Permite acceder a servicios web usando nombres, evita memorizar IPs, facilita cambios de servidores sin afectar a usuarios y aporta una imagen profesional al proyecto.
+
+¿Dónde hay información oficial? 
+IETF (RFC 1034 y 1035), documentación de Ubuntu/Windows Server, proyectos como BIND y Pi-hole. 
+
+
+* **DHCP:**
+¿Qué es? 
+Servicio que asigna automáticamente IP y parámetros de red a cada dispositivo al conectarse.
+
+ ¿Para qué sirve? 
+Evita configurar equipos a mano, reduce errores y acelera la incorporación de nuevos dispositivos. 
+
+¿Dónde hay información oficial? 
+IETF (RFC 2131), documentación de Ubuntu/Windows Server, proyectos ISC DHCP y Kea. 
+
+Características para crear la MV : 
+S.O: Ubuntu Server (64-bit)
+Controladores Red: 1 - Red interna para (Comunicación Pi-hole ↔ DNS)  2 - Adaptador puente para  ( Acceso a red real por el DHCP / Internet) 
+HDD: 15GB
+RAM: 1GB
+CPU: 2
 * **Servicio de Base de Datos:** Gestión centralizada de la información mediante MySQL.
 * **Seguridad:** Configuración de reglas para asegurar que solo usuarios autenticados puedan operar el hardware.
 
