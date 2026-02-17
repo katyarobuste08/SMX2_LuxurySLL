@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+
+# Node.js
+node_modules/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Arduino
+*.ino~
+*.pde~
+*.d~
+
+# PHP
+/vendor/
+*.log
+*.cache
+
+# Database
+*.sql
+*.sqlite
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.sublime-*
