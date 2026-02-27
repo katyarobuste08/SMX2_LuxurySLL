@@ -1,4 +1,4 @@
-# 💎 LUXURY_SL: Proyecto Integral SMX2
+# 💎 LUXURY_SL — Documento de Presentación del Proyecto
 > **Integración de sistemas, redes, hardware IoT y diseño industrial para el módulo de SMX2.**
 
 <div align="center">
@@ -7,7 +7,7 @@
   <h1><strong>LUXURY_SL</strong></h1>
   <p>Desarrollado por:</p>
   <h3><strong>Katya Robuste</strong> ⬥ <strong>Nazar Kishchuk</strong></h3>
-  <br>
+  <p><em>Ciclo: Sistemas Microinformáticos y Redes (SMX2) · Curso 2024–2025</em></p>
 </div>
 
 ---
@@ -16,97 +16,63 @@
 
 <div align="center">
 
-| 🟢 [**1. INTRODUCCIÓN**](#-1-introducción) | 🔵 [**2. TECNOLOGÍAS Y HERRAMIENTAS**](#-2-tecnologías-y-herramientas) |
-| :--- | :--- |
-| Visión, objetivos y despliegue SMX2. | Software, Firmware y Herramientas. |
-| 🟡 [**3. WEB**](#-3-web) | 🔴 [**4. ARDUINO & 3D**](#-4-arduino--modelo-3d) |
-| UX Premium, APIs y Telemetría. | ESP32, Motores y Modelado Industrial. |
-| 🟣 [**5. ARQUITECTURA & RED**](#-5-arquitectura--red) | 🟠 [**6. SERVICIOS & ROLES**](#-6-servicios--roles) |
-| Latencia, Protocolos y Conectividad. | DNS, DHCP, Netplan y Seguridad. |
-| 🟤 [**7. PRUEBAS REALIZADAS**](#-7-pruebas-realizadas) | ⚫ [**8. CONCLUSIONES**](#-8-conclusiones) |
-| Ping, Latencia y Control Remoto. | Integración final y aprendizajes. |
+| | Apartado |
+| :---: | :--- |
+| 🟢 | [**1. Presentación de la Idea**](#-1-presentación-de-la-idea) |
+| 🔵 | [**2. Objetivos del Proyecto**](#-2-objetivos-del-proyecto) |
+| 🟡 | [**3. Requisitos Técnicos**](#-3-requisitos-técnicos) |
+| 🔴 | [**4. Metodología de Trabajo**](#-4-metodología-de-trabajo) |
+| 🟣 | [**5. Recursos Disponibles**](#-5-recursos-disponibles) |
+| 🟠 | [**6. Desafíos y Soluciones Previstas**](#-6-desafíos-y-soluciones-previstas) |
 
 </div>
 
 ---
 
 <details>
-<summary><h2>✨ 1. Introducción</h2></summary>
+<summary><h2>🟢 1. Presentación de la Idea</h2></summary>
 
-**Luxury_SL** es un proyecto técnico integral desarrollado como ejercicio final del ciclo **SMX2** (Sistemas Microinformáticos y Redes).
+**Luxury_SL** es un proyecto técnico integral desarrollado como ejercicio final del ciclo **SMX2** (Sistemas Microinformáticos y Redes). Su propósito es construir un ecosistema funcional que integre software, hardware y redes para controlar un vehículo robótico de 4 ruedas mediante una **interfaz web propia**.
 
-Su objetivo principal es crear un **ecosistema que integre software, hardware y redes** para controlar un vehículo robótico mediante una interfaz web, aplicando de forma práctica todos los conocimientos adquiridos en el módulo.
+El proyecto combina tres grandes bloques tecnológicos que trabajan de forma coordinada:
 
-### Objetivos
+- 🚗 **Vehículo robótico físico:** un coche de 4 ruedas motrices montado sobre chasis diseñado en Blender e impreso en 3D, controlado por un microcontrolador **ESP32** con Wi-Fi integrado.
+- 🌐 **Infraestructura de red local:** servidor Ubuntu con Apache, MySQL, Pi-hole (DNS + DHCP) y conectividad Wi-Fi para gestionar todos los dispositivos de la red interna.
+- 🖥️ **Interfaz web de control:** panel dashboard con estética "Dark Gold" que permite controlar el vehículo en tiempo real, visualizar telemetría y gestionar usuarios por roles.
 
-- Desarrollar un **panel web de control** robusto y seguro.
-- Implementar un **microcontrolador ESP32** que gestione motores y sensores.
-- Configurar la **infraestructura de red** para garantizar baja latencia y conectividad estable.
-- Integrar **servicios como DNS y DHCP** para la gestión centralizada de la red interna.
-- Aplicar **diseño industrial y fabricación 3D** para construir el chasis del vehículo.
+### Flujo de funcionamiento
 
-### Beneficios del proyecto
+```
+Usuario (Navegador)
+        │
+        ▼
+Dashboard Web (HTML/CSS/JS)
+        │  HTTP / WebSocket
+        ▼
+Servidor Apache + PHP + MySQL
+        │  Wi-Fi (LAN local)
+        ▼
+Microcontrolador ESP32
+        │  PWM
+        ▼
+Motores DC + Sensores (Vehículo)
+```
 
-- Aprendizaje práctico en entornos **IoT y redes internas**.
-- Integración de múltiples tecnologías en un **proyecto funcional y profesional**.
-- Documentación y control de accesos para usuarios con distintos roles.
-- Experiencia en **simulación y prototipado digital**, así como pruebas físicas.
-
-</details>
-
----
-
-<details>
-<summary><h2>🛠️ 2. Tecnologías y Herramientas</h2></summary>
-
-| Tecnología | Aplicación en SMX2 | Función específica |
-| :---: | :--- | :--- |
-| **Blender 3D** | Diseño de Chasis | Modelado y optimización de piezas para impresión 3D |
-| **HTML5 / CSS3** | Panel de Control | Estructura y diseño visual de la interfaz de usuario |
-| **JavaScript** | Lógica Frontend | Comunicación asíncrona con Fetch API y WebSocket |
-| **Arduino ESP32** | Microcontrolador | Gestión de hardware y conectividad de red |
-| **Apache** | Servidor Web | Hosting de la plataforma y gestión de tráfico HTTP |
-| **MySQL** | Base de Datos | Almacenamiento de perfiles, permisos y registros |
-| **Pi-hole** | Servidor DNS/DHCP | Gestión centralizada de DNS local y asignación automática de IP |
-| **Ubuntu Server 64-bit** | Sistema Operativo | Entorno de servidor para servicios de red y base de datos |
-
-<p align="center">
-  <img src="https://e7.pngegg.com/pngimages/146/983/png-clipart-blender-3d-computer-graphics-logo-filehippo-3d-modeling-blenders-3d-computer-graphics-text-thumbnail.png" height="45"/>
-  <img src="https://e7.pngegg.com/pngimages/187/112/png-clipart-responsive-web-design-html-computer-icons-css3-world-wide-web-consortium-css-angle-text.png" height="45"/>
-  <img src="https://pngdownload.io/wp-content/uploads/2023/12/CSS-Logo-PNG-Symbol-for-Web-Development-Transparent-jpg.webp" height="45"/>
-  <img src="https://cdn-icons-png.flaticon.com/512/8379/8379454.png" height="45"/>
-  <img src="https://toppng.com/uploads/preview/arduino-logo-11563227354ny21akychx.png" height="45"/>
-  <img src="https://img.favpng.com/25/15/12/logo-apache-http-server-apache-software-foundation-computer-servers-web-server-png-favpng-ebJ1wHvFsydhrpp6V0xFN5NBQ.jpg" height="45"/>
-  <img src="https://e7.pngegg.com/pngimages/617/252/png-clipart-mysql-workbench-computer-icons-logo-database-server-blue-text.png" height="45"/>
-  <img src="https://i.imgur.com/2q6VdIQ.png" height="45"/>
-</p>
-
-### Descripción de herramientas principales
-
-- **Blender 3D:** Se utilizó para modelar el chasis, optimizando el peso y la estructura para impresión 3D. Cada componente fue probado virtualmente antes de imprimir.
-- **HTML, CSS y JavaScript:** Construcción del dashboard web, gestión de órdenes al ESP32 y visualización de telemetría.
-- **ESP32:** Microcontrolador con Wi-Fi integrado, utilizado para recibir órdenes del servidor y controlar motores mediante PWM.
-- **Apache + MySQL:** Backend de la aplicación web, gestión de usuarios, roles y registros de actividad.
-- **Pi-hole:** Servidor interno que proporciona DNS local, además de DHCP para automatizar la asignación de direcciones IP a todos los clientes de la red.
-
-</details>
+1. El usuario accede al dashboard web desde su navegador.
+2. El servidor Apache + PHP recibe la orden, valida el usuario y la reenvía.
+3. El ESP32 recibe la instrucción por Wi-Fi y controla los motores mediante PWM.
+4. El vehículo ejecuta el movimiento y los datos de telemetría vuelven al dashboard en tiempo real.
 
 ---
 
-<details>
-<summary><h2>🌐 3. Web</h2></summary>
+### 🌐 Interfaz Web — Dashboard
 
-La web de **Luxury_SL** funciona como **centro de control del vehículo**. Se diseñó con estética **"Dark Gold"**, combinando estilo moderno con claridad técnica.
+La web funciona como **centro de control del vehículo**, diseñada con estética **"Dark Gold"** combinando estilo moderno con claridad técnica.
 
 **Paleta de colores:**
 <p align="center">
   <img src="https://i.imgur.com/zcfUlYo_d.png" width="600" />
 </p>
-
-### Dashboard Principal
-
-- Visualización en tiempo real de la posición y velocidad del vehículo.
-- Panel de logs de órdenes ejecutadas y usuarios conectados.
 
 <table>
 <tr>
@@ -142,32 +108,133 @@ La web de **Luxury_SL** funciona como **centro de control del vehículo**. Se di
 </tr>
 </table>
 
-**Funcionalidades Clave:**
-
+**Funcionalidades clave:**
 - Control remoto del vehículo mediante botones en la web.
-- Visualización de logs de conexión y telemetría.
+- Visualización de logs de conexión y telemetría en tiempo real.
 - Integración de mapas para seguimiento de posición.
+
+---
+
+### 🤖 Hardware — Vehículo Robótico
+
+El cerebro del coche es el **ESP32**, que maneja la comunicación con el servidor web y controla los motores mediante **PWM** para regular velocidad y dirección.
+
+**Esquema eléctrico:**
+<p align="center">
+<img src="https://i.imgur.com/rijhOry.png" width="400"/>
+</p>
+
+**Componentes principales:**
+<p align="center">
+<img src="https://i.imgur.com/cGVPCzm.png" width="400"/>
+</p>
+
+---
+
+### 🏗️ Arquitectura de Red
+
+**Diagrama de red:**
+<p align="center">
+<img src="https://i.imgur.com/WzbjxSQ.png" width="550"/>
+</p>
+
+**Protocolos utilizados:**
+- **HTTP/HTTPS** para comunicación web.
+- **TCP/IP** en la red local.
+- **MQTT opcional** para telemetría.
+- Latencia medida **< 100ms** entre orden y ejecución.
+
+---
+
+### 🖨️ Diseño y Fabricación 3D
+
+<table>
+<tr>
+<td align="center">
+<strong>Prototipo digital</strong><br>
+<img src="https://i.imgur.com/IZttiWP.png" width="245"/>
+</td>
+<td align="center">
+<strong>Modelo físico</strong><br>
+<img src="https://i.imgur.com/bTWoQN3.png" width="245"/>
+</td>
+</tr>
+</table>
+
+> [!IMPORTANT]
+> Explora el modelo 3D interactivo: [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
 
 </details>
 
 ---
 
 <details>
-<summary><h2>🤖 4. Arduino & Modelo 3D</h2></summary>
+<summary><h2>🔵 2. Objetivos del Proyecto</h2></summary>
 
-### Electrónica y Conectividad
+### Objetivo General
 
-El cerebro del coche es el **ESP32**, que maneja comunicación con el servidor web y controla motores mediante **PWM** para regular velocidad y dirección.
+Diseñar, construir y desplegar un sistema IoT completo que integre hardware embebido, infraestructura de red y una interfaz web funcional, aplicando los conocimientos adquiridos a lo largo del ciclo SMX2.
 
-**Esquema eléctrico:**
+### Objetivos Específicos
+
+- Desarrollar un **panel web de control** robusto, seguro y con autenticación por roles.
+- Implementar un **microcontrolador ESP32** capaz de gestionar motores, sensores y conectividad Wi-Fi.
+- Configurar una **infraestructura de red local** con DNS, DHCP y servidor web propio.
+- Aplicar **diseño industrial** mediante modelado 3D (Blender) y fabricación por impresión 3D.
+- Integrar servicios de **base de datos** (MySQL) para la gestión de usuarios y registros de actividad.
+
+### Beneficios del proyecto
+
+- Aprendizaje práctico en entornos **IoT y redes internas**.
+- Integración de múltiples tecnologías en un **proyecto funcional y profesional**.
+- Documentación y control de accesos para usuarios con distintos roles.
+- Experiencia en **simulación y prototipado digital**, así como pruebas físicas reales.
+
+### Habilidades que se Desarrollan
+
+| Área | Habilidad Específica |
+| :--- | :--- |
+| **Redes** | Configuración de DNS, DHCP, Netplan, Wi-Fi y topología LAN |
+| **Servidores** | Instalación y gestión de Apache, MySQL y Pi-hole en Ubuntu Server |
+| **Programación** | Desarrollo web (HTML, CSS, JS) y firmware para ESP32 (Arduino IDE) |
+| **Hardware IoT** | Integración de sensores, motores DC, PWM y comunicación serie |
+| **Diseño 3D** | Modelado en Blender, optimización para impresión y ensamblaje físico |
+| **Seguridad** | Gestión de roles, sesiones y control de acceso en aplicación web |
+
+</details>
+
+---
+
+<details>
+<summary><h2>🟡 3. Requisitos Técnicos</h2></summary>
+
+### 3.1 Tecnologías y Herramientas
+
+| Tecnología | Aplicación en SMX2 | Función específica |
+| :---: | :--- | :--- |
+| **Blender 3D** | Diseño de Chasis | Modelado y optimización de piezas para impresión 3D |
+| **HTML5 / CSS3** | Panel de Control | Estructura y diseño visual de la interfaz de usuario |
+| **JavaScript** | Lógica Frontend | Comunicación asíncrona con Fetch API y WebSocket |
+| **Arduino ESP32** | Microcontrolador | Gestión de hardware y conectividad de red |
+| **Apache** | Servidor Web | Hosting de la plataforma y gestión de tráfico HTTP |
+| **MySQL** | Base de Datos | Almacenamiento de perfiles, permisos y registros |
+| **Pi-hole** | Servidor DNS/DHCP | Gestión centralizada de DNS local y asignación de IP |
+| **Ubuntu Server 64-bit** | Sistema Operativo | Entorno de servidor para servicios de red y base de datos |
 
 <p align="center">
-<img src="https://i.imgur.com/rijhOry.png" width="400"/>
+  <img src="https://e7.pngegg.com/pngimages/146/983/png-clipart-blender-3d-computer-graphics-logo-filehippo-3d-modeling-blenders-3d-computer-graphics-text-thumbnail.png" height="45"/>
+  <img src="https://e7.pngegg.com/pngimages/187/112/png-clipart-responsive-web-design-html-computer-icons-css3-world-wide-web-consortium-css-angle-text.png" height="45"/>
+  <img src="https://pngdownload.io/wp-content/uploads/2023/12/CSS-Logo-PNG-Symbol-for-Web-Development-Transparent-jpg.webp" height="45"/>
+  <img src="https://cdn-icons-png.flaticon.com/512/8379/8379454.png" height="45"/>
+  <img src="https://toppng.com/uploads/preview/arduino-logo-11563227354ny21akychx.png" height="45"/>
+  <img src="https://img.favpng.com/25/15/12/logo-apache-http-server-apache-software-foundation-computer-servers-web-server-png-favpng-ebJ1wHvFsydhrpp6V0xFN5NBQ.jpg" height="45"/>
+  <img src="https://e7.pngegg.com/pngimages/617/252/png-clipart-mysql-workbench-computer-icons-logo-database-server-blue-text.png" height="45"/>
+  <img src="https://i.imgur.com/2q6VdIQ.png" height="45"/>
 </p>
 
 ---
 
-### Lista de Materiales (BOM)
+### 3.2 Componentes de Hardware (BOM)
 
 #### Placa de Control Principal
 
@@ -213,13 +280,9 @@ El cerebro del coche es el **ESP32**, que maneja comunicación con el servidor w
 | Tornillería | Acero + pilares de cobre |
 | Soporte motores | Aleación de aluminio |
 
-<p align="center">
-<img src="https://i.imgur.com/cGVPCzm.png" width="400"/>
-</p>
-
 ---
 
-### Especificaciones Técnicas del Hardware
+### 3.3 Especificaciones Técnicas del Hardware
 
 | Parámetro | Valor |
 | :--- | :--- |
@@ -228,66 +291,83 @@ El cerebro del coche es el **ESP32**, que maneja comunicación con el servidor w
 | Corriente máxima por motor | ~250 mA |
 | Velocidad máxima aproximada | ~0.8 m/s |
 | Alcance sensor ultrasónico | 2 cm – 400 cm |
+| Alcance Bluetooth (BLE 4.0) | ~10 m en espacio abierto |
 | Dimensiones del chasis | ~28 × 21 × 12 cm |
 | Peso aproximado (sin baterías) | ~500 g |
 
 ---
 
-### Proceso de Ensamblaje
+### 3.4 Software — Versiones y Entornos
 
-El montaje se divide en **6 pasos** diferenciados, sin necesidad de soldadura.
-
-#### 🔩 Step 1 — Montaje de motores en PCB inferior
-
-1. Insertar los **4 motores DC** en los soportes de aluminio.
-2. Fijar cada soporte a la base PCB con tornillos M3 y tuercas.
-3. Conectar las **ruedas** a cada eje de motor.
-4. Instalar el **portabaterías** en el espacio designado del chasis inferior.
-
-> ⚠️ Verificar la orientación de cada motor: los del lado izquierdo giran en sentido contrario a los del derecho para asegurar la tracción correcta.
-
-#### 💡 Step 2 — Instalación de la matriz LED 8×16
-
-1. Colocar el módulo **LED 8×16** en la parte frontal del chasis.
-2. Fijarlo con 4 tornillos M3×6.
-3. Pasar el cable de datos por el interior del chasis hacia la placa superior.
-
-#### 🔄 Step 3 — Plataforma del servo (soporte del ultrasonidos)
-
-1. Montar la **plataforma giratoria** con 4 tornillos M1.2×4.
-2. Insertar el **servo motor** y fijarlo con tornillos M2×4.
-3. Instalar el **HC-SR04** en la plataforma giratoria.
-4. Organizar el cableado con bridas de plástico para evitar enredos.
-
-#### 🔋 Step 4 — Cierre de la estructura y portapilas
-
-1. Conectar el portabaterías al circuito de alimentación.
-2. Asegurarse de que el **interruptor de encendido** quede accesible.
-3. Verificar que todos los cables del nivel inferior queden ordenados.
-
-#### 🖥️ Step 5 — Montaje de la placa de control (PCB superior)
-
-1. Apilar la **Motor Driver Shield** sobre la placa de control.
-2. Fijar el conjunto al chasis superior con pilares de cobre y tornillos M3.
-3. Conectar los **4 motores** a las salidas del driver (M1, M2, M3, M4).
-4. Conectar la **alimentación** del portabaterías a la shield.
-
-#### 🔌 Step 6 — Conexión de sensores y módulos
-
-| Módulo | Puerto / Pin en shield |
-| :--- | :--- |
-| Sensor ultrasónico HC-SR04 | Trig: D12 / Echo: D13 |
-| Servo motor | D10 (PWM) |
-| Módulo Bluetooth HM-10 | RX-TX (Serial) |
-| Receptor IR | D9 |
-| Sensores de línea (×3) | A0, A1, A2 |
-| Matriz LED 8×16 | SDA / SCL (I2C) |
-
-> ⚠️ **Importante:** Cargar el sketch de Arduino **antes** de conectar el módulo Bluetooth HM-10, ya que comparte el puerto serie y bloquea la comunicación con el IDE.
+| Software | Versión Recomendada | Uso en el Proyecto |
+| :--- | :--- | :--- |
+| **Arduino IDE** | v1.8.19 o v2.x | Programación del ESP32 y placas Arduino |
+| **Ubuntu Server** | 22.04 LTS (64-bit) | Sistema operativo del servidor |
+| **Apache HTTP Server** | 2.4.x | Servidor web para el dashboard |
+| **MySQL / MariaDB** | 8.0.x / 10.6.x | Base de datos de usuarios y logs |
+| **Pi-hole** | v5.x (última estable) | Servidor DNS y DHCP local |
+| **Blender** | 3.6 LTS o 4.x | Modelado 3D del chasis |
+| **VS Code** | Última estable | Desarrollo web (HTML, CSS, JS) |
+| **PHP** | 8.1.x | Backend del panel web |
 
 ---
 
-### Modos de Operación del Vehículo
+### 3.5 Librerías Arduino Necesarias
+
+| Librería | Función | Cómo Instalarla |
+| :--- | :--- | :--- |
+| `Servo.h` | Control del servo motor | Incluida en Arduino IDE |
+| `IRremote.h` | Decodificación de señales IR | Library Manager → "IRremote" |
+| `HT16K33.h` | Comunicación I2C matriz LED | Library Manager → "Adafruit HT16K33" |
+| `SoftwareSerial.h` | Comunicación con módulo BT | Incluida en Arduino IDE |
+| `WiFi.h` | Conectividad Wi-Fi del ESP32 | Incluida en paquete ESP32 |
+| `WebServer.h` | Servidor HTTP ligero en ESP32 | Incluida en paquete ESP32 |
+
+---
+
+### 3.6 Materiales y Recursos Adicionales
+
+| Material | Cantidad Estimada | Dónde Obtenerlo |
+| :--- | :---: | :--- |
+| Filamento PLA (impresión 3D) | ~200g | Tiendas de impresión 3D / Amazon |
+| Tornillos M3, M2, M1.2 | Kit surtido | Ferretería / Amazon |
+| Pilares de cobre M3 | 8–12 unidades | Ferretería / Tiendas electrónica |
+| Bridas de plástico (cable ties) | 10–20 unidades | Ferretería / Todo a 100 |
+| Cable USB tipo A-B | 1 unidad | Incluido en el kit / Amazon |
+| Protoboard + cables dupont | 1 set | Tienda electrónica / AliExpress |
+| Cinta aislante negra | 1 rollo | Ferretería / Todo a 100 |
+| Baterías 18650 o pilas AA | 2 o 6 unidades | Ferretería / Supermercado |
+
+---
+
+### 3.7 Configuración de Red — Netplan
+
+```yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s8:
+      dhcp4: no
+      addresses: [10.10.10.10/24]
+      gateway4: 10.10.10.1
+      nameservers:
+          addresses: [10.10.10.10, 8.8.8.8]
+    enp0s3:
+      dhcp4: yes
+```
+
+Aplicar y verificar:
+
+```bash
+sudo netplan apply
+ip a
+ping luxury.local
+```
+
+---
+
+### 3.8 Modos de Operación del Vehículo
 
 | Modo | Descripción |
 | :--- | :--- |
@@ -301,17 +381,109 @@ El montaje se divide en **6 pasos** diferenciados, sin necesidad de soldadura.
 
 ---
 
-### Programación — Arduino IDE
+### 3.9 Roles y Permisos de Usuario
 
-- **Entorno:** Arduino IDE v1.8.x o superior
-- **Lenguaje:** C/C++ estándar para AVR
-- **Librerías necesarias:**
-  - `Servo.h` — control del servo
-  - `IRremote.h` — receptor infrarrojo
-  - `HT16K33.h` — matriz LED I2C
-  - `SoftwareSerial.h` — comunicación BT
+| Rol | Permisos |
+| :--- | :--- |
+| **Admin** | Control total: usuarios, logs, configuración de red |
+| **Operador** | Control del vehículo y visualización de telemetría |
+| **Invitado** | Solo visualización del dashboard (modo lectura) |
 
-**Proyectos de aprendizaje progresivos incluidos (17 en total):**
+Los roles se gestionan desde la base de datos **MySQL** conectada al backend **Apache + PHP**.
+
+</details>
+
+---
+
+<details>
+<summary><h2>🔴 4. Metodología de Trabajo</h2></summary>
+
+El proyecto se divide en **5 fases de implementación progresiva**. Cada fase tiene tareas concretas que permiten validar el sistema por bloques antes de la integración final.
+
+---
+
+### 🗓️ Fase 1 — Diseño y Planificación `Semana 1–2`
+
+- [ ] Definir arquitectura completa del sistema (red, servidor, hardware, web).
+- [ ] Diseñar el chasis del vehículo en Blender 3D.
+- [ ] Preparar el diagrama de red y topología LAN.
+- [ ] Crear la lista de materiales (BOM) completa.
+- [ ] Dividir el trabajo entre los integrantes del equipo.
+
+---
+
+### 🌐 Fase 2 — Infraestructura de Red `Semana 2–3`
+
+- [ ] Instalar Ubuntu Server 22.04 en la máquina virtual o física.
+- [ ] Configurar IP estática con Netplan.
+- [ ] Instalar y configurar Pi-hole como servidor DNS y DHCP.
+- [ ] Instalar Apache y PHP para el servidor web.
+- [ ] Instalar y configurar MySQL con las tablas de usuarios y logs.
+- [ ] Verificar conectividad completa de la red local.
+
+**Instalación de Pi-hole:**
+
+```bash
+# Paso 1 — Actualizar el sistema
+sudo apt update && sudo apt upgrade -y
+
+# Paso 2 — Instalar Pi-hole
+curl -sSL https://install.pi-hole.net | bash
+
+# Paso 3 — Establecer contraseña del panel web
+pihole -a -p
+```
+
+Configuración DHCP en el panel web `http://10.10.10.10/admin`:
+
+| Parámetro | Valor |
+| :--- | :--- |
+| IP de inicio | `10.10.10.100` |
+| IP de fin | `10.10.10.200` |
+| Gateway | `10.10.10.1` |
+| Tiempo de concesión | 24h |
+
+Registros DNS locales a añadir:
+
+| Nombre de dominio | IP |
+| :--- | :--- |
+| `luxury.local` | `10.10.10.10` |
+| `robot.local` | `10.10.10.50` (IP del ESP32) |
+
+---
+
+### 🤖 Fase 3 — Hardware y Firmware `Semana 3–4`
+
+- [ ] Imprimir el chasis en 3D y ensamblar la estructura del vehículo.
+- [ ] Montar los 4 motores, servo y sensores sobre el chasis.
+- [ ] Conectar la placa Arduino + shield de motores.
+- [ ] Programar el ESP32: control de motores, lectura de sensores y servidor HTTP.
+- [ ] Probar cada sensor de forma individual (ultrasónico, línea, IR).
+- [ ] Validar el control básico del vehículo por consola serie.
+
+**Pasos de ensamblaje:**
+
+| Step | Acción |
+| :---: | :--- |
+| 🔩 1 | Insertar los 4 motores DC en los soportes de aluminio y fijar al chasis inferior |
+| 💡 2 | Instalar la matriz LED 8×16 en la parte frontal con tornillos M3×6 |
+| 🔄 3 | Montar la plataforma del servo con el HC-SR04 encima |
+| 🔋 4 | Conectar portabaterías y verificar el interruptor de encendido |
+| 🖥️ 5 | Apilar la Motor Driver Shield sobre la placa de control y conectar motores |
+| 🔌 6 | Conectar todos los sensores y módulos según la tabla de pines |
+
+**Tabla de pines:**
+
+| Módulo | Pin en shield |
+| :--- | :--- |
+| Sensor ultrasónico HC-SR04 | Trig: D12 / Echo: D13 |
+| Servo motor | D10 (PWM) |
+| Módulo Bluetooth HM-10 | RX-TX (Serial) |
+| Receptor IR | D9 |
+| Sensores de línea (×3) | A0, A1, A2 |
+| Matriz LED 8×16 | SDA / SCL (I2C) |
+
+**Proyectos de aprendizaje Arduino (17 en total):**
 
 ```
 Proyecto 01 → LED blink básico
@@ -335,188 +507,25 @@ Proyecto 17 → Robot multi-función completo
 
 ---
 
-### Diseño y Fabricación 3D
+### 🖥️ Fase 4 — Desarrollo Web `Semana 4–5`
 
-- **Prototipo digital:** Optimización de piezas y verificación de encajes.
-- **Modelo físico:** Impresión 3D y ensamblaje final.
-
-<table>
-<tr>
-<td align="center">
-<strong>Prototipo digital</strong><br>
-<img src="https://i.imgur.com/IZttiWP.png" width="245"/>
-</td>
-<td align="center">
-<strong>Modelo físico</strong><br>
-<img src="https://i.imgur.com/bTWoQN3.png" width="245"/>
-</td>
-</tr>
-</table>
-
-> [!IMPORTANT]
-> Explora el modelo 3D: [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
-
-</details>
+- [ ] Diseñar el dashboard con estética Dark Gold (HTML + CSS).
+- [ ] Implementar el sistema de login y gestión de roles.
+- [ ] Desarrollar la lógica de control (JavaScript + Fetch API / WebSocket).
+- [ ] Integrar el backend PHP para comunicar el dashboard con el ESP32.
+- [ ] Implementar el sistema de logs en tiempo real.
 
 ---
 
-<details>
-<summary><h2>🏗️ 5. Arquitectura & Red</h2></summary>
+### ✅ Fase 5 — Integración, Pruebas y Documentación `Semana 5–6`
 
-### Flujo de datos
+- [ ] Integrar todos los módulos del sistema.
+- [ ] Realizar pruebas de latencia (ping, control remoto).
+- [ ] Validar la seguridad del acceso web (roles, sesiones).
+- [ ] Documentar el proyecto completo (README GitHub + memoria técnica).
+- [ ] Preparar la presentación final del proyecto.
 
-1. Usuario envía orden desde web.
-2. Apache + PHP procesan solicitud y validan usuario.
-3. Servidor transmite datos al ESP32 por Wi-Fi.
-4. ESP32 ejecuta órdenes en motores y sensores.
-
-**Diagrama de red:**
-
-<p align="center">
-<img src="https://i.imgur.com/WzbjxSQ.png" width="550"/>
-</p>
-
-### Protocolos y Latencia
-
-- **HTTP/HTTPS** para comunicación web.
-- **TCP/IP** en la red local.
-- **MQTT opcional** para telemetría.
-- Latencia medida < 100ms entre orden y ejecución.
-
-</details>
-
----
-
-<details>
-<summary><h2>🔐 6. Servicios & Roles</h2></summary>
-
-### DNS Local y DHCP
-
-**DNS**
-- Traduce nombres de dominio a IP.
-- Facilita acceso a servicios web internos.
-- Implementación: Pi-hole en Ubuntu Server.
-
-**DHCP**
-- Asigna IP automáticamente a clientes.
-- Reduce errores y simplifica integración de nuevos dispositivos.
-
----
-
-### Instalación y Configuración de Pi-hole (DNS + DHCP)
-
-Pi-hole actúa como servidor DNS y DHCP centralizado de la red interna del proyecto.
-
-#### Requisitos previos
-
-- Ubuntu Server 64-bit instalado y actualizado.
-- IP estática configurada en el servidor (ver Netplan más abajo).
-- Acceso a internet durante la instalación.
-
-#### Paso 1 — Actualizar el sistema
-
-```bash
-sudo apt update && sudo apt upgrade -y
-```
-
-#### Paso 2 — Instalar Pi-hole
-
-```bash
-curl -sSL https://install.pi-hole.net | bash
-```
-
-Durante el asistente de instalación:
-
-| Opción | Valor recomendado |
-| :--- | :--- |
-| Interface de red | `enp0s8` (la interna, IP estática) |
-| Upstream DNS | `8.8.8.8` (Google) o `1.1.1.1` (Cloudflare) |
-| Instalar admin web | ✅ Sí |
-| Instalar lighttpd | ✅ Sí |
-| Habilitar query logging | ✅ Sí |
-
-#### Paso 3 — Establecer contraseña del panel web
-
-```bash
-pihole -a -p
-```
-
-#### Paso 4 — Activar el servidor DHCP en Pi-hole
-
-1. Acceder al panel web: `http://10.10.10.10/admin`
-2. Ir a **Settings → DHCP**
-3. Activar **DHCP server enabled**
-4. Configurar rango de IPs:
-
-| Parámetro | Valor |
-| :--- | :--- |
-| IP de inicio | `10.10.10.100` |
-| IP de fin | `10.10.10.200` |
-| Gateway | `10.10.10.1` |
-| Tiempo de concesión | 24h |
-
-> ⚠️ Si el router ya tiene DHCP activo, desactivarlo primero para evitar conflictos.
-
-#### Paso 5 — Añadir registros DNS locales
-
-En **Settings → DNS → Local DNS Records**, añadir:
-
-| Nombre de dominio | IP |
-| :--- | :--- |
-| `luxury.local` | `10.10.10.10` |
-| `robot.local` | `10.10.10.50` (IP del ESP32) |
-
----
-
-### Netplan y configuración de red
-
-```yaml
-network:
-  version: 2
-  renderer: networkd
-  ethernets:
-    enp0s8:
-      dhcp4: no
-      addresses: [10.10.10.10/24]
-      gateway4: 10.10.10.1
-      nameservers:
-          addresses: [10.10.10.10, 8.8.8.8]
-    enp0s3:
-      dhcp4: yes
-```
-
-Aplicar cambios:
-
-```bash
-sudo netplan apply
-```
-
-Verificar:
-
-```bash
-ip a
-ping luxury.local
-```
-
----
-
-### Roles y Permisos de Usuario
-
-| Rol | Permisos |
-| :--- | :--- |
-| **Admin** | Control total: usuarios, logs, configuración de red |
-| **Operador** | Control del vehículo y visualización de telemetría |
-| **Invitado** | Solo visualización del dashboard (modo lectura) |
-
-Los roles se gestionan desde la base de datos **MySQL** conectada al backend **Apache + PHP**.
-
-</details>
-
----
-
-<details>
-<summary><h2>🧪 7. Pruebas Realizadas</h2></summary>
-
+**Pruebas realizadas:**
 - **Ping y latencia:** Medición de tiempos de respuesta en la red local.
 - **Control remoto:** Verificación de respuesta del ESP32 ante órdenes del dashboard.
 - **Seguimiento de línea:** Pruebas físicas con el sensor de trayectoria.
@@ -528,17 +537,195 @@ Los roles se gestionan desde la base de datos **MySQL** conectada al backend **A
 ---
 
 <details>
-<summary><h2>🏆 8. Conclusiones</h2></summary>
+<summary><h2>🟣 5. Recursos Disponibles</h2></summary>
 
-El proyecto **Luxury_SL** ha permitido integrar de forma práctica y profesional todos los bloques del ciclo SMX2: redes, hardware embebido, servicios de servidor y diseño físico. La combinación de ESP32 con infraestructura web propia (DNS, DHCP, Apache, MySQL) ha demostrado ser una arquitectura robusta y escalable, muy superior a soluciones punto a punto como Bluetooth o IR aislados.
+### 📚 Documentación Oficial
 
-El modelado 3D del chasis y el ensamblaje físico del vehículo han completado la experiencia, haciendo del proyecto un entregable técnico real y funcional.
+| Recurso | Enlace |
+| :--- | :--- |
+| Documentación ESP32 | https://docs.espressif.com/projects/esp-idf/en/latest/ |
+| Arduino Reference | https://www.arduino.cc/reference/en/ |
+| Documentación Pi-hole | https://docs.pi-hole.net/ |
+| Apache HTTP Server Docs | https://httpd.apache.org/docs/ |
+| MySQL 8.0 Reference | https://dev.mysql.com/doc/refman/8.0/en/ |
+| Ubuntu Server Guide | https://ubuntu.com/server/docs |
+| Guía oficial del kit 4WD | https://docs.keyestudio.com/projects/KS0470/ |
+
+---
+
+### 🎥 Videotutoriales Recomendados
+
+| Tema | Canal | Enlace |
+| :--- | :--- | :--- |
+| Montaje del coche 4WD | Keyestudio Channel | [youtube.com/@keyestudio](https://youtube.com/@keyestudio) |
+| ESP32 + Arduino IDE setup | Random Nerd Tutorials | [randomnerdtutorials.com](https://randomnerdtutorials.com) |
+| Pi-hole instalación completa | Wolfgang's Channel | [youtube.com/@WolfgangsChannel](https://youtube.com/@WolfgangsChannel) |
+| Netplan Ubuntu Server | Christian Lempa | [youtube.com/@christianlempa](https://youtube.com/@christianlempa) |
+| Blender modelado básico | Blender Guru | [youtube.com/@blenderguru](https://youtube.com/@blenderguru) |
+| Dashboard HTML/CSS/JS | Fireship | [youtube.com/@Fireship](https://youtube.com/@Fireship) |
+| Apache + PHP + MySQL | Traversy Media | [youtube.com/@TraversyMedia](https://youtube.com/@TraversyMedia) |
+
+---
+
+### 💻 Repositorios y Recursos de Código
+
+| Recurso | Enlace |
+| :--- | :--- |
+| Repositorio GitHub del proyecto | *(URL interna del equipo)* |
+| Getting Started with Arduino | https://getting-started-with-arduino.readthedocs.io |
+| Random Nerd Tutorials ESP32 | https://randomnerdtutorials.com/esp32/ |
+| Stack Exchange Electronics | https://electronics.stackexchange.com |
+| Foro de soporte Arduino (ES) | https://forum.arduino.cc/ |
 
 </details>
 
 ---
 
+<details>
+<summary><h2>🟠 6. Desafíos y Soluciones Previstas</h2></summary>
+
+Basándonos en la documentación oficial del kit y en la experiencia de la comunidad Arduino, hemos identificado los principales problemas que pueden surgir durante el desarrollo del proyecto, junto con las estrategias para resolverlos.
+
+---
+
+### ⚡ Hardware y Electrónica
+
+<details>
+<summary><strong>▶ Módulo Bluetooth bloquea la subida de código</strong></summary>
+
+**Problema:** El HM-10 comparte el puerto serie (RX/TX) con el Arduino IDE. Si está conectado, falla la carga del sketch.
+
+**Solución:** Retirar siempre el módulo Bluetooth **antes** de cargar cualquier sketch. Reconectarlo solo después de la subida exitosa.
+
+</details>
+
+<details>
+<summary><strong>▶ Driver CP2102 no reconocido por el sistema operativo</strong></summary>
+
+**Problema:** Algunos sistemas operativos no instalan automáticamente el driver del chip CP2102.
+
+**Solución:** Descargar e instalar el driver CP2102 manualmente desde la página de Silicon Labs. Verificar el puerto COM en el Administrador de Dispositivos.
+
+</details>
+
+<details>
+<summary><strong>▶ El servo no vuelve a 90° al inicio</strong></summary>
+
+**Problema:** Si no se inicializa el servo, el sensor ultrasónico puede quedar girado y dar lecturas erróneas desde el arranque.
+
+**Solución:** Añadir en el `setup()` del sketch una instrucción explícita para centrar el servo:
+
+```cpp
+void setup() {
+  myServo.attach(10);
+  myServo.write(90); // Centrar el servo al inicio
+}
+```
+
+</details>
+
+<details>
+<summary><strong>▶ Motores de velocidad asimétrica</strong></summary>
+
+**Problema:** Los 4 motores DC pueden tener pequeñas diferencias de fabricación que provocan que el coche no vaya completamente recto.
+
+**Solución:** Calibrar los valores de PWM de cada motor individualmente en el código hasta conseguir movimiento recto estable.
+
+</details>
+
+<details>
+<summary><strong>▶ Película protectora olvidada en el chasis</strong></summary>
+
+**Problema:** El chasis viene con una película plástica protectora que puede generar cortocircuitos si no se retira.
+
+**Solución:** ⚠️ Retirar **siempre** la película plástica de todas las piezas del chasis **antes** de instalar cualquier componente electrónico.
+
+</details>
+
+---
+
+### 📡 Sensores y Lecturas
+
+<details>
+<summary><strong>▶ Sensor de línea falla bajo luz solar directa</strong></summary>
+
+**Problema:** El TCRT5000 es sensible a la luz ambiental. En exteriores o con luz solar directa, da lecturas incorrectas.
+
+**Solución:** Probar siempre en entornos con luz controlada. Ajustar el potenciómetro de sensibilidad antes de cada sesión.
+
+</details>
+
+---
+
+### 🌐 Red e Infraestructura
+
+<details>
+<summary><strong>▶ Conflicto DHCP entre Pi-hole y el router</strong></summary>
+
+**Problema:** Si el router ya tiene DHCP activo, puede haber conflicto de IPs con Pi-hole, causando fallos de conectividad en toda la red.
+
+**Solución:** Desactivar el DHCP del router **antes** de activar Pi-hole. Documentar el rango de IPs asignado para evitar solapamientos.
+
+</details>
+
+<details>
+<summary><strong>▶ Latencia alta o pérdida de paquetes Wi-Fi</strong></summary>
+
+**Problema:** Si el ESP32 y el servidor están en redes distintas o hay interferencias, la latencia puede superar los 200ms.
+
+**Solución:** Asegurar que el ESP32 y el servidor estén en la misma LAN local. Usar banda de 2.4GHz para mayor alcance.
+
+</details>
+
+---
+
+### 🖥️ Desarrollo Web e Integración
+
+<details>
+<summary><strong>▶ Integración web + ESP32: CORS y timeout</strong></summary>
+
+**Problema:** El dashboard web puede bloquearse por políticas CORS al intentar comunicarse directamente con el ESP32.
+
+**Solución:** Añadir cabeceras CORS en el servidor HTTP del ESP32 o usar Apache como proxy intermedio.
+
+```cpp
+server.sendHeader("Access-Control-Allow-Origin", "*");
+```
+
+</details>
+
+<details>
+<summary><strong>▶ Pérdida de datos de telemetría en tiempo real</strong></summary>
+
+**Problema:** El uso de polling HTTP puede saturar el ESP32 con muchas peticiones simultáneas y provocar reinicios.
+
+**Solución:** Implementar WebSocket para telemetría en tiempo real. Limitar la frecuencia de actualización del dashboard a 200–500ms.
+
+</details>
+
+---
+
+### 🛡️ Estrategia General de Resolución de Problemas
+
+- **Trabajar por bloques:** validar cada componente de forma individual antes de integrar.
+- **Monitor serie:** usar el monitor serie del Arduino IDE para depurar el firmware en tiempo real.
+- **Documentar errores:** mantener un registro en GitHub Issues para resolver problemas de forma colaborativa.
+- **Entorno controlado:** realizar pruebas sin luz solar directa y con red estable antes de las demos finales.
+- **Comunidad:** consultar el foro oficial de Arduino y la documentación del kit ante cualquier duda de hardware.
+
+</details>
+
+---
+
+## 🏆 Conclusiones
+
+El proyecto **Luxury_SL** ha permitido integrar de forma práctica y profesional todos los bloques del ciclo SMX2: redes, hardware embebido, servicios de servidor y diseño físico. La combinación de ESP32 con infraestructura web propia (DNS, DHCP, Apache, MySQL) ha demostrado ser una arquitectura robusta y escalable, muy superior a soluciones punto a punto como Bluetooth o IR aislados.
+
+El modelado 3D del chasis y el ensamblaje físico del vehículo han completado la experiencia, haciendo del proyecto un entregable técnico real y funcional.
+
+---
+
 <div align="center">
   <p>Desarrollado por <strong>Katya Robuste</strong> ⬥ <strong>Nazar Kishchuk</strong></p>
-  <p><em>LUXURY_SL — Proyecto Integral SMX2</em></p>
+  <p><em>LUXURY_SL — Proyecto Integral SMX2 · 2024–2025</em></p>
 </div>
