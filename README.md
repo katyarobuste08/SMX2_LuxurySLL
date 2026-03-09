@@ -1,20 +1,26 @@
-# 💎 LUXURY_SL — Documento de Presentación del Proyecto
-> **Integración de sistemas, redes, hardware IoT y diseño industrial para el módulo de SMX2.**
-
 <div align="center">
   <img src="https://i.imgur.com/FG6uNYF.png" width="220"/>
+  <br><br>
+  <h1>💎 LUXURY_SL</h1>
+  <p><strong>Integración de sistemas, redes, hardware IoT y diseño industrial para el módulo SMX2</strong></p>
   <br>
-  <h1><strong>LUXURY_SL</strong></h1>
   <p>Desarrollado por:</p>
   <h3><strong>Katya Robuste</strong> ⬥ <strong>Nazar Kishchuk</strong></h3>
   <p><em>Ciclo: Sistemas Microinformáticos y Redes (SMX2) · Curso 2024–2025</em></p>
+  <br>
+
+  ![Ubuntu](https://img.shields.io/badge/Ubuntu_Server-22.04_LTS-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+  ![Apache](https://img.shields.io/badge/Apache-2.4.x-D22128?style=for-the-badge&logo=apache&logoColor=white)
+  ![MySQL](https://img.shields.io/badge/MySQL-8.0.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+  ![PHP](https://img.shields.io/badge/PHP-8.1.x-777BB4?style=for-the-badge&logo=php&logoColor=white)
+  ![Arduino](https://img.shields.io/badge/Arduino-ESP32-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+  ![Blender](https://img.shields.io/badge/Blender-3.6_LTS-F5792A?style=for-the-badge&logo=blender&logoColor=white)
+
 </div>
 
 ---
 
 ## 📑 Índice
-
-<div align="center">
 
 | | Apartado |
 | :---: | :--- |
@@ -22,15 +28,14 @@
 | 🔵 | [**2. Objetivos del Proyecto**](#-2-objetivos-del-proyecto) |
 | 🟡 | [**3. Requisitos Técnicos**](#-3-requisitos-técnicos) |
 | 🔴 | [**4. Metodología de Trabajo**](#-4-metodología-de-trabajo) |
-| 🟣 | [**5. Recursos Disponibles**](#-5-recursos-disponibles) |
-| 🟠 | [**6. Desafíos y Soluciones Previstas**](#-6-desafíos-y-soluciones-previstas) |
-
-</div>
+| 🌐 | [**5. Infraestructura de Servicios de Red**](#-5-infraestructura-de-servicios-de-red) |
+| 🟣 | [**6. Recursos Disponibles**](#-6-recursos-disponibles) |
+| 🟠 | [**7. Desafíos y Soluciones Previstas**](#-7-desafíos-y-soluciones-previstas) |
+| 🏆 | [**8. Conclusiones**](#-8-conclusiones) |
 
 ---
 
-<details>
-<summary><h2>🟢 1. Presentación de la Idea</h2></summary>
+## 🟢 1. Presentación de la Idea
 
 **Luxury_SL** es un proyecto técnico integral desarrollado como ejercicio final del ciclo **SMX2** (Sistemas Microinformáticos y Redes). Su propósito es construir un ecosistema funcional que integre software, hardware y redes para controlar un vehículo robótico de 4 ruedas mediante una **interfaz web propia**.
 
@@ -79,17 +84,17 @@ La web funciona como **centro de control del vehículo**, diseñada con estétic
 <td align="center">
 <strong>Dashboard</strong><br>
 <img src="https://i.imgur.com/Xhj3vUs.png" width="220"/><br>
-<span style="color:gray;">Estado del vehículo en tiempo real</span>
+<span>Estado del vehículo en tiempo real</span>
 </td>
 <td align="center">
 <strong>Acceso de Usuario</strong><br>
 <img src="https://i.imgur.com/xFugChF.png" width="220"/><br>
-<span style="color:gray;">Gestión de sesiones seguras</span>
+<span>Gestión de sesiones seguras</span>
 </td>
 <td align="center">
 <strong>Mapa de Logros</strong><br>
 <img src="https://i.imgur.com/snpG4OU.png" width="220"/><br>
-<span style="color:gray;">Seguimiento de tareas y hitos del proyecto</span>
+<span>Seguimiento de tareas y hitos del proyecto</span>
 </td>
 </tr>
 <tr>
@@ -164,12 +169,9 @@ El cerebro del coche es el **ESP32**, que maneja la comunicación con el servido
 > [!IMPORTANT]
 > Explora el modelo 3D interactivo: [Sketchfab Luxury_SL](https://skfb.ly/pCxW9)
 
-</details>
-
 ---
 
-<details>
-<summary><h2>🔵 2. Objetivos del Proyecto</h2></summary>
+## 🔵 2. Objetivos del Proyecto
 
 ### Objetivo General
 
@@ -201,12 +203,9 @@ Diseñar, construir y desplegar un sistema IoT completo que integre hardware emb
 | **Diseño 3D** | Modelado en Blender, optimización para impresión y ensamblaje físico |
 | **Seguridad** | Gestión de roles, sesiones y control de acceso en aplicación web |
 
-</details>
-
 ---
 
-<details>
-<summary><h2>🟡 3. Requisitos Técnicos</h2></summary>
+## 🟡 3. Requisitos Técnicos
 
 ### 3.1 Tecnologías y Herramientas
 
@@ -224,7 +223,6 @@ Diseñar, construir y desplegar un sistema IoT completo que integre hardware emb
 <p align="center">
   <img src="https://e7.pngegg.com/pngimages/146/983/png-clipart-blender-3d-computer-graphics-logo-filehippo-3d-modeling-blenders-3d-computer-graphics-text-thumbnail.png" height="45"/>
   <img src="https://e7.pngegg.com/pngimages/187/112/png-clipart-responsive-web-design-html-computer-icons-css3-world-wide-web-consortium-css-angle-text.png" height="45"/>
-  <img src="https://pngdownload.io/wp-content/uploads/2023/12/CSS-Logo-PNG-Symbol-for-Web-Development-Transparent-jpg.webp" height="45"/>
   <img src="https://cdn-icons-png.flaticon.com/512/8379/8379454.png" height="45"/>
   <img src="https://toppng.com/uploads/preview/arduino-logo-11563227354ny21akychx.png" height="45"/>
   <img src="https://img.favpng.com/25/15/12/logo-apache-http-server-apache-software-foundation-computer-servers-web-server-png-favpng-ebJ1wHvFsydhrpp6V0xFN5NBQ.jpg" height="45"/>
@@ -391,12 +389,9 @@ ping luxury.local
 
 Los roles se gestionan desde la base de datos **MySQL** conectada al backend **Apache + PHP**.
 
-</details>
-
 ---
 
-<details>
-<summary><h2>🔴 4. Metodología de Trabajo</h2></summary>
+## 🔴 4. Metodología de Trabajo
 
 El proyecto se divide en **5 fases de implementación progresiva**. Cada fase tiene tareas concretas que permiten validar el sistema por bloques antes de la integración final.
 
@@ -532,12 +527,269 @@ Proyecto 17 → Robot multi-función completo
 - **Evitación de obstáculos:** Validación del HC-SR04 en entornos reales.
 - **Carga de la web:** Test de sesiones concurrentes en Apache.
 
-</details>
+---
+
+## 🌐 5. Infraestructura de Servicios de Red
+
+La infraestructura implementada constituye el **núcleo lógico de la red local** del proyecto. Está diseñada para proporcionar resolución de nombres, asignación automática de direcciones IP y publicación de servicios web internos mediante una arquitectura centralizada sobre Ubuntu Server.
+
+El sistema integra dos grandes bloques de servicio que trabajan de forma coordinada:
+
+- 🛡️ **Servidor DNS + DHCP centralizado** mediante Pi-hole
+- 🌍 **Servidor Web dinámico** mediante Apache + PHP
+
+Ambos servicios permiten que los dispositivos cliente funcionen de forma automatizada, organizada y segura dentro de la red LAN.
 
 ---
 
-<details>
-<summary><h2>🟣 5. Recursos Disponibles</h2></summary>
+### 🛡️ 5.1 Servicio DNS + DHCP — Pi-hole
+
+#### Teoría
+
+Pi-hole se implementa como servidor de infraestructura básica de red, cumpliendo dos funciones críticas:
+
+- 🔹 **DNS (Domain Name System):** Resuelve nombres de dominio a direcciones IP. En vez de escribir la IP manualmente, permite escribir el nombre del dominio para acceder a la web del proyecto.
+- 🔹 **DHCP (Dynamic Host Configuration Protocol):** Asigna direcciones IP automáticamente a los clientes conectados a la misma red.
+
+#### Función dentro de la red
+
+Actúa como punto central de resolución y asignación de red. Todos los dispositivos de la LAN utilizan este servidor como referencia primaria de comunicación.
+
+**¿A quién da servicio?**
+- Equipos cliente Windows/Linux
+- Dispositivos móviles
+- Máquinas virtuales
+- Cualquier dispositivo conectado por cable o Wi-Fi
+
+**Problema que resuelve:**
+
+| Sin Pi-hole | Con Pi-hole |
+| :--- | :--- |
+| Las IP deberían configurarse manualmente | Automatización total de configuración IP |
+| No existiría resolución de nombres interna | Control centralizado del tráfico DNS |
+| Mayor desorden y riesgo de conflictos IP | Mejora de seguridad y administración |
+
+---
+
+#### ⚙️ Instalación y Configuración de Pi-hole
+
+**Equipo donde se instala:** PC del aula en máquina virtual
+
+**Especificaciones técnicas de la MV:**
+
+| Parámetro | Valor |
+| :--- | :--- |
+| S.O | Ubuntu Server (64-bit) |
+| Red (interfaz 1) | Red interna — Comunicación Pi-hole ↔ DNS |
+| Red (interfaz 2) | Adaptador puente — Acceso a red real / Internet |
+| HDD | 15 GB |
+| RAM | 1 GB |
+| CPU | 2 núcleos |
+
+**Instalación:**
+
+```bash
+curl -sSL https://install.pi-hole.net | bash
+```
+
+Durante la instalación se configura:
+- Interfaz de red con Netplan
+- DNS upstream (8.8.8.8 / 1.1.1.1)
+- IP estática del servidor
+
+---
+
+#### 🔧 Puertos Utilizados
+
+| Puerto | Protocolo | Función |
+| :---: | :---: | :--- |
+| **53** | TCP/UDP | DNS — Resolución de nombres de dominio |
+| **80** | TCP | Panel Web Pi-hole (HTTP) |
+| **443** | TCP | HTTPS |
+
+> [!NOTE]
+> Solo estos tres puertos están abiertos en el firewall.
+
+**Funciones DNS activas:**
+- Bloqueo de dominios no deseados.
+- Registros DNS locales personalizados.
+
+---
+
+#### 🧪 Verificación de Funcionamiento — Pi-hole
+
+**Estado del servicio:**
+
+```bash
+systemctl status pihole-FTL
+# Resultado esperado: active (running)
+```
+
+**Pruebas desde cliente:**
+
+```bash
+# Ping al servidor
+ping 10.10.10.10
+
+# Resolución DNS
+# Resultado esperado: devuelve dirección IP válida
+```
+
+> [!NOTE]
+> El acceso web vía `luxury.local` está pendiente de aplicar.
+
+---
+
+#### 🚨 Incidencias Técnicas — Pi-hole
+
+| Problema | Causa | Solución |
+| :--- | :--- | :--- |
+| No resuelve dominios | Puerto 53 bloqueado | Revisar firewall y reglas UFW |
+
+---
+
+#### 🔐 Seguridad Implementada — Pi-hole
+
+- Firewall abierto únicamente en puertos `53`, `80` y `443`.
+- Usuario del servicio: `pihole`.
+- Acceso SSH restringido.
+- Actualizaciones periódicas:
+
+```bash
+apt update && apt upgrade
+pihole -up
+```
+
+- Permisos revisados en directorio `/etc/pihole`.
+
+---
+
+### 🌍 5.2 Servidor Web Interno — Apache + PHP
+
+#### Teoría
+
+El servidor web permite alojar aplicaciones y páginas accesibles desde navegador dentro de la red local:
+
+- **Apache** gestiona peticiones HTTP/HTTPS.
+- **PHP** permite ejecutar lógica dinámica en el servidor.
+
+**Función dentro de la red:** Publicar contenido web interno como intranet, paneles de administración y aplicaciones del proyecto.
+
+**¿A quién da servicio?** Usuarios conectados a la red LAN que acceden mediante navegador web.
+
+**Problema que resuelve:** Centraliza aplicaciones sin necesidad de instalación en clientes.
+
+---
+
+#### ⚙️ Instalación y Configuración de Apache
+
+**Requisitos del sistema:**
+
+| Parámetro | Valor |
+| :--- | :--- |
+| Sistema Operativo | Ubuntu Server 22.04 |
+| CPU mínima | 1 núcleo |
+| RAM recomendada | 1 GB |
+| Disco mínimo | 10 GB |
+
+**Instalación:**
+
+```bash
+apt install apache2 php libapache2-mod-php
+```
+
+---
+
+#### 🔧 Parámetros Básicos de Apache
+
+**Puertos activos:**
+
+| Puerto | Protocolo |
+| :---: | :--- |
+| **80** | HTTP |
+| **443** | HTTPS |
+
+**Directorios principales:**
+
+| Directorio | Ruta |
+| :--- | :--- |
+| Raíz web | `/var/www/html` |
+| Configuración | `/etc/apache2/apache2.conf` |
+| Virtual Hosts | `/etc/apache2/sites-available` |
+
+**Configuración de Virtual Host:**
+
+```apache
+<VirtualHost *:80>
+    ServerName intranet.local
+    DocumentRoot /var/www/intranet
+</VirtualHost>
+```
+
+**Activar el sitio:**
+
+```bash
+a2ensite intranet.conf
+systemctl reload apache2
+```
+
+---
+
+#### 🧪 Verificación de Funcionamiento — Apache
+
+**Estado del servicio:**
+
+```bash
+systemctl status apache2
+```
+
+**Prueba desde navegador:**
+
+```
+http://192.168.1.3
+```
+
+**Prueba de PHP** — Crear `/var/www/html/info.php`:
+
+```php
+<?php phpinfo(); ?>
+```
+
+> Si muestra la configuración PHP → correcto funcionamiento.
+
+**Logs del servidor:**
+
+```
+/var/log/apache2/access.log
+/var/log/apache2/error.log
+```
+
+---
+
+#### 🚨 Incidencias Técnicas — Apache
+
+| Error | Causa | Solución |
+| :--- | :--- | :--- |
+| **Error 403** | Permisos incorrectos | `chown -R www-data:www-data /var/www/` |
+| **Puerto 80 ocupado** | Otro proceso usa el puerto | `netstat -tulpn` para identificarlo |
+
+---
+
+#### 🔐 Seguridad Implementada — Apache
+
+- Puertos abiertos únicamente `80` y `443`.
+- Usuario del servicio: `www-data`.
+- Listado de directorios deshabilitado.
+- Versión de Apache oculta en cabeceras.
+- Actualizaciones periódicas:
+
+```bash
+apt update && apt upgrade
+```
+
+---
+
+## 🟣 6. Recursos Disponibles
 
 ### 📚 Documentación Oficial
 
@@ -550,6 +802,10 @@ Proyecto 17 → Robot multi-función completo
 | MySQL 8.0 Reference | https://dev.mysql.com/doc/refman/8.0/en/ |
 | Ubuntu Server Guide | https://ubuntu.com/server/docs |
 | Guía oficial del kit 4WD | https://docs.keyestudio.com/projects/KS0470/ |
+| RFC 1035 (DNS) | https://www.rfc-editor.org/rfc/rfc1035 |
+| RFC 2131 (DHCP) | https://www.rfc-editor.org/rfc/rfc2131 |
+| OWASP Secure Web Server Guide | https://owasp.org/ |
+| Documentación oficial PHP | https://www.php.net/docs.php |
 
 ---
 
@@ -571,22 +827,14 @@ Proyecto 17 → Robot multi-función completo
 
 | Recurso | Enlace |
 | :--- | :--- |
-| Repositorio GitHub del proyecto | *(URL interna del equipo)* |
 | Getting Started with Arduino | https://getting-started-with-arduino.readthedocs.io |
 | Random Nerd Tutorials ESP32 | https://randomnerdtutorials.com/esp32/ |
 | Stack Exchange Electronics | https://electronics.stackexchange.com |
 | Foro de soporte Arduino (ES) | https://forum.arduino.cc/ |
 
-</details>
-
 ---
 
-<details>
-<summary><h2>🟠 6. Desafíos y Soluciones Previstas</h2></summary>
-
-Basándonos en la documentación oficial del kit y en la experiencia de la comunidad Arduino, hemos identificado los principales problemas que pueden surgir durante el desarrollo del proyecto, junto con las estrategias para resolverlos.
-
----
+## 🟠 7. Desafíos y Soluciones Previstas
 
 ### ⚡ Hardware y Electrónica
 
@@ -713,19 +961,26 @@ server.sendHeader("Access-Control-Allow-Origin", "*");
 - **Entorno controlado:** realizar pruebas sin luz solar directa y con red estable antes de las demos finales.
 - **Comunidad:** consultar el foro oficial de Arduino y la documentación del kit ante cualquier duda de hardware.
 
-</details>
-
 ---
 
-## 🏆 Conclusiones
+## 🏆 8. Conclusiones
 
 El proyecto **Luxury_SL** ha permitido integrar de forma práctica y profesional todos los bloques del ciclo SMX2: redes, hardware embebido, servicios de servidor y diseño físico. La combinación de ESP32 con infraestructura web propia (DNS, DHCP, Apache, MySQL) ha demostrado ser una arquitectura robusta y escalable, muy superior a soluciones punto a punto como Bluetooth o IR aislados.
+
+La implementación de **Pi-hole** como servidor DNS + DHCP centralizado garantiza una red interna ordenada, segura y automatizada. El **servidor Apache + PHP** completa el ecosistema, publicando el dashboard de control sin necesidad de instalaciones en los clientes.
 
 El modelado 3D del chasis y el ensamblaje físico del vehículo han completado la experiencia, haciendo del proyecto un entregable técnico real y funcional.
 
 ---
 
 <div align="center">
+  <br>
   <p>Desarrollado por <strong>Katya Robuste</strong> ⬥ <strong>Nazar Kishchuk</strong></p>
   <p><em>LUXURY_SL — Proyecto Integral SMX2 · 2024–2025</em></p>
+  <br>
+
+  ![GitHub](https://img.shields.io/badge/GitHub-SMX2_Project-181717?style=for-the-badge&logo=github&logoColor=white)
+  ![Status](https://img.shields.io/badge/Estado-En_Desarrollo-yellow?style=for-the-badge)
+  ![License](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge)
+
 </div>
