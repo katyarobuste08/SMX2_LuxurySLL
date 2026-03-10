@@ -6,7 +6,7 @@
   <br>
   <p>Desarrollado por:</p>
   <h3><strong>Katya Robuste</strong> ⬥ <strong>Nazar Kishchuk</strong></h3>
-  <p><em>Ciclo: Sistemas Microinformáticos y Redes (SMX2) · Curso 2025–2026</em></p>
+  <p><em>Ciclo: Sistemas Microinformáticos y Redes (SMX2) · Curso 2024–2025</em></p>
   <br>
 
   ![Ubuntu](https://img.shields.io/badge/Ubuntu_Server-22.04_LTS-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
@@ -20,7 +20,9 @@
 
 ---
 
-## 📑 1. Índice
+<details>
+<summary><strong>📑 1. Índice</strong></summary>
+
 
 | # | Apartado |
 | :---: | :--- |
@@ -50,7 +52,12 @@
 
 ---
 
-## 🟢 2. Introducción — ¿Qué estamos haciendo?
+
+</details>
+
+<details>
+<summary><strong>🟢 2. Introducción — ¿Qué estamos haciendo?</strong></summary>
+
 
 **Luxury_SL** es un proyecto técnico integral desarrollado como trabajo final del ciclo **SMX2** (Sistemas Microinformáticos y Redes). Construimos un ecosistema completo que integra software, hardware y redes para controlar un vehículo robótico de 4 ruedas mediante una **interfaz web propia**, sin depender de ningún servicio cloud externo.
 
@@ -97,7 +104,12 @@ Usuario (Navegador)
 
 ---
 
-## 💡 3. Briefing de Ideas
+
+</details>
+
+<details>
+<summary><strong>💡 3. Briefing de Ideas</strong></summary>
+
 
 Antes de definir el proyecto final, se valoraron varias ideas. A continuación se recoge el proceso de selección.
 
@@ -143,7 +155,12 @@ El proyecto combina conocimientos de todos los módulos del ciclo SMX2 en un sis
 
 ---
 
-## 🏗️ 4. Arquitectura del Software
+
+</details>
+
+<details>
+<summary><strong>🏗️ 4. Arquitectura del Software</strong></summary>
+
 
 El software del proyecto se organiza en **tres capas** que se comunican entre sí de forma ordenada.
 
@@ -195,7 +212,12 @@ MySQL almacena todos los datos persistentes: cuentas de usuario, permisos, histo
 
 ---
 
-## 🛠️ 5. Tecnologías a Utilizar
+
+</details>
+
+<details>
+<summary><strong>🛠️ 5. Tecnologías a Utilizar</strong></summary>
+
 
 ### Software
 
@@ -254,7 +276,12 @@ MySQL almacena todos los datos persistentes: cuentas de usuario, permisos, histo
 
 ---
 
-## 🌐 6. Red
+
+</details>
+
+<details>
+<summary><strong>🌐 6. Red</strong></summary>
+
 
 La red de LUXURY_SL es una **LAN privada** completamente autogestionada. No depende de ningún servicio externo para funcionar: el propio servidor Ubuntu actúa como núcleo de la red, proporcionando DNS, DHCP y los servicios web.
 
@@ -316,10 +343,15 @@ ping luxury.local
 
 ---
 
-## 📊 7. Diagrama de la Red
+
+</details>
+
+<details>
+<summary><strong>📊 7. Diagrama de la Red</strong></summary>
+
 
 <p align="center">
-  <img src="https://i.imgur.com/WzbjxSQ.png" width="600"/>
+  <img src="https://i.ibb.co/dsGqwW2C/image.png" width="600"/>
 </p>
 
 ```
@@ -349,7 +381,12 @@ El servidor Ubuntu centraliza todos los servicios. Los clientes obtienen su IP d
 
 ---
 
-## 🗺️ 8. Mapa Físico
+
+</details>
+
+<details>
+<summary><strong>🗺️ 8. Mapa Físico</strong></summary>
+
 
 El mapa físico muestra la distribución real de los equipos en el espacio del aula.
 
@@ -392,7 +429,12 @@ Leyenda:
 
 ---
 
-## 🧠 9. Mapa Lógico
+
+</details>
+
+<details>
+<summary><strong>🧠 9. Mapa Lógico</strong></summary>
+
 
 El mapa lógico muestra cómo se organizan los servicios y qué IP tiene cada elemento, independientemente de su ubicación física.
 
@@ -436,7 +478,12 @@ SUBRED: 10.10.10.0/24
 
 ---
 
-## 🌍 10. Web
+
+</details>
+
+<details>
+<summary><strong>🌍 10. Web</strong></summary>
+
 
 El dashboard web es el **centro de operaciones** de LUXURY_SL. Desde él, el operador controla el vehículo, consulta la telemetría y gestiona los usuarios, todo desde el navegador sin instalar nada en el cliente.
 
@@ -473,7 +520,12 @@ El dashboard web es el **centro de operaciones** de LUXURY_SL. Desde él, el ope
 
 ---
 
-## 🎨 11. Diseño
+
+</details>
+
+<details>
+<summary><strong>🎨 11. Diseño</strong></summary>
+
 
 El dashboard sigue una estética **"Dark Gold"**: fondos oscuros profundos con acentos dorados, tipografía limpia y elementos con brillo metálico. El objetivo es que el panel transmita precisión técnica y elegancia.
 
@@ -487,8 +539,8 @@ El dashboard sigue una estética **"Dark Gold"**: fondos oscuros profundos con a
 | :--- | :---: | :--- |
 | Fondo principal | `#0D0D0D` | Fondo de página y tarjetas |
 | Fondo secundario | `#1A1A1A` | Paneles y sidebar |
-| blanco | `#C9A84C` | Títulos, bordes activos, iconos |
-| Blanco | `#E8C97E` | Hover, textos de acento |
+| Oro principal | `#C9A84C` | Títulos, bordes activos, iconos |
+| Oro claro | `#E8C97E` | Hover, textos de acento |
 | Texto principal | `#F0F0F0` | Texto general |
 | Texto secundario | `#888888` | Labels, placeholders |
 | Alerta / Error | `#E05A5A` | Mensajes de error |
@@ -511,7 +563,12 @@ El dashboard sigue una estética **"Dark Gold"**: fondos oscuros profundos con a
 
 ---
 
-## 📐 12. Mockup
+
+</details>
+
+<details>
+<summary><strong>📐 12. Mockup</strong></summary>
+
 
 <table>
 <tr>
@@ -554,7 +611,12 @@ El dashboard sigue una estética **"Dark Gold"**: fondos oscuros profundos con a
 
 ---
 
-## 🗺️ 13. Mapa de Navegabilidad
+
+</details>
+
+<details>
+<summary><strong>🗺️ 13. Mapa de Navegabilidad</strong></summary>
+
 
 ```
                  ┌───────────────────┐
@@ -603,7 +665,12 @@ Acceso Invitado:  Login → /guest/ → Solo ver telemetría
 
 ---
 
-## 🗄️ 14. Base de Datos
+
+</details>
+
+<details>
+<summary><strong>🗄️ 14. Base de Datos</strong></summary>
+
 
 La base de datos **MySQL** almacena toda la información persistente del sistema: usuarios, roles, sesiones y registros de telemetría.
 
@@ -613,19 +680,19 @@ La base de datos **MySQL** almacena toda la información persistente del sistema
 
 <table>
 <tr>
-<td align="center" width="50%">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsHhT0lhtqSDNWxRp-jWjGiqMvYce069W8uA&s" width="160"/><br><br>
+<td align="left" width="50%">
   <strong>MySQL 8.0</strong><br><br>
-  <p align="left">
+  <p>
   MySQL es el sistema gestor de base de datos relacional que usamos como almacén central de todos los datos del proyecto. En LUXURY_SL lo hemos utilizado para guardar las cuentas de usuario con sus contraseñas cifradas en bcrypt, los roles de acceso (Admin / Operador / Invitado), el historial de comandos enviados al vehículo, los registros de telemetría del ESP32 (distancia, velocidad, batería) y las sesiones activas del dashboard. El servidor MySQL solo escucha en <code>localhost</code>, nunca expuesto directamente a la LAN, y el usuario de la aplicación (<code>luxury_app</code>) tiene permisos mínimos para reducir la superficie de ataque.
   </p>
+  <p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsHhT0lhtqSDNWxRp-jWjGiqMvYce069W8uA&s" width="160"/></p>
 </td>
-<td align="center" width="50%">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/PhpMyAdmin_logo.svg" width="200"/><br><br>
+<td align="left" width="50%">
   <strong>phpMyAdmin</strong><br><br>
-  <p align="left">
+  <p>
   phpMyAdmin es la interfaz web que hemos utilizado durante el desarrollo para gestionar la base de datos de forma visual sin tener que escribir comandos SQL en la terminal. Nos ha permitido crear las tablas del esquema, insertar los primeros registros de prueba, importar y exportar volcados de la base de datos, y verificar que las relaciones entre tablas eran correctas. En producción phpMyAdmin queda deshabilitado o protegido con contraseña y acceso restringido por IP para no exponer la administración de la BD a todos los clientes de la LAN.
   </p>
+  <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/PhpMyAdmin_logo.svg" width="200"/></p>
 </td>
 </tr>
 </table>
@@ -715,7 +782,12 @@ CREATE TABLE sessions (
 
 ---
 
-## 🔌 15. Servicios — Visión General
+
+</details>
+
+<details>
+<summary><strong>🔌 15. Servicios — Visión General</strong></summary>
+
 
 Una vista rápida de todos los servicios activos en el servidor, su función y cómo se relacionan entre sí dentro de la red.
 
@@ -764,7 +836,12 @@ Una vista rápida de todos los servicios activos en el servidor, su función y c
 
 ---
 
-## 🔵 16. Guía de Servicio — DNS
+
+</details>
+
+<details>
+<summary><strong>🔵 16. Guía de Servicio — DNS</strong></summary>
+
 
 ### 16.1 Teoría
 
@@ -891,7 +968,12 @@ ls -la /etc/pihole/
 
 ---
 
-## 🟣 17. Guía de Servicio — DHCP
+
+</details>
+
+<details>
+<summary><strong>🟣 17. Guía de Servicio — DHCP</strong></summary>
+
 
 ### 17.1 Teoría
 
@@ -1020,7 +1102,12 @@ sudo ufw status verbose | grep 67
 
 ---
 
-## 🔴 18. Guía de Servicio — Apache
+
+</details>
+
+<details>
+<summary><strong>🔴 18. Guía de Servicio — Apache</strong></summary>
+
 
 ### 18.1 Teoría
 
@@ -1028,19 +1115,19 @@ sudo ufw status verbose | grep 67
 
 <table>
 <tr>
-<td align="center" width="50%">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt1MqnFozRoQe9MQK8vlnJQBx7W1MOVYjtig&s" width="180"/><br><br>
+<td align="left" width="50%">
   <strong>Apache HTTP Server 2.4</strong><br><br>
-  <p align="left">
+  <p>
   Apache es el servidor web que actúa como punto de entrada de todas las peticiones HTTP dentro de la red local. En LUXURY_SL lo hemos configurado con un <strong>Virtual Host</strong> para el dominio <code>luxury.local</code>, apuntando al directorio <code>/var/www/luxury</code> donde residen los archivos del dashboard. Apache recibe la petición del navegador, pasa el control a PHP para que ejecute la lógica del backend (autenticación, consulta a MySQL, relay al ESP32) y devuelve la respuesta HTML/JSON al cliente. También gestiona los logs de acceso y error del sitio, que usamos para monitorizar el tráfico y depurar incidencias.
   </p>
+  <p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt1MqnFozRoQe9MQK8vlnJQBx7W1MOVYjtig&s" width="180"/></p>
 </td>
-<td align="center" width="50%">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1280px-PHP-logo.svg.png" width="180"/><br><br>
+<td align="left" width="50%">
   <strong>PHP 8.1</strong><br><br>
-  <p align="left">
+  <p>
   PHP es el lenguaje de scripting del servidor que hemos utilizado para toda la lógica del backend del dashboard. En LUXURY_SL, PHP se encarga de validar las credenciales del login comparando contra la tabla <code>users</code> de MySQL, de verificar el rol del usuario en cada petición antes de ejecutar cualquier acción, de construir las respuestas JSON que consume el JavaScript del frontend, y de hacer las peticiones HTTP al servidor embebido del ESP32 para enviarle los comandos de movimiento. PHP corre integrado en Apache a través del módulo <code>libapache2-mod-php</code>, de forma que cada archivo <code>.php</code> del dashboard se ejecuta en el servidor sin que el navegador del cliente vea nunca el código fuente.
   </p>
+  <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1280px-PHP-logo.svg.png" width="180"/></p>
 </td>
 </tr>
 </table>
@@ -1200,7 +1287,12 @@ sudo systemctl restart apache2
 
 ---
 
-## 🔒 19. Guía de Servicio — Firewall
+
+</details>
+
+<details>
+<summary><strong>🔒 19. Guía de Servicio — Firewall</strong></summary>
+
 
 ### 19.1 Teoría
 
@@ -1339,7 +1431,12 @@ tail -f /var/log/ufw.log
 
 ---
 
-## 💾 20. Guía de Servicio — Copias de Seguridad
+
+</details>
+
+<details>
+<summary><strong>💾 20. Guía de Servicio — Copias de Seguridad</strong></summary>
+
 
 ### 20.1 Teoría
 
@@ -1498,7 +1595,12 @@ chmod 600 /root/.my.cnf
 
 ---
 
-## 🏆 21. Conclusiones
+
+</details>
+
+<details>
+<summary><strong>🏆 21. Conclusiones</strong></summary>
+
 
 El proyecto **LUXURY_SL** ha permitido integrar de forma práctica y profesional todos los bloques del ciclo SMX2 en un único sistema funcional y tangible.
 
@@ -1517,7 +1619,12 @@ El modelado 3D del chasis y el ensamblaje físico del vehículo han completado l
 
 ---
 
-## 📚 22. Bibliografía
+
+</details>
+
+<details>
+<summary><strong>📚 22. Bibliografía</strong></summary>
+
 
 ### Documentación Oficial
 
@@ -1563,7 +1670,12 @@ El modelado 3D del chasis y el ensamblaje físico del vehículo han completado l
 
 ---
 
-## 👤 23. Guías de Usuario
+
+</details>
+
+<details>
+<summary><strong>👤 23. Guías de Usuario</strong></summary>
+
 
 Guías orientadas al **usuario final** del sistema: cómo acceder al dashboard, controlar el vehículo, gestionar usuarios y leer la telemetría.
 
@@ -1689,3 +1801,6 @@ Guías orientadas al **usuario final** del sistema: cómo acceder al dashboard, 
   ![License](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge)
 
 </div>
+
+
+</details>
