@@ -6,7 +6,7 @@
   <br>
   <p>Desarrollado por:</p>
   <h3><strong>Katya Robuste</strong> ⬥ <strong>Nazar Kishchuk</strong></h3>
-  <p><em>Ciclo: Sistemas Microinformáticos y Redes (SMX2) · Curso 2024–2025</em></p>
+  <p><em>Ciclo: Sistemas Microinformáticos y Redes (SMX2) · Curso 2025–2026</em></p>
   <br>
 
   ![Ubuntu](https://img.shields.io/badge/Ubuntu_Server-22.04_LTS-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
@@ -245,8 +245,10 @@ MySQL almacena todos los datos persistentes: cuentas de usuario, permisos, histo
   <img src="https://e7.pngegg.com/pngimages/187/112/png-clipart-responsive-web-design-html-computer-icons-css3-world-wide-web-consortium-css-angle-text.png" height="45"/>
   <img src="https://cdn-icons-png.flaticon.com/512/8379/8379454.png" height="45"/>
   <img src="https://toppng.com/uploads/preview/arduino-logo-11563227354ny21akychx.png" height="45"/>
-  <img src="https://img.favpng.com/25/15/12/logo-apache-http-server-apache-software-foundation-computer-servers-web-server-png-favpng-ebJ1wHvFsydhrpp6V0xFN5NBQ.jpg" height="45"/>
-  <img src="https://e7.pngegg.com/pngimages/617/252/png-clipart-mysql-workbench-computer-icons-logo-database-server-blue-text.png" height="45"/>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt1MqnFozRoQe9MQK8vlnJQBx7W1MOVYjtig&s" height="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1280px-PHP-logo.svg.png" height="45"/>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsHhT0lhtqSDNWxRp-jWjGiqMvYce069W8uA&s" height="45"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/PhpMyAdmin_logo.svg" height="45"/>
   <img src="https://i.imgur.com/2q6VdIQ.png" height="45"/>
 </p>
 
@@ -485,8 +487,8 @@ El dashboard sigue una estética **"Dark Gold"**: fondos oscuros profundos con a
 | :--- | :---: | :--- |
 | Fondo principal | `#0D0D0D` | Fondo de página y tarjetas |
 | Fondo secundario | `#1A1A1A` | Paneles y sidebar |
-| Oro principal | `#C9A84C` | Títulos, bordes activos, iconos |
-| Oro claro | `#E8C97E` | Hover, textos de acento |
+| blanco | `#C9A84C` | Títulos, bordes activos, iconos |
+| Blanco | `#E8C97E` | Hover, textos de acento |
 | Texto principal | `#F0F0F0` | Texto general |
 | Texto secundario | `#888888` | Labels, placeholders |
 | Alerta / Error | `#E05A5A` | Mensajes de error |
@@ -604,6 +606,31 @@ Acceso Invitado:  Login → /guest/ → Solo ver telemetría
 ## 🗄️ 14. Base de Datos
 
 La base de datos **MySQL** almacena toda la información persistente del sistema: usuarios, roles, sesiones y registros de telemetría.
+
+---
+
+### 🛢️ Herramientas de base de datos utilizadas
+
+<table>
+<tr>
+<td align="center" width="50%">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsHhT0lhtqSDNWxRp-jWjGiqMvYce069W8uA&s" width="160"/><br><br>
+  <strong>MySQL 8.0</strong><br><br>
+  <p align="left">
+  MySQL es el sistema gestor de base de datos relacional que usamos como almacén central de todos los datos del proyecto. En LUXURY_SL lo hemos utilizado para guardar las cuentas de usuario con sus contraseñas cifradas en bcrypt, los roles de acceso (Admin / Operador / Invitado), el historial de comandos enviados al vehículo, los registros de telemetría del ESP32 (distancia, velocidad, batería) y las sesiones activas del dashboard. El servidor MySQL solo escucha en <code>localhost</code>, nunca expuesto directamente a la LAN, y el usuario de la aplicación (<code>luxury_app</code>) tiene permisos mínimos para reducir la superficie de ataque.
+  </p>
+</td>
+<td align="center" width="50%">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/PhpMyAdmin_logo.svg" width="200"/><br><br>
+  <strong>phpMyAdmin</strong><br><br>
+  <p align="left">
+  phpMyAdmin es la interfaz web que hemos utilizado durante el desarrollo para gestionar la base de datos de forma visual sin tener que escribir comandos SQL en la terminal. Nos ha permitido crear las tablas del esquema, insertar los primeros registros de prueba, importar y exportar volcados de la base de datos, y verificar que las relaciones entre tablas eran correctas. En producción phpMyAdmin queda deshabilitado o protegido con contraseña y acceso restringido por IP para no exponer la administración de la BD a todos los clientes de la LAN.
+  </p>
+</td>
+</tr>
+</table>
+
+---
 
 ### Nombre de la base de datos: `luxury_db`
 
@@ -998,6 +1025,25 @@ sudo ufw status verbose | grep 67
 ### 18.1 Teoría
 
 **Apache HTTP Server** es el servidor web que publica el dashboard de LUXURY_SL. Recibe peticiones HTTP de los navegadores, ejecuta el código PHP del backend y devuelve las respuestas al cliente.
+
+<table>
+<tr>
+<td align="center" width="50%">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt1MqnFozRoQe9MQK8vlnJQBx7W1MOVYjtig&s" width="180"/><br><br>
+  <strong>Apache HTTP Server 2.4</strong><br><br>
+  <p align="left">
+  Apache es el servidor web que actúa como punto de entrada de todas las peticiones HTTP dentro de la red local. En LUXURY_SL lo hemos configurado con un <strong>Virtual Host</strong> para el dominio <code>luxury.local</code>, apuntando al directorio <code>/var/www/luxury</code> donde residen los archivos del dashboard. Apache recibe la petición del navegador, pasa el control a PHP para que ejecute la lógica del backend (autenticación, consulta a MySQL, relay al ESP32) y devuelve la respuesta HTML/JSON al cliente. También gestiona los logs de acceso y error del sitio, que usamos para monitorizar el tráfico y depurar incidencias.
+  </p>
+</td>
+<td align="center" width="50%">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1280px-PHP-logo.svg.png" width="180"/><br><br>
+  <strong>PHP 8.1</strong><br><br>
+  <p align="left">
+  PHP es el lenguaje de scripting del servidor que hemos utilizado para toda la lógica del backend del dashboard. En LUXURY_SL, PHP se encarga de validar las credenciales del login comparando contra la tabla <code>users</code> de MySQL, de verificar el rol del usuario en cada petición antes de ejecutar cualquier acción, de construir las respuestas JSON que consume el JavaScript del frontend, y de hacer las peticiones HTTP al servidor embebido del ESP32 para enviarle los comandos de movimiento. PHP corre integrado en Apache a través del módulo <code>libapache2-mod-php</code>, de forma que cada archivo <code>.php</code> del dashboard se ejecuta en el servidor sin que el navegador del cliente vea nunca el código fuente.
+  </p>
+</td>
+</tr>
+</table>
 
 | Concepto | Definición |
 | :--- | :--- |
