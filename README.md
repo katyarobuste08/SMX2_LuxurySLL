@@ -185,6 +185,10 @@ El software del proyecto se organiza en **tres capas** que se comunican entre s�
 │   ESP32 (servidor HTTP embebido + PWM)        │
 └──────────────────────────────────────────────┘
 ```
+## Diagrama de red del robot
+
+![Diagrama de red](https://i.postimg.cc/856M3z5F/Chat-GPT-Image-13-mar-2026-13-53-16.png)
+
 
 ### Descripción de cada capa
 
