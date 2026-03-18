@@ -6,7 +6,7 @@
   <br>
   <p>Desarrollado por:</p>
   <h3><strong>Katya Robuste</strong> ⬥ <strong>Nazar Kishchuk</strong></h3>
-  <p><em>Ciclo: Sistemas Microinformáticos y Redes (SMX2) · Curso 2024–2025</em></p>
+  <p><em>Ciclo: Sistemas Microinformáticos y Redes (SMX2) · Curso 2025–2026</em></p>
   <br>
 
   ![Ubuntu](https://img.shields.io/badge/Ubuntu_Server-22.04_LTS-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
