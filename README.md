@@ -1525,17 +1525,14 @@ sudo /usr/local/bin/luxury_backup.sh
 sudo crontab -e
 ```
 
-```cron
-0 2 * * * /usr/local/bin/luxury_backup.sh >> /var/log/luxury_backup.log 2>&1
 
-Servicios implementados en TrueNAS SCALE 25.10.0
+# Servicios implementados en TrueNAS SCALE 25.10.0
 En el servidor TrueNAS SCALE 25.10.0 se han configurado varios servicios de red que permiten el acceso y la transferencia de archivos dentro de la red. Estos servicios utilizan diferentes tecnologías y protocolos para proporcionar distintos métodos de acceso al almacenamiento del NAS.
 
 Cada servicio dispone de un archivo de configuración dentro del sistema Linux sobre el que se basa TrueNAS. Además, es necesario tener en cuenta ciertos requisitos técnicos, como la activación del servicio desde la interfaz de administración, la correcta configuración de los permisos de los datasets y la apertura de los puertos correspondientes en la red.
 
-Tabla de servicios configurados
+# Tabla de servicios configurados
 Servidor: TrueNAS SCALE 25.10.0
-
 Servicio: FTP (ProFTPD)
 Directorio y archivo de configuración: /etc/proftpd/proftpd.conf
 Explicación:
@@ -1545,13 +1542,12 @@ Servicio: SMB (Samba)
 Directorio y archivo de configuración: /etc/smb4.conf
 Explicación:
 El servicio SMB permite compartir archivos y carpetas en red, siendo especialmente utilizado por sistemas operativos Windows. TrueNAS utiliza Samba como implementación de este protocolo. Para configurar este servicio es necesario crear un dataset que será compartido, asignar los permisos adecuados y configurar un recurso compartido SMB desde la interfaz de administración de TrueNAS. Este servicio utiliza normalmente el puerto 445 y permite que los usuarios accedan al almacenamiento del NAS como si fuera una carpeta compartida en la red.
-
 Servicio: SSH (OpenSSH)
 Directorio y archivo de configuración: /etc/ssh/sshd_config
 Explicación:
 El servicio SSH permite el acceso remoto seguro al servidor mediante una terminal. Se utiliza para administrar el sistema, ejecutar comandos de forma remota y transferir archivos mediante protocolos seguros como SCP o SFTP. Para su funcionamiento es necesario habilitar el servicio SSH desde la interfaz de TrueNAS y configurar el método de autenticación, que puede realizarse mediante contraseña o mediante claves SSH. Este servicio utiliza el puerto 22 y proporciona cifrado en la comunicación entre el cliente y el servidor.
 
-Consideraciones técnicas
+# Consideraciones técnicas
 Al implementar estos servicios en TrueNAS es importante tener en cuenta los siguientes aspectos:
 
 Activar los servicios desde la interfaz de administración de TrueNAS.
