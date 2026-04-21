@@ -531,71 +531,90 @@ El dashboard web es el **centro de operaciones** de LUXURY_SL. Desde él, el ope
 <summary><strong>🎨 11. Diseño</strong></summary>
 
 
-El dashboard sigue una estética **"Dark Gold"**: fondos oscuros profundos con acentos dorados, tipografía limpia y elementos con brillo metálico. El objetivo es que el panel transmita precisión técnica y elegancia.
+## 📐 Mockup — Sistema de Login (Luxury_SL)
 
-### Paleta de colores
-
-<p align="center">
-  <img src="https://i.imgur.com/zcfUlYo_d.png" width="600" />
-</p>
-
-| Nombre | Código HEX | Uso |
-| :--- | :---: | :--- |
-| Fondo principal | `#0D0D0D` | Fondo de página y tarjetas |
-| Fondo secundario | `#1A1A1A` | Paneles y sidebar |
-| Oro principal | `#C9A84C` | Títulos, bordes activos, iconos |
-| Oro claro | `#E8C97E` | Hover, textos de acento |
-| Texto principal | `#F0F0F0` | Texto general |
-| Texto secundario | `#888888` | Labels, placeholders |
-| Alerta / Error | `#E05A5A` | Mensajes de error |
-| Éxito / OK | `#5ABA6D` | Confirmaciones |
-
-### Tipografía
-
-| Uso | Fuente | Peso |
-| :--- | :--- | :--- |
-| Títulos principales | `Orbitron` (Google Fonts) | 700 |
-| Texto general | `Inter` (Google Fonts) | 400 / 500 |
-| Código y datos técnicos | `JetBrains Mono` | 400 |
-
-### Principios de diseño
-
-- **Consistencia:** todos los componentes siguen el mismo sistema de espaciado y colores.
-- **Claridad técnica:** los datos de telemetría se muestran de forma numérica y visual, sin ruido innecesario.
-- **Jerarquía visual:** el panel de control del vehículo ocupa la zona central y más prominente.
-- **Responsive:** el dashboard se adapta a tablet y móvil para control desde cualquier dispositivo desde la url official
+Este mockup representa el diseño completo del sistema de autenticación desarrollado con **PHP**, **phpMyAdmin (MySQL)** y **CSS**.  
+Incluye todas las pantallas del flujo de usuario, desde el inicio de sesión hasta la recuperación de contraseña.
 
 ---
 
-
-## 📐 12. Mockup
-
-El sistema ha sido desarrollado utilizando **PHP**, **phpMyAdmin** para la gestión de la base de datos, y **CSS** para el diseño visual.
-
-### 📊 Dashboard principal
-Muestra datos del vehículo en tiempo real.  
-PHP obtiene la información desde la base de datos y la actualiza dinámicamente en la interfaz.
-
 ### 🔐 Login
-Sistema de autenticación de usuarios.  
-PHP valida los datos con la base de datos y gestiona las sesiones para mantener la seguridad.
+Pantalla principal donde el usuario introduce su correo y contraseña.  
+PHP valida los datos contra la base de datos y gestiona la sesión del usuario.
 
-### 🗺️ Mapa de logros
-Visualiza el progreso del proyecto.  
-Los datos se almacenan en la base de datos y se muestran de forma clara con CSS.
+---
 
-### 🌐 Planos de red
-Representación visual de la estructura de red del sistema.  
-Permite entender cómo se conectan los distintos dispositivos.
+### 📝 Registro
+Permite crear una nueva cuenta.  
+Los datos se guardan en la base de datos mediante PHP, asegurando unicidad en email y usuario.
 
-### 📡 Panel de comunicaciones (Logging)
-Muestra los registros (logs) y el estado de conexión del ESP32.  
-Los datos se guardan en la base de datos y se actualizan en tiempo real con PHP.
+---
 
-### 🧰 Stack tecnológico
-- **PHP** → lógica del sistema  
-- **phpMyAdmin** → gestión de la base de datos  
-- **CSS** → diseño e interfaz visual  
+### 📩 Recuperar contraseña
+Popup donde el usuario introduce su correo.  
+PHP genera un código de recuperación y lo envía por email (SMTP), guardándolo en la base de datos con tiempo de expiración.
+
+---
+
+### 🔑 Verificación de código
+El usuario introduce el código recibido.  
+PHP comprueba que sea correcto y que no haya expirado (controlado en la base de datos).
+
+---
+
+### 🔒 Nueva contraseña
+Permite establecer una nueva contraseña.  
+Se encripta usando **BCRYPT** antes de guardarse en la base de datos para mayor seguridad.
+
+---
+
+### ✅ Confirmación
+Pantalla final que indica que la contraseña se ha actualizado correctamente.  
+Se limpia la sesión y el usuario puede volver a iniciar sesión.
+
+---
+
+### 🔄 Flujo del sistema
+1. Usuario solicita recuperación  
+2. Se envía código por email  
+3. Se valida el código  
+4. Se actualiza la contraseña  
+5. Se redirige al login  
+
+---
+
+### 🗄️ Base de datos (phpMyAdmin)
+Tabla `users` con:
+- ID único  
+- Username y email (únicos)  
+- Contraseña encriptada  
+- Código de recuperación  
+- Fecha de expiración  
+- Fecha de creación  
+
+---
+
+### 📁 Arquitectura
+- `index.html` → interfaz (login/registro)  
+- `login.php` → autenticación  
+- `registrar.php` → creación de cuentas  
+- `recuperar.php` → envío de código  
+- `verificar_codigo.php` → validación  
+- `nueva_contrasena.php` → cambio de contraseña  
+- `conexion.php` → conexión a la BD  
+- `login.css` → diseño visual  
+
+---
+
+### 🎨 Diseño
+Interfaz creada con **CSS**, estilo moderno en negro y dorado, centrado en claridad visual y experiencia de usuario.
+
+---
+
+### ⚙️ Tecnologías usadas
+- PHP → lógica del sistema  
+- MySQL / phpMyAdmin → base de datos  
+- CSS → diseño y UI  
 
 ---
 
