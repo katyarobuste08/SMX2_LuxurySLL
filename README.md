@@ -563,55 +563,39 @@ El dashboard sigue una estética **"Dark Gold"**: fondos oscuros profundos con a
 - **Consistencia:** todos los componentes siguen el mismo sistema de espaciado y colores.
 - **Claridad técnica:** los datos de telemetría se muestran de forma numérica y visual, sin ruido innecesario.
 - **Jerarquía visual:** el panel de control del vehículo ocupa la zona central y más prominente.
-- **Responsive:** el dashboard se adapta a tablet y móvil para control desde cualquier dispositivo de la LAN.
+- **Responsive:** el dashboard se adapta a tablet y móvil para control desde cualquier dispositivo desde la url official
 
 ---
 
 
-</details>
+## 📐 12. Mockup
 
-<details>
-<summary><strong>📐 12. Mockup</strong></summary>
+El sistema ha sido desarrollado utilizando **PHP**, **phpMyAdmin** para la gestión de la base de datos, y **CSS** para el diseño visual.
 
+### 📊 Dashboard principal
+Muestra datos del vehículo en tiempo real.  
+PHP obtiene la información desde la base de datos y la actualiza dinámicamente en la interfaz.
 
-<table>
-<tr>
-<td align="center">
-<strong>Dashboard principal</strong><br>
-<img src="https://i.imgur.com/Xhj3vUs.png" width="280"/><br>
-<em>Control del vehículo y telemetría en tiempo real</em>
-</td>
-<td align="center">
-<strong>Pantalla de login</strong><br>
-<img src="https://i.imgur.com/xFugChF.png" width="280"/><br>
-<em>Autenticación segura con gestión de sesiones</em>
-</td>
-</tr>
-<tr>
-<td align="center">
-<strong>Mapa de logros / hitos</strong><br>
-<img src="https://i.imgur.com/snpG4OU.png" width="280"/><br>
-<em>Seguimiento del progreso del proyecto</em>
-</td>
-<td align="center">
-<strong>Planos lógicos de red</strong><br>
-<img src="https://i.imgur.com/iM1fOzK.png" width="280"/><br>
-<em>Visualización de la topología interna</em>
-</td>
-</tr>
-<tr>
-<td align="center">
-<strong>Panel de comunicaciones</strong><br>
-<img src="https://i.imgur.com/6NnGtWI.png" width="280"/><br>
-<em>Logs y estado de la conexión ESP32</em>
-</td>
-<td align="center">
-<strong>Stack tecnológico</strong><br>
-<img src="https://i.imgur.com/4gWzAay.png" width="280"/><br>
-<em>Resumen visual de tecnologías utilizadas</em>
-</td>
-</tr>
-</table>
+### 🔐 Login
+Sistema de autenticación de usuarios.  
+PHP valida los datos con la base de datos y gestiona las sesiones para mantener la seguridad.
+
+### 🗺️ Mapa de logros
+Visualiza el progreso del proyecto.  
+Los datos se almacenan en la base de datos y se muestran de forma clara con CSS.
+
+### 🌐 Planos de red
+Representación visual de la estructura de red del sistema.  
+Permite entender cómo se conectan los distintos dispositivos.
+
+### 📡 Panel de comunicaciones (Logging)
+Muestra los registros (logs) y el estado de conexión del ESP32.  
+Los datos se guardan en la base de datos y se actualizan en tiempo real con PHP.
+
+### 🧰 Stack tecnológico
+- **PHP** → lógica del sistema  
+- **phpMyAdmin** → gestión de la base de datos  
+- **CSS** → diseño e interfaz visual  
 
 ---
 
