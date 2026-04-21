@@ -1,7 +1,7 @@
-<div align="center">
-  <img src="https://i.imgur.com/FG6uNYF.png" width="220"/>
+<p align="center">
+  <img src="https://i.imgur.com/MwVFHO7.png" alt="LuxurySL Banner" style="max-width: 100%; height: auto;" />
+</p>
   <br><br>
-  <h1>💎 LUXURY_SL</h1>
   <p><strong>Integración de sistemas, redes, hardware IoT y diseño industrial para el módulo SMX2</strong></p>
   <br>
   <p>Desarrollado por:</p>
