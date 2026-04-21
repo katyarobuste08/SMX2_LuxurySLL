@@ -1,21 +1,35 @@
 <p align="center">
-  <img src="https://i.imgur.com/MwVFHO7.png" alt="LuxurySL Banner" style="max-width: 100%; height: auto;" />
+  <img src="https://i.imgur.com/MwVFHO7.png" alt="LuxurySL Banner" width="100%" />
 </p>
-  <br><br>
-  <p><strong>Integración de sistemas, redes, hardware IoT y diseño industrial para el módulo SMX2</strong></p>
-  <br>
-  <p>Desarrollado por:</p>
-  <h3><strong>Katya Robuste</strong> ⬥ <strong>Nazar Kishchuk</strong></h3>
-  <p><em>Ciclo: Sistemas Microinformáticos y Redes (SMX2) · Curso 2024–2025</em></p>
-  <br>
 
-  ![Ubuntu](https://img.shields.io/badge/Ubuntu_Server-22.04_LTS-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-  ![Apache](https://img.shields.io/badge/Apache-2.4.x-D22128?style=for-the-badge&logo=apache&logoColor=white)
-  ![MySQL](https://img.shields.io/badge/MySQL-8.0.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-  ![PHP](https://img.shields.io/badge/PHP-8.1.x-777BB4?style=for-the-badge&logo=php&logoColor=white)
-  ![Arduino](https://img.shields.io/badge/Arduino-ESP32-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-  ![Blender](https://img.shields.io/badge/Blender-3.6_LTS-F5792A?style=for-the-badge&logo=blender&logoColor=white)
+<br>
 
+<p align="center">
+  <strong>Integración de sistemas, redes, hardware IoT y diseño industrial para el módulo SMX2</strong>
+</p>
+
+<br>
+
+<p align="center">Desarrollado por:</p>
+
+<p align="center">
+  <strong>Katya Robuste</strong> ⬥ <strong>Nazar Kishchuk</strong>
+</p>
+
+<p align="center">
+  <em>Ciclo: Sistemas Microinformáticos y Redes (SMX2) · Curso 2025–2026</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Ubuntu_Server-22.04_LTS-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache-2.4.x-D22128?style=for-the-badge&logo=apache&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-8.0.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/PHP-8.1.x-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Arduino-ESP32-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/Blender-3.6_LTS-F5792A?style=for-the-badge&logo=blender&logoColor=white" />
+</p>
 </div>
 
 ---
