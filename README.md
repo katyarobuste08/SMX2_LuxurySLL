@@ -531,90 +531,154 @@ El dashboard web es el **centro de operaciones** de LUXURY_SL. Desde él, el ope
 <summary><strong>🎨 11. Diseño</strong></summary>
 
 
-## 📐 Mockup — Sistema de Login (Luxury_SL)
+# 🎨 Luxury_SL - Mockup
 
-Este mockup representa el diseño completo del sistema de autenticación desarrollado con **PHP**, **phpMyAdmin (MySQL)** y **CSS**.  
-Incluye todas las pantallas del flujo de usuario, desde el inicio de sesión hasta la recuperación de contraseña.
+## 📌 Descripción
 
----
+**Luxury_SL** es un sistema completo de autenticación desarrollado con **PHP**, **MySQL (phpMyAdmin)** y **CSS**.  
+Incluye registro de usuarios, inicio de sesión seguro y recuperación de contraseña mediante código enviado por email.
 
-### 🔐 Login
-Pantalla principal donde el usuario introduce su correo y contraseña.  
-PHP valida los datos contra la base de datos y gestiona la sesión del usuario.
-
----
-
-### 📝 Registro
-Permite crear una nueva cuenta.  
-Los datos se guardan en la base de datos mediante PHP, asegurando unicidad en email y usuario.
+El proyecto está diseñado con enfoque en:
+- 🔐 Seguridad básica
+- 🧩 Arquitectura limpia
+- 🎨 Interfaz moderna y elegante
+- ⚡ Experiencia de usuario fluida
 
 ---
 
-### 📩 Recuperar contraseña
-Popup donde el usuario introduce su correo.  
-PHP genera un código de recuperación y lo envía por email (SMTP), guardándolo en la base de datos con tiempo de expiración.
+## ✨ Características
+
+- 🔐 Login seguro con validación en base de datos  
+- 📝 Registro de usuarios con verificación de duplicados  
+- 📩 Recuperación de contraseña mediante email (SMTP)  
+- 🔑 Verificación de código con expiración automática  
+- 🔒 Cambio de contraseña con encriptación **BCRYPT**  
+- 🗄️ Base de datos estructurada en MySQL  
+- 🎨 UI moderna estilo **dark luxury (negro + dorado)**  
 
 ---
 
-### 🔑 Verificación de código
-El usuario introduce el código recibido.  
-PHP comprueba que sea correcto y que no haya expirado (controlado en la base de datos).
+## 🖼️ Vista del sistema
+
+![Mockup del sistema](https://i.imgur.com/dge3ajD.png)
 
 ---
 
-### 🔒 Nueva contraseña
-Permite establecer una nueva contraseña.  
-Se encripta usando **BCRYPT** antes de guardarse en la base de datos para mayor seguridad.
+## 🔄 Flujo del sistema
+
+El sistema sigue un flujo seguro y estructurado de autenticación y recuperación de cuenta.
 
 ---
 
-### ✅ Confirmación
-Pantalla final que indica que la contraseña se ha actualizado correctamente.  
-Se limpia la sesión y el usuario puede volver a iniciar sesión.
+### 🔐 1. Login
+
+- El usuario introduce **usuario o email + contraseña**.
+- El sistema valida los datos contra la base de datos.
+- Si son correctos:
+  - Se crea una sesión activa.
+  - Se permite el acceso al sistema.
+- Si son incorrectos:
+  - Se muestra un error sin revelar información sensible.
+
+
+
+### 📝 2. Registro
+
+- El usuario introduce sus datos: usuario, email y contraseña.
+- El sistema:
+  - Verifica que no existan duplicados.
+  - Encripta la contraseña con **BCRYPT**.
+  - Guarda el usuario en la base de datos.
+- Se confirma la creación de la cuenta.
+
+
+
+### 📩 3. Recuperación de contraseña
+
+- El usuario introduce su correo electrónico.
+- El sistema:
+  - Verifica si el email existe.
+  - Genera un **código único de recuperación**.
+  - Guarda el código con fecha de expiración.
+  - Envía el código por email mediante **SMTP**.
+
+
+
+### 🔑 4. Verificación del código
+
+- El usuario introduce el código recibido.
+- El sistema:
+  - Comprueba su validez.
+  - Verifica que no haya expirado.
+- Si es correcto:
+  - Se permite continuar.
+- Si es incorrecto:
+  - Se bloquea el proceso.
+
+
+
+### 🔒 5. Nueva contraseña
+
+- El usuario introduce una nueva contraseña.
+- El sistema:
+  - Valida su seguridad.
+  - La encripta con **BCRYPT**.
+  - Actualiza la base de datos.
+  - Elimina el código de recuperación usado.
+
+
+
+### ✅ 6. Confirmación
+
+- Se muestra mensaje de éxito.
+- El usuario es redirigido al login.
+- El flujo de recuperación finaliza correctamente.
 
 ---
 
-### 🔄 Flujo del sistema
-1. Usuario solicita recuperación  
-2. Se envía código por email  
-3. Se valida el código  
-4. Se actualiza la contraseña  
-5. Se redirige al login  
+## 🗄️ Base de datos
 
----
+**Tabla:** `users`
 
-### 🗄️ Base de datos (phpMyAdmin)
-Tabla `users` con:
-- ID único  
-- Username y email (únicos)  
-- Contraseña encriptada  
-- Código de recuperación  
-- Fecha de expiración  
-- Fecha de creación  
+| Campo | Descripción |
+|------|-------------|
+| id | Identificador único |
+| username | Nombre de usuario (único) |
+| email | Correo electrónico (único) |
+| password | Contraseña encriptada (BCRYPT) |
+| reset_code | Código de recuperación |
+| code_expiration | Fecha de expiración del código |
+| created_at | Fecha de creación |
 
----
 
-### 📁 Arquitectura
-- `index.html` → interfaz (login/registro)  
-- `login.php` → autenticación  
-- `registrar.php` → creación de cuentas  
-- `recuperar.php` → envío de código  
-- `verificar_codigo.php` → validación  
-- `nueva_contrasena.php` → cambio de contraseña  
-- `conexion.php` → conexión a la BD  
-- `login.css` → diseño visual  
 
----
+## 🎨 Diseño UI
 
-### 🎨 Diseño
-Interfaz creada con **CSS**, estilo moderno en negro y dorado, centrado en claridad visual y experiencia de usuario.
+El diseño sigue un estilo **moderno, oscuro y premium**, inspirado en interfaces “luxury”.
 
----
+### 🎨 Paleta de colores:
+- ⚫ Negro → Fondo principal
+- 🟡 Dorado → Elementos destacados y botones
+- ⚪ Blanco → Texto principal
+- 🔘 Gris oscuro → Inputs y bordes
 
-### ⚙️ Tecnologías usadas
-- PHP → lógica del sistema  
-- MySQL / phpMyAdmin → base de datos  
-- CSS → diseño y UI  
+### 🧠 Principios de diseño:
+- Interfaz centrada y minimalista  
+- Tarjetas (cards) para formularios  
+- Bordes redondeados y sombras suaves  
+- Transiciones fluidas en botones y acciones  
+- Consistencia visual en todas las pantallas  
+
+
+## ⚙️ Tecnologías utilizadas
+
+- 🐘 PHP → Lógica del backend  
+- 🗄️ MySQL / phpMyAdmin → Base de datos  
+- 🎨 CSS → Diseño de interfaz  
+- 📧 SMTP → Envío de correos electrónicos  
+
+
+ 
 
 ---
 
