@@ -1501,7 +1501,56 @@ tail -f /var/log/ufw.log
 - Ubuntu Server Guide: https://ubuntu.com/server/docs
 
 ---
+# 🛡️ IPFIRE
 
+Este repositorio documenta la implementación de una **infraestructura de red perimetral** mediante **IPFire** y la configuración de un **sistema de mensajería automatizada** usando **XAMPP/PHP con SMTP**.
+
+---
+
+## 🧱 1. Cortafuegos Perimetral: IPFire
+
+IPFire actúa como la primera línea de defensa de la red, funcionando como un firewall endurecido que filtra ataques externos antes de que alcancen la infraestructura interna.
+
+### 🌐 Arquitectura de Red
+
+La configuración se basa en una segmentación por colores:
+
+- 🔴 **Red ROJA (WAN):** Conexión directa a Internet  
+- 🟢 **Red VERDE (LAN):** Red interna segura y filtrada  
+- 🟢 **IP Gateway (Green):** `10.10.10.1`  
+- 🔒 **Red protegida:** `192.168.135.0`
+
+### 🛡️ Seguridad Intrínseca (IDS/IPS)
+
+El sistema integra **Suricata**, un motor de detección y prevención de intrusiones que analiza el tráfico en tiempo real para detectar:
+
+- Malware
+- Exploits
+- Intentos de intrusión
+
+---
+
+### 🛠️ Comandos de Administración
+
+| Acción | Comando |
+|--------|--------|
+| Configuración general | `setup` |
+| Estado del IPS | `/etc/init.d/suricata status` |
+| Ver red verde | `ip addr show green0` |
+| Prueba de conectividad | `ping -c 4 8.8.8.8` |
+| Ver logs firewall | `cat /var/log/messages` |
+
+---
+
+### ⚠️ Solución de Problemas
+
+| Problema | Causa probable | Solución |
+|----------|----------------|----------|
+| Sin acceso a WebGUI | Puerto incorrecto | Usar `https://` puerto `444` |
+| Sin conexión | Orden de tarjetas | Reasignar en `setup > Networking` |
+| CPU al 100% | Exceso de reglas IPS | Reducir reglas activas |
+
+---
 
 </details>
 
